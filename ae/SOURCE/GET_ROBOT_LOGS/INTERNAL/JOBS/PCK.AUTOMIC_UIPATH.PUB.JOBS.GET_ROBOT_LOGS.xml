@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBS_CIT AttrType="CIT" name="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_RELEASES">
+<JOBS_CIT AttrType="CIT" name="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_ROBOT_LOGS">
 <XHEADER state="1">
-<Title>GET_RELEASES</Title>
+<Title>Get Robot Logs</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -96,8 +96,12 @@
 <component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
 <component con="0" enc="0" type="2" value="$filter" xmlName="query_0_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_FILTER#" xmlName="query_0_1"/>
+<component con="0" enc="0" type="2" value="$orderby" xmlName="query_1_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_ORD_BY#" xmlName="query_1_1"/>
+<component con="0" enc="0" type="2" value="$top" xmlName="query_2_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_TOP#" xmlName="query_2_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="/odata/RobotLogs" xmlName="resource"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
 <component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
 <component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
