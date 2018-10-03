@@ -1,0 +1,5 @@
+*** Variables ***
+#---- AE Actions-------------------------
+${_START_JOB_ACTION}    PCK.AUTOMIC_CA_CA7.PUB.ACTION.START_JOB
+
+

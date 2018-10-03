@@ -1,0 +1,67 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        cancel_job
+Test Template     Cancel Job Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    JobNumber         JobName         Force       Kill        Reason
+Cancel job with valid Job Number having all valid data
+                      [Tags]    main_scenarios
+                      OK        ${Job_Number}     ${EMPTY}        ${Force}    ${Kill}     ${Reason}
+
+Restart job with valid Job Name having duplicate jobs with same name
+                      NOK       ${EMPTY}          ${Job_Name}     ${EMPTY}    ${EMPTY}    ${Reason}
+
+Cancel job with Invalid or non existing JobNumber
+                      NOK       Invalid           ${EMPTY}        ${EMPTY}    ${EMPTY}    ${EMPTY}
+
+Cancel job with Invalid or non existing JobName
+                      NOK       ${EMPTY}          Invalid         ${EMPTY}    ${EMPTY}    ${EMPTY}
+
+Empty JobNumber and JobName and valid values in non mandatory fields
+                      NOK       ${EMPTY}          ${EMPTY}        ${Force}    ${Kill}     ${Reason}
+
+Cancel job with valid Job Name and Job Number
+                      NOK       ${Job_Number1}    ${Job_Name1}    ${EMPTY}    ${EMPTY}    ${EMPTY}
+
+Cancel job with valid Job Number where reason is not mandatory
+                      OK        ${Job_Number2}    ${EMPTY}        ${EMPTY}    ${EMPTY}    ${EMPTY}
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "CANCEL JOB"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Cancel Job Template
+    [Arguments]    ${OK_NOK}    ${Job_Number}    ${Job_Name}    ${Force}    ${Kill}    ${Reason}
+    [Documentation]    This test cancels jobs in CA7.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${Job_Number}: This field specifies job number of CA7 job.
+    ...    -${Job_Name}: This field specifies job name of CA7 job.
+    ...    -${Force}: This field specifies whether to force the cancellation of the job of CA7 job.
+    ...    -${Kill}: This field specifies whether to stop the job immediately, rather than letting the canceled job terminate typically of CA7 job.
+    ...    -${Reason}: This field specifies reason of CA7 job.
+    Generate String
+    Init Action    ${_CANCEL_JOB_ACTION}
+    Connect To CA7
+    Run Keyword If    '${Job_Name}' == 'Invalid'    Action Set    &UC4RB_CA7_JOBNAME#    ${Generated_Name}_${Time}
+    ...    ELSE    Action Set    &UC4RB_CA7_JOBNAME#    ${Job_Name}
+    Run Keyword If    '${Job_Number}' == 'Invalid'    Action Set    &UC4RB_CA7_JOBNO#    ${Generated_Name}_${Time}
+    ...    ELSE    Action Set    &UC4RB_CA7_JOBNO#    ${Job_Number}
+    Run Keyword If    '${Force}'    Action Set    &UC4RB_CA7_FORCE#    ${Force}
+    Run Keyword If    '${Kill}'    Action Set    &UC4RB_CA7_KILL#    ${Kill}
+    Run Keyword If    '${Reason}'    Action Set    &UC4RB_CA7_REASON#    ${Reason}
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success
+    ...    ELSE    Assert Failure
+
+Teardown
+    Log    *******End Test "CANCEL JOB"*******
