@@ -357,8 +357,8 @@
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
 <component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
 <component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
-<component con="0" enc="0" type="2" value="true" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseReport"/>
+<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
+<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
 <component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
 <component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
 <component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
@@ -615,7 +615,8 @@ This action uploads a new package on UiPath Orchestrator.
 - File*: 	 Provide the path to package to upload with extension nupkg. E.g. C:\AWI.nupkg
 
 = Behavior =
-(none)
+* Curl should be installed on Agent machine to run the action.
+* Curl should be allowed on Rest Webservice Agent.
 
 = Return Value =
 (none)
