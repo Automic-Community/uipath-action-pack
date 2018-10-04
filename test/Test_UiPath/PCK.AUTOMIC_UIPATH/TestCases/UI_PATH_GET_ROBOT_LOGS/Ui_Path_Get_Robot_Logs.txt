@@ -1,7 +1,7 @@
 *** Settings ***
 Suite Setup       Startup
 Suite Teardown    Teardown
-Test Template     Get_Robot_Logs Template
+Test Template     Get Robot Logs Template
 Library           com.automic.robot.itpa.ItpaLibrary
 Library           String
 Library           DateTime
@@ -10,10 +10,10 @@ Resource          ../../Resources/keywords.txt
 Resource          ../../Resources/variables.txt
 Resource          ../../Resources/actions.txt
 
-*** Test Cases ***    OK_NOK    Property          Filter       OrderBy       Top         Skip        Expand
+*** Test Cases ***    OK_NOK    Properties        Filter       OrderBy       Top         Skip        Expand
 Get Robot Logs with all valid data
                       [Tags]    main_scenarios
-                      OK        ${Property}       ${Filter}    ${OrderBy}    ${Top}      ${Skip}     ${Expand}
+                      OK        ${Properties}     ${Filter}    ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
 
 Get Robot Logs with valid Multiple Property Name
                       OK        ${Properties}     ${Filter}    ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
@@ -22,22 +22,22 @@ Get Robot Logs with Invalid or non existing Property
                       NOK       Invalid           ${Filter}    ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
 
 Get Robot Logs with Invalid or non existing Filter
-                      NOK       ${Property}       Invalid      ${OrderBy}    ${Top}      ${Skip}     ${Expand}
+                      NOK       ${Properties}     Invalid      ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
 
 Get Robot Logs with all fields blank
                       OK        ${EMPTY}          ${EMPTY}     ${EMPTY}      ${EMPTY}    ${EMPTY}    ${EMPTY}
 
 Get Robot Logs with Invalid OrderBy
-                      NOK       ${Property}       ${EMPTY}     Invalid       ${Top}      ${Skip}     ${Empty}
+                      NOK       ${Properties}     ${EMPTY}     Invalid       ${Top}      ${Skip}     ${EMPTY}
 
 Get Robot Logs with Invalid Top
-                      NOK       ${Property}       ${EMPTY}     ${OrderBy}    Invalid     ${EMPTY}    ${EMPTY}
+                      NOK       ${Properties}     ${EMPTY}     ${OrderBy}    Invalid     ${EMPTY}    ${EMPTY}
 
 Get Robot Logs with Invalid Expand
-                      NOK       ${Property}       ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     Invalid
+                      NOK       ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
 
 Get Robot Logs with both Skip & Top to verify that input for skip is ignored.
-                      OK        ${Property}       ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
+                      OK        ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
 
 *** Keywords ***
 Startup
@@ -45,33 +45,32 @@ Startup
     Log    *******Connect to AE*******
     Connect AE
 
-Get_Robot_Logs
-    [Arguments]    ${OK_NOK}    ${Property}    ${Filter}    ${OrderBy}    ${Top}    ${Skip}
+Get Robot Logs Template
+    [Arguments]    ${OK_NOK}    ${Properties}    ${Filter}    ${OrderBy}    ${Top}    ${Skip}
     ...    ${Expand}
     [Documentation]    This test is to test the feature of Get_Robot_Logs .
     ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
-    ...    -${Property}: This field specifies the list of properties as comma separated to include in the response. E.g. ProcessName,TimeStamp.
+    ...    -${Properties}: This field specifies the list of properties as comma separated to include in the response. E.g. ProcessName,TimeStamp.
     ...    -${Filter}: This field specifies the filters to be applied for the results, based on a Boolean condition. E.g. ProcessName eq 'SalesProcess.
     ...    -${OrderBy}: This field specifies specify the property to be used in ordering. E.g. TimeStamp desc
     ...    -${Top}: This field specifies if the result should include only the first N items.
     ...    -${Skip}: This field specifies if the result should skip the first N items.
     ...    -${Expand}: This field specifies related entities to be inlined..
-    Template
     Generate String
     Init Action    ${GET_ROBOT_LOGS_ACTION}
     Connect To UiPath
-    Run Keyword If    '${Property}' == 'Invalid'    Action Set    &    UC4RB_UIP_PROP#    ${Generated_Name}_${Time}    ELSE
-    ...    Action Set    &    UC4RB_UIP_PROP#    $${Property}
+    Run Keyword If    '${Properties}' == 'Invalid'    Action Set    &UC4RB_UIP_PROP#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_PROP#    ${Properties}
     Run Keyword If    '${Filter}' == 'Invalid'    Action Set    &UC4RB_UIP_FILTER#    ${Generated_Name}_${Time}    ELSE    Action Set
     ...    &UC4RB_UIP_FILTER#    ${Filter}
-    Run Keyword If    '${OrderBy}'    == 'Invalid'    Action Set    &UC4RB_UIP_ORD_BY#    ${Generated_Name}_${Time}    ELSE
-    ...    Action Set    &UC4RB_UIP_ORD_BY#    ${OrderBy}
-    Run Keyword If    '${Top}'    == 'Invalid'    Action Set    &UC4RB_UIP_TOP#    ${Generated_Name}_${Time}    ELSE
-    ...    Action Set    &UC4RB_UIP_TOP#    ${Top}
-    Run Keyword If    '${Skip}'    == 'Invalid'    Action Set    &UC4RB_UIP_SKIP#    ${Generated_Name}_${Time}    ELSE
-    ...    Action Set    &UC4RB_UIP_SKIP#    ${Skip}
-    Run Keyword If    '${Expand}'    == 'Invalid'    Action Set    &UC4RB_UIP_EXPAND#    ${Generated_Name}_${Time}    ELSE
-    ...    Action Set    &UC4RB_UIP_EXPAND#    ${Expand}
+    Run Keyword If    '${OrderBy}' == 'Invalid'    Action Set    &UC4RB_UIP_ORD_BY#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_ORD_BY#    ${OrderBy}
+    Run Keyword If    '${Top}' == 'Invalid'    Action Set    &UC4RB_UIP_TOP#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_TOP#    ${Top}
+    Run Keyword If    '${Skip}' == 'Invalid'    Action Set    &UC4RB_UIP_SKIP#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_SKIP#    ${Skip}
+    Run Keyword If    '${Expand}'    ==    'Invalid'    Action Set    &UC4RB_UIP_EXPAND#    ${Generated_Name}_${Time}
+    ...    ELSE    Action Set    &UC4RB_UIP_EXPAND#    ${Expand}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
 
