@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<FILTER_OUTPUT name="PCK.AUTOMIC_UIPATH.PRV.FILTER.RESPONSE_FILTER">
+<HEADER state="1">
+<Title>Upload Package Response Filter</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<FILTER_OUTPUT state="1">
+<Filters>
+<filter Condition="C" FilterText="&quot;success&quot;:false" Lnr="1" SrcName="REP" SrcType="R"/>
+</Filters>
+<OperatorAND>1</OperatorAND>
+<OperatorOR>0</OperatorOR>
+</FILTER_OUTPUT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</FILTER_OUTPUT>
+</uc-export>

@@ -1,0 +1,11 @@
+*** Settings ***
+Resource          ../../../Env/default.txt
+
+*** Variables ***
+#---- Promptset Fields --------------------------------------------------------------------------------------
+${UiPath_URL}     https://platform.uipath.com
+${TenantName}     Srishti
+${Username}       Admin
+${Password}       India@12
+#-------------------Upload Package-------------------------------------
+${File_Path}      D:\\ClosedXML.0.87.1.nupkg
