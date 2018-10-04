@@ -66,7 +66,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">
-<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">No</UC4RB_UIP_COUNTs.00>
+<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">NO</UC4RB_UIP_COUNTs.00>
 <UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES"/>
@@ -101,7 +101,7 @@
 <node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT"/>
+<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -142,7 +142,7 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
@@ -160,7 +160,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">
-<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">No</UC4RB_UIP_COUNTs.00>
+<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">NO</UC4RB_UIP_COUNTs.00>
 <UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES"/>
@@ -195,7 +195,7 @@
 <node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT"/>
+<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -311,7 +311,7 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
@@ -329,7 +329,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">
-<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">No</UC4RB_UIP_COUNTs.00>
+<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">NO</UC4RB_UIP_COUNTs.00>
 <UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES"/>
@@ -364,7 +364,7 @@
 <node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT"/>
+<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -427,8 +427,8 @@
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_FILTER#" xmlName="query_0_1"/>
 <component con="0" enc="0" type="2" value="&amp;ORDER_BY#" xmlName="query_1_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_ORD_BY#" xmlName="query_1_1"/>
-<component con="0" enc="0" type="2" value="&amp;PROPERTIES#" xmlName="query_2_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_PROP#" xmlName="query_2_1"/>
+<component con="0" enc="0" type="2" value="$select" xmlName="query_2_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SELECT#" xmlName="query_2_1"/>
 <component con="0" enc="0" type="2" value="&amp;TOP#" xmlName="query_3_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_TOP#" xmlName="query_3_1"/>
 <component con="0" enc="0" type="2" value="&amp;SKIP#" xmlName="query_4_0"/>
@@ -436,7 +436,7 @@
 <component con="0" enc="0" type="2" value="&amp;EXPAND#" xmlName="query_5_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
 <component con="0" enc="0" type="2" value="$count" xmlName="query_6_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_COUNT#" xmlName="query_6_1"/>
+<component con="0" enc="0" type="2" value="&amp;COUNT_VAL#" xmlName="query_6_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
@@ -482,7 +482,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">
-<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">No</UC4RB_UIP_COUNTs.00>
+<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES">NO</UC4RB_UIP_COUNTs.00>
 <UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_RELEASES"/>
@@ -517,7 +517,7 @@
 <node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT"/>
+<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -573,7 +573,7 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PRPTS" type="PROMPTSET">
@@ -594,7 +594,7 @@
 <UC4RB_UIP_ORD_BYs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_TOPs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_SKIPs.00 altview="0" haslist="0">0</UC4RB_UIP_SKIPs.00>
-<UC4RB_UIP_COUNTs.00 altview="0" haslist="0">No</UC4RB_UIP_COUNTs.00>
+<UC4RB_UIP_COUNTs.00 altview="0" haslist="0">NO</UC4RB_UIP_COUNTs.00>
 <UC4RB_UIP_EXPANDs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -624,7 +624,7 @@
 <node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" ontop="1">
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" prptmode="1">
-<OVERWRITE_RA_AGENT_PROMPTs.00 altview="0" haslist="0"/>
+<OVERWRITE_RA_AGENT_PROMPTs.00 altview="1" haslist="0">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -657,19 +657,20 @@ PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_RELEASES
 This action fetches all the Releases(Processes) defined in UiPath Orchestrator.
 
 = Failure Conditions =
-* If the input is provided to 'Skip' field without specifying the 'Order By' field.
+* If 'Skip' field input is provided without specifying the 'Order By' field.
 
 = Inputs =
-- Properties:         Provide the list of properties as comma separated to include in the response. E.g. ProcessName,TimeStamp
-- Filter:             Provide filters to be applied for the results, based on a Boolean condition. E.g. ProcessName eq 'SalesProcess'
-- Order By:           Specify the property to be used for ordering. E.g. TimeStamp desc
-- Top:                Specify if the result should include only the first N items. E.g. 5
-- Skip:               Specify if the result should skip the first N items. E.g. 2
-- Include Count:      Specify whether if the count of the matching results should be included in the response. E.g. No
-- Expand:             Provide related entities to be inlined. E.g. Environment
+- Properties: Provide the list of properties as comma separated to include in the response. E.g. ProcessName,TimeStamp
+- Filter: Provide filters to be applied for the results, based on a Boolean condition. E.g. ProcessName eq 'SalesProcess'
+- Order By: Specify the property to be used for ordering. E.g. TimeStamp desc
+- Top: Specify if the result should include only the first N items. E.g. 5
+- Skip: Specify if the result should skip the first N items. E.g. 2
+- Include Count: Specify whether if the count of the matching results should be included in the response. E.g. No
+- Expand: Provide related entities to be inlined. E.g. Environment
 
 = Behavior =
 * To use Skip field, the user should also specify Order By field.
+* Input for the Top field should be numeric and greater than 0.
 
 = Return Value =
 (none)
@@ -685,13 +686,13 @@ This action fetches all the Releases(Processes) defined in UiPath Orchestrator.
 AE logs will be displayed in the AE report.
 
 = Example =
-- Properties:              EnvironmentId, Key, Name
-- Filter:                  ProcessKey eq 'AWI'
-- Order By:                Name desc
-- Top:                     2
-- Skip:                    1
-- Include Count:           No
-- Expand:                  Environment
+- Properties: EnvironmentId, Key, Name
+- Filter: ProcessKey eq 'AWI'
+- Order By: Name desc
+- Top: 2
+- Skip: 1
+- Include Count: No
+- Expand: Environment
 ]]></DOC>
 </DOCU_Docu>
 </JOBP>
