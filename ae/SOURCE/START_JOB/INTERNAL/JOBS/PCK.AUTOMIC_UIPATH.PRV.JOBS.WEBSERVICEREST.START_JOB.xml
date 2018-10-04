@@ -181,7 +181,9 @@
 :INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.SET_CONNECTION_AUTH_NONE]]></PSCRI>
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[:P &RELEASE_KEY#]]></MSCRI>
+<MSCRI><![CDATA[:IF &RELEASE_KEY# = "[]"
+:  STOP MSG, 50, "No release details found with specified Release Name."
+:ENDIF]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
