@@ -8,9 +8,8 @@ ${TenantName}     riteshjaiswal
 ${Username}       ritesh.jaiswal@nagarro.com
 ${Password}       Passw0rd
 #---- Get Robot Logs --------------------------------------------------------------------------------------
-${Property}       TimeStamp
-${Properties}     TimeStamp
-${Filter}         ProcessName
+${Properties}     RawMessage
+${Filter}         ProcessName eq 'RawMessage'
 ${OrderBy}        TimeStamp
 ${Top}            7
 ${Skip}           3
