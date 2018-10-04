@@ -661,10 +661,10 @@ none
                        E.g. 5
 - Skip               : Provide the number of logs that you do not want in your result set.
                        E.g. 2
-- Expand	     : Provide relatedentities to be inlined.        
+- Expand	     : Provide related entities to be inlined.       
 
 = Behavior =
-* If Skip and Top both are provided, the rest api will ignore the input given for skip.
+* If Skip and Top both are provided, the rest api will ignore the input given for skip.
 * Top must be greater than 0, else it would not show any result and action will be failed.
 
 =Return Value=
