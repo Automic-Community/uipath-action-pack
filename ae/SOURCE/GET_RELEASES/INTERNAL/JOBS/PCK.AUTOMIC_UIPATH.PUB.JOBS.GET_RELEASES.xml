@@ -102,7 +102,7 @@
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_FILTER#" xmlName="query_0_1"/>
 <component con="0" enc="0" type="2" value="&amp;ORDER_BY#" xmlName="query_1_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_ORD_BY#" xmlName="query_1_1"/>
-<component con="0" enc="0" type="2" value="$select" xmlName="query_2_0"/>
+<component con="0" enc="0" type="2" value="&amp;SELECT#" xmlName="query_2_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SELECT#" xmlName="query_2_1"/>
 <component con="0" enc="0" type="2" value="&amp;TOP#" xmlName="query_3_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_TOP#" xmlName="query_3_1"/>
@@ -110,7 +110,7 @@
 <component con="0" enc="0" type="2" value="&amp;SKIP_VAL#" xmlName="query_4_1"/>
 <component con="0" enc="0" type="2" value="&amp;EXPAND#" xmlName="query_5_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
-<component con="0" enc="0" type="2" value="$count" xmlName="query_6_0"/>
+<component con="0" enc="0" type="2" value="&amp;COUNT#" xmlName="query_6_0"/>
 <component con="0" enc="0" type="2" value="&amp;COUNT_VAL#" xmlName="query_6_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
@@ -183,10 +183,10 @@
 :  SET &FILTER#="$filter"
 :ENDIF
 
-:SET &UC4RB_UIP_SELECT# = "Key,"
 ! check if property is given by user
 :IF &UC4RB_UIP_PROP# <> ""
-:  SET &UC4RB_UIP_SELECT# = STR_CAT(&UC4RB_UIP_SELECT#,&UC4RB_UIP_PROP#)
+:  SET &SELECT# = "$select"
+:  SET &UC4RB_UIP_SELECT# = STR_CAT("Key,",&UC4RB_UIP_PROP#)
 :ENDIF
 
 ! check if orderby given by user
@@ -205,12 +205,15 @@
 :ENDIF
 
 !check value of Include Count
-:SET &COUNT_VAL# = "false"
-:IF &UC4RB_UIP_COUNT# <> "NO"
-:   SET &COUNT_VAL# = "true"
+:IF &UC4RB_UIP_COUNT# <> ""
+:  SET &COUNT_VAL# = "false"
+:  SET &COUNT# = "$count"
+:  IF &UC4RB_UIP_COUNT# <> "NO"
+:     SET &COUNT_VAL# = "true"
+:  ENDIF
 :ENDIF
 
-! check if expand given by user
+! check for value of skip field
 :  SET &SKIP# = ""
 :  SET &SKIP_VAL# = ""
 :IF &UC4RB_UIP_SKIP# <> 0

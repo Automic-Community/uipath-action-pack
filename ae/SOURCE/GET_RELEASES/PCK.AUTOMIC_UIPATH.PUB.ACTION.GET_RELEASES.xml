@@ -204,6 +204,7 @@
 <CIT src="OCV">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
+<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
 <component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
 <component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
 <component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
@@ -273,7 +274,6 @@
 <component con="0" enc="0" type="2" value="UC4RB_UIP_AUTH_TOKEN#" xmlName="response_part_0_script_0_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
 <component con="0" enc="0" type="2" value="" xmlName="file"/>
 </cit>
 <cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
@@ -435,7 +435,7 @@
 <component con="0" enc="0" type="2" value="&amp;SKIP_VAL#" xmlName="query_4_1"/>
 <component con="0" enc="0" type="2" value="&amp;EXPAND#" xmlName="query_5_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
-<component con="0" enc="0" type="2" value="$count" xmlName="query_6_0"/>
+<component con="0" enc="0" type="2" value="&amp;COUNT#" xmlName="query_6_0"/>
 <component con="0" enc="0" type="2" value="&amp;COUNT_VAL#" xmlName="query_6_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
