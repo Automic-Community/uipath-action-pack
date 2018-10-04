@@ -7,7 +7,15 @@
 <OH_SubType/>
 </HEADER>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[
+
+
+
+=Actions=
+Following actions are supported.
+
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOT_LOGS
+* Action Description: This action is used to get the robot log from the specified url with other parameters.]]></DOC>
 </DOCU_Docu>
 </DOCU>
 </uc-export>
