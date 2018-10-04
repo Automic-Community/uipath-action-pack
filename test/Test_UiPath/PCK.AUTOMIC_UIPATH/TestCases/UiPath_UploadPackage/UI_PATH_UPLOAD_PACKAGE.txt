@@ -20,7 +20,7 @@ Upload Package with Invalid or non existing File Path
                       NOK       Invalid
 
 Upload Package with Empty File field
-                      NOK       ${EMPTY}
+                      NOK       ${Empty}
 
 *** Keywords ***
 Startup
@@ -37,7 +37,7 @@ Upload Package Template
     Init Action    ${_UPLOAD_PACKAGE_ACTION}
     Connect To UiPath
     Run Keyword If    '${File}' == 'Invalid'    Action Set    &UC4RB_UIP_FILE#    ${Generated_Name}_${Time}
-    ...    ELSE    Action Set    &UC4RB_UIP_FILE#    ${File_Path}
+    ...    ELSE    Action Set    &UC4RB_UIP_FILE#    ${File}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success
     ...    ELSE    Assert Failure

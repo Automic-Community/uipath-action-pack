@@ -116,6 +116,6 @@ Init Action
 
 Connect To UiPath
     Action Set    &UC4RB_UIP_URL#    ${UiPath_URL}
-    Action Set    &UC4RB_UIP_TNT_NAME#    ${TenantName}
-    Action Set    &UC4RB_UIP_USERNAME#    ${Username}
-    Action Set    &UC4RB_UIP_PASSWORD#    ${Password}
+    Action Set    &UC4RB_UIP_TENANT_NAME#    ${TenantName}
+    Action Set    &UC4RB_UIP_USER#    ${Username}
+    Action Set    &UC4RB_UIP_PASSWD#    ${Password}
