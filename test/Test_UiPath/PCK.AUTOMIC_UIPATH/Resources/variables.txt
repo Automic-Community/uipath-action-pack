@@ -3,5 +3,15 @@ Resource          ../../../Env/default.txt
 
 *** Variables ***
 #---- Promptset Fields --------------------------------------------------------------------------------------
-${UiPath}     Add Details Here
-
+${UiPath_URL}     https://platform.uipath.com
+${TenantName}     riteshjaiswal
+${Username}       riteshjaiswal
+${Password}       Passw0rd
+#---- Get Robot Logs --------------------------------------------------------------------------------------
+${Property}       TimeStamp
+${Properties}     ProcessName,TimeStamp
+${Filter}         ProcessName eq 'SalesProcess'
+${OrderBy}        TimeStamp desc
+${Top}            7
+${Skip}           3
+${Expand}         TimeStamp

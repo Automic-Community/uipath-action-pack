@@ -1,5 +1,3 @@
 *** Variables ***
 #---- AE Actions-------------------------
-${_START_JOB_ACTION}    PCK.AUTOMIC_CA_CA7.PUB.ACTION.START_JOB
-
-
+${GET_ROBOT_LOGS_ACTION}    PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOT_LOGS
