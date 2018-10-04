@@ -8,6 +8,7 @@ Connect AE
 Set Overwrite Agent
     Run Keyword If    '${ENV}' == 'WIN'    Set Overwrite Agent WIN
     Run Keyword If    '${ENV}' == 'UNIX'    Set Overwrite Agent UNIX
+    Run Keyword If    '${ENV}' == 'RA'    Set Overwrite RA Agent
 
 Set Overwrite Agent WIN
     Action Set    &AGENT#    ${_PROMPTSET_AGENT_WIN}
@@ -16,6 +17,9 @@ Set Overwrite Agent WIN
 Set Overwrite Agent UNIX
     Action Set    &AGENT#    ${_PROMPTSET_AGENT_UNIX}
     Action Set    &LOGIN#    ${_PROMPTSET_LOGIN_UNIX}
+
+Set Overwrite RA Agent
+    Action Set    &OVERWRITE_RA_AGENT_PROMPT#    ${_PROMPTSET_RA_AGENT}
 
 Action Report Should Contain
     [Arguments]    ${text}
@@ -89,7 +93,7 @@ Action Object Variable Should Not Be Found
 
 Assert Success
     Action Report Should Be Found
-    Action Report Should Contain    EXECUTED SUCCESSFULLY
+    Action Report Should Contain    RESTful job complete
     Action Return Status Should Be    ${ENDED_OK}
     Action Return Code Should Be    ${RETURN_CODE_SUCCESS}
 
@@ -112,6 +116,6 @@ Init Action
 
 Connect To UiPath
     Action Set    &UC4RB_UIP_URL#    ${UiPath_URL}
-    Action Set    &UC4RB_UIP_TNT_NAME#    ${TenantName}
-    Action Set    &UC4RB_UIP_USERNAME#    ${Username}
-    Action Set    &UC4RB_UIP_PASSWORD#    ${Password}
+    Action Set    &UC4RB_UIP_TENANT_NAME#    ${TenantName}
+    Action Set    &UC4RB_UIP_USER#    ${Username}
+    Action Set    &UC4RB_UIP_PASSWD#    ${Password}
