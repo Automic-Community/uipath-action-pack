@@ -49,23 +49,14 @@ Start job with valid Process Name with 'Robot Count' as Strategy and valid Robot
 Start job with valid Process Name with 'Robot Count' as Strategy and valid Robot Ids and Number of Robots is 1
                       NOK       ${Process_Name}    ${Strategy_3}    ${Robot_Id}    ${No_of_Robot1}
 
-ReUpload Package job with valid Job Name having duplicate jobs with same name
-                      NOK       ${EMPTY}           ${Job_Name}      ${EMPTY}       ${EMPTY}
+Start job with empty Process Name
+                      NOK       ${Empty}           ${Strategy_1}    ${EMPTY}       ${No_of_Robot}
 
-Start job with Invalid or non existing JobNumber
-                      NOK       Invalid            ${EMPTY}         ${EMPTY}       ${EMPTY}
+Start job with Invalid Process Name
+                      NOK       Invalid            ${Strategy_1}    ${EMPTY}       ${No_of_Robot}
 
-Start job with Invalid or non existing JobName
-                      NOK       ${EMPTY}           Invalid          ${EMPTY}       ${EMPTY}
-
-Empty JobNumber and JobName and valid values in non mandatory fields
-                      NOK       ${EMPTY}           ${EMPTY}         ${Force}       ${Kill}
-
-Start job with valid Job Name and Job Number
-                      NOK       ${Job_Number1}     ${Job_Name1}     ${EMPTY}       ${EMPTY}
-
-Start job with valid Job Number where reason is not mandatory
-                      OK        ${Job_Number2}     ${EMPTY}         ${EMPTY}       ${EMPTY}
+Start job with valid Process Name and invalid Robot IDs
+                      NOK       ${Process_Name}    ${Strategy_2}    Invalid        ${No_of_Robot}
 
 *** Keywords ***
 Startup
@@ -86,10 +77,10 @@ Start Job Template
     Connect To UiPath
     Run Keyword If    '${ProcessName}' == 'Invalid'    Action Set    &UC4RB_UIP_RELEASE#    ${Generated_Name}_${Time}
     ...    ELSE    Action Set    &UC4RB_UIP_RELEASE#    ${ProcessName}
-    Run Keyword If    '${Strategy}' == 'Invalid'    Action Set    &UC4RB_UIP_STRATEGY#    ${Generated_Name}_${Time}
-    ...    ELSE    Action Set    &UC4RB_UIP_STRATEGY#    ${Strategy}
-    Run Keyword If    '${RobotIds}'    Action Set    &UC4RB_UIP_ROBOT#    ${RobotIds}
-    Run Keyword If    '${NumberOfRobots}'    Action Set    &UC4RB_UIP_ROBOT_NUM#    ${NumberOfRobots}
+    Action Set    &UC4RB_UIP_STRATEGY#    ${Strategy}
+    Run Keyword If    '${RobotIds}' == 'Invalid'    Action Set    &UC4RB_UIP_ROBOT#    ${Generated_Name}_${Time}
+    ...    ELSE    Action Set    Action Set    &UC4RB_UIP_ROBOT#    ${RobotIds}
+    Action Set    &UC4RB_UIP_ROBOT_NUM#    ${NumberOfRobots}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success
     ...    ELSE    Assert Failure
