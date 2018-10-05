@@ -17,7 +17,7 @@
 <ATTR_JOBS state="1">
 <Queue>CLIENT_QUEUE</Queue>
 <StartType/>
-<HostDst>|WEBSERVICEREST01|HOST</HostDst>
+<HostDst>|&lt;CIT&gt;|HOST</HostDst>
 <HostATTR_Type>CIT</HostATTR_Type>
 <CodeName/>
 <Login/>
@@ -48,7 +48,7 @@
 <RequTaskParams>0</RequTaskParams>
 </ATTR_CIT>
 <CIT state="2">
-<citcont agentname="WEBSERVICEREST01" jobtype="WEBSERVICEREST" text="Web Service Rest">
+<citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
 <component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
 <component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
