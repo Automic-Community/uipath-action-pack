@@ -14,3 +14,5 @@ ${OrderBy}        TimeStamp desc
 ${Top}            7
 ${Skip}           3
 ${Expand}         *
+#-------------------Upload Package-------------------------------------
+${File_Path}      D:\\ClosedXML.0.87.1.nupkg
