@@ -8,7 +8,7 @@
 </HEADER>
 <FILTER_OUTPUT state="1">
 <Filters>
-<filter Condition="C" FilterText="&quot;success&quot;:false" Lnr="1" SrcName="REP" SrcType="R"/>
+<filter Condition="C" FilterText="&quot;message&quot;:" Lnr="1" SrcName="REP" SrcType="R"/>
 </Filters>
 <OperatorAND>1</OperatorAND>
 <OperatorOR>0</OperatorOR>
