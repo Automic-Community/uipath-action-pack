@@ -27,6 +27,9 @@ v2018.2
 =Actions=
 Following actions are supported.
 
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOT_LOGS
+* Action Description: This action will fetch logs for Robot(s) defined in UiPath Orchestrator.
+
 * Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.UPLOAD_PACKAGE
 * Action Description: This action uploads a new package on UiPath Orchestrator.
 
