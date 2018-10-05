@@ -52,9 +52,6 @@ Start job with valid Process Name with 'Robot Count' as Strategy and valid Robot
 Start job with empty Process Name
                       NOK       ${Empty}           ${Strategy_1}    ${EMPTY}       ${No_of_Robot}
 
-Start job with Invalid Process Name
-                      NOK       Invalid            ${Strategy_1}    ${EMPTY}       ${No_of_Robot}
-
 Start job with valid Process Name and invalid Robot IDs
                       NOK       ${Process_Name}    ${Strategy_2}    Invalid        ${No_of_Robot}
 
@@ -79,7 +76,7 @@ Start Job Template
     ...    ELSE    Action Set    &UC4RB_UIP_RELEASE#    ${ProcessName}
     Action Set    &UC4RB_UIP_STRATEGY#    ${Strategy}
     Run Keyword If    '${RobotIds}' == 'Invalid'    Action Set    &UC4RB_UIP_ROBOT#    ${Generated_Name}_${Time}
-    ...    ELSE    Action Set    Action Set    &UC4RB_UIP_ROBOT#    ${RobotIds}
+    ...    ELSE    Action Set    &UC4RB_UIP_ROBOT#    ${RobotIds}
     Action Set    &UC4RB_UIP_ROBOT_NUM#    ${NumberOfRobots}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success
