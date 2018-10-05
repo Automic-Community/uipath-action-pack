@@ -10,31 +10,37 @@ Resource          ../../Resources/keywords.txt
 Resource          ../../Resources/variables.txt
 Resource          ../../Resources/actions.txt
 
-*** Test Cases ***    OK_NOK    Properties        Filter      OrderBy       Top         Skip        Expand
+*** Test Cases ***    OK_NOK    Properties        Filter       OrderBy       Top         Skip        Expand
 Get Robot Logs with all valid data
                       [Tags]    main_scenarios
-                      OK        ${Properties}     ${EMPTY}    ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
+                      OK        ${Properties}     ${Filter}    ${OrderBy}    ${Top}      ${Skip}     ${Expand}
 
 Get Robot Logs with valid Multiple Property Name
-                      OK        ${Properties}     ${EMPTY}    ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
+                      OK        ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
 
 Get Robot Logs with Invalid or non existing Property
-                      NOK       Invalid           ${EMPTY}    ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
+                      NOK       Invalid           ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
 
 Get Robot Logs with Invalid or non existing Filter
-                      NOK       ${Properties}     Invalid     ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
+                      NOK       ${Properties}     Invalid      ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
 
 Get Robot Logs with all fields blank
-                      OK        ${EMPTY}          ${EMPTY}    ${EMPTY}      ${EMPTY}    ${EMPTY}    ${EMPTY}
+                      OK        ${EMPTY}          ${EMPTY}     ${EMPTY}      ${EMPTY}    ${EMPTY}    ${EMPTY}
 
 Get Robot Logs with Invalid OrderBy
-                      NOK       ${Properties}     ${EMPTY}    Invalid       ${Top}      ${Skip}     ${EMPTY}
+                      NOK       ${Properties}     ${EMPTY}     Invalid       ${Top}      ${Skip}     ${EMPTY}
 
 Get Robot Logs with Invalid Top
-                      NOK       ${Properties}     ${EMPTY}    ${OrderBy}    Invalid     ${EMPTY}    ${EMPTY}
+                      NOK       ${Properties}     ${EMPTY}     ${OrderBy}    Invalid     ${EMPTY}    ${EMPTY}
 
 Get Robot Logs with both Skip & Top to verify that input for skip is ignored.
-                      OK        ${Properties}     ${EMPTY}    ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
+                      OK        ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
+
+Get Robot Logs with invalid value in skip field
+                      NOK       ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      Invalid     ${EMPTY}
+
+Get Robot Logs with invalid value in expand field
+                      NOK       ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     Invalid
 
 *** Keywords ***
 Startup
@@ -66,8 +72,8 @@ Get Robot Logs Template
     ...    &UC4RB_UIP_TOP#    ${Top}
     Run Keyword If    '${Skip}' == 'Invalid'    Action Set    &UC4RB_UIP_SKIP#    ${Generated_Name}_${Time}    ELSE    Action Set
     ...    &UC4RB_UIP_SKIP#    ${Skip}
-    Run Keyword If    '${Expand}'    ==    'Invalid'    Action Set    &UC4RB_UIP_EXPAND#    ${Generated_Name}_${Time}
-    ...    ELSE    Action Set    &UC4RB_UIP_EXPAND#    ${Expand}
+    Run Keyword If    '${Expand}' == 'Invalid'    Action Set    &UC4RB_UIP_EXPAND#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_EXPAND#    ${Expand}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
 

@@ -4,13 +4,13 @@ Resource          ../../../Env/default.txt
 *** Variables ***
 #---- Promptset Fields --------------------------------------------------------------------------------------
 ${UiPath_URL}     https://platform.uipath.com
-${TenantName}     riteshjaiswal
-${Username}       ritesh.jaiswal@nagarro.com
-${Password}       Passw0rd
+${TenantName}     Add Tenant Details
+${Username}       Add Username
+${Password}       Add Password
 #---- Get Robot Logs --------------------------------------------------------------------------------------
 ${Properties}     RawMessage
-${Filter}         ProcessName eq 'RawMessage'
-${OrderBy}        TimeStamp
+${Filter}         ProcessName eq RawMessage
+${OrderBy}        TimeStamp desc
 ${Top}            7
 ${Skip}           3
-${Expand}         TimeStamp
+${Expand}         *
