@@ -11,28 +11,61 @@ Resource          ../../Resources/keywords.txt
 Resource          ../../Resources/variables.txt
 Resource          ../../Resources/actions.txt
 
-*** Test Cases ***    OK_NOK    JobNumber         JobName         Force       Kill        Reason
-Start job with valid Job Number having all valid data
+*** Test Cases ***    OK_NOK    ProcessName        Strategy         RobotIds       NumberOfRobots
+Start job with valid Process Name with 'All' as Strategy and Robot Ids is empty and Number of Robots is 0
                       [Tags]    main_scenarios
-                      OK        ${Job_Number}     ${EMPTY}        ${Force}    ${Kill}     ${Reason}
+                      OK        ${Process_Name}    ${Strategy_1}    ${Empty}       ${No_of_Robot}
+
+Start job with valid Process Name with 'All' as Strategy and Robot Ids is empty and Number of Robots is 1
+                      NOK       ${Process_Name}    ${Strategy_1}    ${Empty}       ${No_of_Robot1}
+
+Start job with valid Process Name with 'All' as Strategy and valid Robot Ids and Number of Robots is 0
+                      NOK       ${Process_Name}    ${Strategy_1}    ${Robot_Id}    ${No_of_Robot}
+
+Start job with valid Process Name with 'All' as Strategy and valid Robot Ids and Number of Robots is 1
+                      NOK       ${Process_Name}    ${Strategy_1}    ${Robot_Id}    ${No_of_Robot1}
+
+Start job with valid Process Name with 'Specific' as Strategy and valid Robot Ids and Number of Robots is 0
+                      OK        ${Process_Name}    ${Strategy_2}    ${Robot_Id}    ${No_of_Robot}
+
+Start job with valid Process Name with 'Specific' as Strategy and Robot Ids is empty and Number of Robots is 1
+                      NOK       ${Process_Name}    ${Strategy_2}    ${Empty}       ${No_of_Robot1}
+
+Start job with valid Process Name with 'Specific' as Strategy and Robot Ids is empty and Number of Robots is 0
+                      NOK       ${Process_Name}    ${Strategy_2}    ${Empty}       ${No_of_Robot}
+
+Start job with valid Process Name with 'Specific' as Strategy and valid Robot Ids and Number of Robots is 1
+                      NOK       ${Process_Name}    ${Strategy_2}    ${Robot_Id}    ${No_of_Robot1}
+
+Start job with valid Process Name with 'Robot Count' as Strategy and Robot Ids is empty and Number of Robots is 1
+                      OK        ${Process_Name}    ${Strategy_3}    ${Empty}       ${No_of_Robot1}
+
+Start job with valid Process Name with 'Robot Count' as Strategy and Robot Ids is empty and Number of Robots is 0
+                      NOK       ${Process_Name}    ${Strategy_3}    ${Empty}       ${No_of_Robot}
+
+Start job with valid Process Name with 'Robot Count' as Strategy and valid Robot Ids and Number of Robots is 0
+                      NOK       ${Process_Name}    ${Strategy_3}    ${Robot_Id}    ${No_of_Robot}
+
+Start job with valid Process Name with 'Robot Count' as Strategy and valid Robot Ids and Number of Robots is 1
+                      NOK       ${Process_Name}    ${Strategy_3}    ${Robot_Id}    ${No_of_Robot1}
 
 ReUpload Package job with valid Job Name having duplicate jobs with same name
-                      NOK       ${EMPTY}          ${Job_Name}     ${EMPTY}    ${EMPTY}    ${Reason}
+                      NOK       ${EMPTY}           ${Job_Name}      ${EMPTY}       ${EMPTY}
 
 Start job with Invalid or non existing JobNumber
-                      NOK       Invalid           ${EMPTY}        ${EMPTY}    ${EMPTY}    ${EMPTY}
+                      NOK       Invalid            ${EMPTY}         ${EMPTY}       ${EMPTY}
 
 Start job with Invalid or non existing JobName
-                      NOK       ${EMPTY}          Invalid         ${EMPTY}    ${EMPTY}    ${EMPTY}
+                      NOK       ${EMPTY}           Invalid          ${EMPTY}       ${EMPTY}
 
 Empty JobNumber and JobName and valid values in non mandatory fields
-                      NOK       ${EMPTY}          ${EMPTY}        ${Force}    ${Kill}     ${Reason}
+                      NOK       ${EMPTY}           ${EMPTY}         ${Force}       ${Kill}
 
 Start job with valid Job Name and Job Number
-                      NOK       ${Job_Number1}    ${Job_Name1}    ${EMPTY}    ${EMPTY}    ${EMPTY}
+                      NOK       ${Job_Number1}     ${Job_Name1}     ${EMPTY}       ${EMPTY}
 
 Start job with valid Job Number where reason is not mandatory
-                      OK        ${Job_Number2}    ${EMPTY}        ${EMPTY}    ${EMPTY}    ${EMPTY}
+                      OK        ${Job_Number2}     ${EMPTY}         ${EMPTY}       ${EMPTY}
 
 *** Keywords ***
 Startup
@@ -41,19 +74,22 @@ Startup
     Connect AE
 
 Start Job Template
-    [Arguments]    ${OK_NOK}    ${Job_Number}    ${Job_Name}    ${Force}    ${Kill}    ${Reason}
+    [Arguments]    ${OK_NOK}    ${ProcessName}    ${Strategy}    ${RobotIds}    ${NumberOfRobots}
     [Documentation]    This test Starts jobs in UI Path.
     ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${ProcessName}: It provide the Process name to start a job.
+    ...    -${Strategy}: It specify which robots from the environment will be run by the process.
+    ...    -${RobotIds}: It provide the collection of names of specific robots selected to be run by the current process.
+    ...    -${NumberOfRobots}: It provide the number of robots selected to be run by the current process.
     Generate String
     Init Action    ${_Start_JOB_ACTION}
     Connect To UiPath
-    Run Keyword If    '${Job_Name}' == 'Invalid'    Action Set    &UC4RB_CA7_JOBNAME#    ${Generated_Name}_${Time}
-    ...    ELSE    Action Set    &UC4RB_CA7_JOBNAME#    ${Job_Name}
-    Run Keyword If    '${Job_Number}' == 'Invalid'    Action Set    &UC4RB_CA7_JOBNO#    ${Generated_Name}_${Time}
-    ...    ELSE    Action Set    &UC4RB_CA7_JOBNO#    ${Job_Number}
-    Run Keyword If    '${Force}'    Action Set    &UC4RB_CA7_FORCE#    ${Force}
-    Run Keyword If    '${Kill}'    Action Set    &UC4RB_CA7_KILL#    ${Kill}
-    Run Keyword If    '${Reason}'    Action Set    &UC4RB_CA7_REASON#    ${Reason}
+    Run Keyword If    '${ProcessName}' == 'Invalid'    Action Set    &UC4RB_UIP_RELEASE#    ${Generated_Name}_${Time}
+    ...    ELSE    Action Set    &UC4RB_UIP_RELEASE#    ${ProcessName}
+    Run Keyword If    '${Strategy}' == 'Invalid'    Action Set    &UC4RB_UIP_STRATEGY#    ${Generated_Name}_${Time}
+    ...    ELSE    Action Set    &UC4RB_UIP_STRATEGY#    ${Strategy}
+    Run Keyword If    '${RobotIds}'    Action Set    &UC4RB_UIP_ROBOT#    ${RobotIds}
+    Run Keyword If    '${NumberOfRobots}'    Action Set    &UC4RB_UIP_ROBOT_NUM#    ${NumberOfRobots}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success
     ...    ELSE    Assert Failure

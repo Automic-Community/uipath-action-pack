@@ -8,9 +8,10 @@ ${TenantName}     Srishti
 ${Username}       Admin
 ${Password}       India@12
 #-------------------Start Job-------------------------------------
-${Release_Name}      Test1
-${Strategy_1}    All
-${Strategy_2}    Specific
-${Strategy_3}    Robot Count
-${Robot_Name}    Robot
-${No_of_Robot}    1
+${Process_Name}    Test1
+${Strategy_1}     All
+${Strategy_2}     Specific
+${Strategy_3}     RobotCount
+${Robot_Id}       56346
+${No_of_Robot}    0
+${No_of_Robot1}    1
