@@ -53,24 +53,15 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
-<UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
 <UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 <UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">NO</UC4RB_UIP_INC_CNTs.00>
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 <UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 <UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -101,6 +92,16 @@
 <PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
 <OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
+<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
+<UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -132,7 +133,9 @@
 <dyntree>
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
-<Values/>
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIP_AUTH_TOKEN#" Value=""/>
+</Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
@@ -144,24 +147,15 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
-<UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
 <UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 <UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">NO</UC4RB_UIP_INC_CNTs.00>
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 <UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 <UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -195,11 +189,22 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
+<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
+<UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 </dyntree>
 </dynvalues>
 <CIT src="OCV">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
+<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
 <component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
 <component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
@@ -262,7 +267,6 @@
 <component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
 <component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
 <component con="0" enc="0" type="2" value="$result" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
@@ -312,24 +316,15 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
-<UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
 <UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 <UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">NO</UC4RB_UIP_INC_CNTs.00>
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 <UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 <UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -363,11 +358,43 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
+<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
+<UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 </dyntree>
 </dynvalues>
 <CIT src="OCV">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
+<component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
+<component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
+<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
+<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
+<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
+<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
+<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
+<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
+<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
+<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_password"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_port"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_preemptive"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_username"/>
@@ -408,33 +435,13 @@
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SKIP#" xmlName="query_4_1"/>
 <component con="0" enc="0" type="2" value="&amp;EXPAND_QRY_PARA#" xmlName="query_5_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
+<component con="0" enc="0" type="2" value="&amp;COUNT_QRY_PARA#" xmlName="query_6_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_INC_CNT#" xmlName="query_6_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
 <component con="0" enc="0" type="2" value="" xmlName="file"/>
-<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
-<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
-<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
-<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
-<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_password"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_port"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
-<component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
-<component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
 </cit>
 <cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
 </citcont>
@@ -462,24 +469,15 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
-<UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
 <UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 <UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">NO</UC4RB_UIP_INC_CNTs.00>
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 <UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 <UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -510,6 +508,16 @@
 <PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
 <OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
+<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
+<UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -568,16 +576,6 @@
 <Mode>1</Mode>
 </VALUE>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" prptmode="1">
-<UC4RB_UIP_URLs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_TENANT_NAMEs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_USERs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_PASSWDs.00 altview="0" haslist="0">--10</UC4RB_UIP_PASSWDs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" ontop="1">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" prptmode="1">
@@ -585,7 +583,8 @@
 <UC4RB_UIP_FILTERs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_ORD_BYs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_TOPs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_SKIPs.00 altview="0" haslist="0">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_SKIPs.00 altview="0" haslist="0"/>
+<UC4RB_UIP_INC_CNTs.00 altview="0" haslist="0">NO</UC4RB_UIP_INC_CNTs.00>
 <UC4RB_UIP_EXPANDs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -616,6 +615,16 @@
 <PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" ontop="1">
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" prptmode="1">
 <OVERWRITE_RA_AGENT_PROMPTs.00 altview="1" haslist="0">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" prptmode="1">
+<UC4RB_UIP_URLs.00 altview="0" haslist="0">https://platform.uipath.com</UC4RB_UIP_URLs.00>
+<UC4RB_UIP_TENANT_NAMEs.00 altview="0" haslist="0"/>
+<UC4RB_UIP_USERs.00 altview="0" haslist="0"/>
+<UC4RB_UIP_PASSWDs.00 altview="0" haslist="0">--10</UC4RB_UIP_PASSWDs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -661,11 +670,12 @@ none
                        E.g. 5
 - Skip               : Provide the number of logs that you do not want in your result set.
                        E.g. 2
+-Include Count       : Specify whether if count of the matching results should be included in the response.
 - Expand	     : Provide related entities to be inlined.       
 
 = Behavior =
 * If Skip and Top both are provided, the rest api will ignore the input given for skip.
-* Top must be greater than 0, else it would not show any result and action will be failed.
+* Top can be 0, in this case all the logs will get displayed.
 
 =Return Value=
 (none)
