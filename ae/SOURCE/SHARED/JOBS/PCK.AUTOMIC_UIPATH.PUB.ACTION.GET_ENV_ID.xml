@@ -50,22 +50,6 @@
 <CIT state="2">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
-<component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
-<component con="0" enc="0" type="2" value="Bearer &amp;UC4RB_UIP_AUTH_TOKEN#" xmlName="header_0_1"/>
-<component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
-<component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
-<component con="0" enc="0" type="2" value="$filter" xmlName="query_0_0"/>
-<component con="0" enc="0" type="2" value="Name eq '&amp;UC4RB_UIP_ENV_NAME#'" xmlName="query_0_1"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
-<component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="$value[0].Id" xmlName="response_part_0_script_0_code_0"/>
-<component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
-<component con="0" enc="0" type="2" value="UC4RB_UIP_ENV_ID#" xmlName="response_part_0_script_0_resourceName"/>
-<component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
-<component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
-<component con="0" enc="0" type="2" value="" xmlName="file"/>
 <component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
 <component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
 <component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
@@ -110,6 +94,22 @@
 <component con="0" enc="0" type="2" value="/odata/Environments" xmlName="resource"/>
 <component con="0" enc="0" type="2" value="GET" xmlName="method"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
+<component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
+<component con="0" enc="0" type="2" value="Bearer &amp;UC4RB_UIP_AUTH_TOKEN#" xmlName="header_0_1"/>
+<component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
+<component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
+<component con="0" enc="0" type="2" value="$filter" xmlName="query_0_0"/>
+<component con="0" enc="0" type="2" value="Name eq '&amp;UC4RB_UIP_ENV_NAME#'" xmlName="query_0_1"/>
+<component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
+<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
+<component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
+<component con="0" enc="0" type="2" value="$value[0].Id" xmlName="response_part_0_script_0_code_0"/>
+<component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIP_ENV_ID#" xmlName="response_part_0_script_0_resourceName"/>
+<component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
+<component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
+<component con="0" enc="0" type="2" value="" xmlName="file"/>
 </cit>
 <cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
 </citcont>
@@ -152,7 +152,9 @@
 <dyntree>
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
-<Values/>
+<Values>
+<row ERTUsage="0" Name="&amp;UC4RB_UIP_ENV_ID#" Value="&quot;&quot;"/>
+</Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
