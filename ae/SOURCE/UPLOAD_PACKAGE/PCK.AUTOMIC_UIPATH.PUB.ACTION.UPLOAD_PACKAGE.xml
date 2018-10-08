@@ -355,6 +355,8 @@
 <CIT src="OCV">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
+<component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
+<component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
 <component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
 <component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
 <component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
@@ -379,8 +381,6 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_username"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientkey"/>
-<component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
-<component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientsecret"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_token"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_uri"/>
@@ -615,8 +615,7 @@ This action uploads a new package on UiPath Orchestrator.
 - File*: 	 Provide name of the package file with full path of the containing directory. File extension should be nupkg. E.g. C:\AWI.nupkg
 
 = Behavior =
-* Curl should be installed on Agent machine to run the action.
-* Curl should be allowed on Rest Webservice Agent.
+(none)
 
 = Return Value =
 (none)

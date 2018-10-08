@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
 <JOBS_CIT AttrType="CIT" name="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_RELEASES">
 <XHEADER state="1">
-<Title>GET_RELEASES</Title>
+<Title>Get Releases</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -98,8 +98,20 @@
 <component con="0" enc="0" type="2" value="Bearer &amp;UC4RB_UIP_AUTH_TOKEN#" xmlName="header_0_1"/>
 <component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
 <component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
-<component con="0" enc="0" type="2" value="$filter" xmlName="query_0_0"/>
+<component con="0" enc="0" type="2" value="&amp;FILTER#" xmlName="query_0_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_FILTER#" xmlName="query_0_1"/>
+<component con="0" enc="0" type="2" value="&amp;ORDER_BY#" xmlName="query_1_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_ORD_BY#" xmlName="query_1_1"/>
+<component con="0" enc="0" type="2" value="&amp;SELECT#" xmlName="query_2_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SELECT#" xmlName="query_2_1"/>
+<component con="0" enc="0" type="2" value="&amp;TOP#" xmlName="query_3_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_TOP#" xmlName="query_3_1"/>
+<component con="0" enc="0" type="2" value="&amp;SKIP#" xmlName="query_4_0"/>
+<component con="0" enc="0" type="2" value="&amp;SKIP_VAL#" xmlName="query_4_1"/>
+<component con="0" enc="0" type="2" value="&amp;EXPAND#" xmlName="query_5_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
+<component con="0" enc="0" type="2" value="&amp;COUNT#" xmlName="query_6_0"/>
+<component con="0" enc="0" type="2" value="&amp;COUNT_VAL#" xmlName="query_6_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
@@ -164,7 +176,50 @@
 <PRE_SCRIPT mode="1" replacementmode="1" state="1">
 <PSCRI><![CDATA[:INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.PREPARE_RA_JOB
 :SET &CONN_ENDPOINT_URL# = &UC4RB_UIP_URL#
-:INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.SET_CONNECTION_AUTH_NONE]]></PSCRI>
+:INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.SET_CONNECTION_AUTH_NONE
+
+! check if filter is given by user
+:IF &UC4RB_UIP_FILTER# <> ""
+:  SET &FILTER#="$filter"
+:ENDIF
+
+! check if property is given by user
+:IF &UC4RB_UIP_PROP# <> ""
+:  SET &SELECT# = "$select"
+:  SET &UC4RB_UIP_SELECT# = STR_CAT("Key,",&UC4RB_UIP_PROP#)
+:ENDIF
+
+! check if orderby given by user
+:IF &UC4RB_UIP_ORD_BY# <> ""
+:  SET &ORDER_BY#= "$orderby"
+:ENDIF
+
+! check if top is given by user
+:IF &UC4RB_UIP_TOP# <> ""
+:  SET &TOP# ="$top"
+:ENDIF
+
+! check if expand given by user
+:IF &UC4RB_UIP_EXPAND# <> ""
+:  SET &EXPAND#="$expand"
+:ENDIF
+
+!check value of Include Count
+:IF &UC4RB_UIP_COUNT# <> ""
+:  SET &COUNT_VAL# = "false"
+:  SET &COUNT# = "$count"
+:  IF &UC4RB_UIP_COUNT# <> "NO"
+:     SET &COUNT_VAL# = "true"
+:  ENDIF
+:ENDIF
+
+! check for value of skip field
+:  SET &SKIP# = ""
+:  SET &SKIP_VAL# = ""
+:IF &UC4RB_UIP_SKIP# <> 0
+:  SET &SKIP# = "$skip"
+:  SET &SKIP_VAL# = &UC4RB_UIP_SKIP#
+:ENDIF]]></PSCRI>
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
 <MSCRI/>
