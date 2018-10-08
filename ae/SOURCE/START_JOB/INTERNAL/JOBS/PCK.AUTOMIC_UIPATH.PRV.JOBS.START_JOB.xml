@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBS_CIT AttrType="CIT" name="PCK.AUTOMIC_UIPATH.PRV.JOBS.WEBSERVICEREST.START_JOB">
+<JOBS_CIT AttrType="CIT" name="PCK.AUTOMIC_UIPATH.PRV.JOBS.START_JOB">
 <XHEADER state="1">
 <Title>Start Job</Title>
 <ArchiveKey1/>
@@ -183,7 +183,13 @@
 <SCRIPT mode="1" state="1">
 <MSCRI><![CDATA[:IF &RELEASE_KEY# = "[]"
 :  STOP MSG, 50, "No release details found with specified Release Name."
-:ENDIF]]></MSCRI>
+:ENDIF
+
+
+:SET &ATTRIBUTE_VARA# = "PCK.AUTOMIC_UIPATH.PRV.VARA.ROBOT_STRATEGY"
+:SET &UC4RB_MAP_BY_ATTRIBUTE# = &UC4RB_UIP_STRATEGY#
+:INC PCK.AUTOMIC_UIPATH.PUB.JOBI.ITERATE_VARA
+:SET &UC4RB_UIP_STRATEGY#  = &ATTRIBUTE#]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
