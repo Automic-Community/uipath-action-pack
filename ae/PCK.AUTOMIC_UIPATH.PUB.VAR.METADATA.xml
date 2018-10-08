@@ -25,16 +25,16 @@
 </ATTR_VARA>
 <VARA state="1">
 <Variables>
-<row Name="Categories" Value="" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Categories" Value="UiPath Integration" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Company" Value="Automic" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Dependencies" Value="PCK.AUTOMIC_RA_REST ~&gt; 1.0" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="Description" Value="" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Description" Value="Provides integration with UiPath" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Homepage" Value="www.automic.com" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="License" Value="" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="License" Value="Automic License " Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Name" Value="PCK.AUTOMIC_UIPATH" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Package Format Version" Value="0.3.0" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Restricted To Client" Value="" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="Title" Value="UIPATH" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Title" Value="UiPath Package" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Type" Value="Action Pack" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Version" Value="1.0.0" Value1="" Value2="" Value3="" Value4=""/>
 </Variables>

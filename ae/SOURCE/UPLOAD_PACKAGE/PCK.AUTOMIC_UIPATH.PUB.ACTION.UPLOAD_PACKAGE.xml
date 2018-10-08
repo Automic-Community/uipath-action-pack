@@ -615,8 +615,7 @@ This action uploads a new package on UiPath Orchestrator.
 - File*: 	 Provide name of the package file with full path of the containing directory. File extension should be nupkg. E.g. C:\AWI.nupkg
 
 = Behavior =
-* Curl should be installed on Agent machine to run the action.
-* Curl should be allowed on Rest Webservice Agent.
+(none)
 
 = Return Value =
 (none)

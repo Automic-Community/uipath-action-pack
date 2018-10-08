@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
 <JOBS_CIT AttrType="CIT" name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_TOKEN">
 <XHEADER state="1">
-<Title>GET_TOKEN</Title>
+<Title>Get Token</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
