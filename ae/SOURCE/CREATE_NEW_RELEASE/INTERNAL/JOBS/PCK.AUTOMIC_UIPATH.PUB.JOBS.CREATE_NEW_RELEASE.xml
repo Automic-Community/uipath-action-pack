@@ -100,11 +100,13 @@
 <component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
 <component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
 <component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
-<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_7"/>
+<component con="0" enc="0" type="2" value="A  &amp;UC4RB_UIP_ADV_OPT_KEY_VAL#" xmlName="request_part_0_requestTab_data_8"/>
+<component con="0" enc="0" type="2" value="A  &quot;EnvironmentName&quot;: &quot;&amp;UC4RB_UIP_ENV_NAME#&quot;" xmlName="request_part_0_requestTab_data_7"/>
+<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_9"/>
 <component con="0" enc="0" type="2" value="A  &quot;Name&quot;: &quot;&amp;UC4RB_UIP_PROC_NAME#&quot;," xmlName="request_part_0_requestTab_data_4"/>
 <component con="0" enc="0" type="2" value="A  &quot;ProcessVersion&quot;: &quot;&amp;UC4RB_UIP_PROC_VRSN#&quot;," xmlName="request_part_0_requestTab_data_3"/>
-<component con="0" enc="0" type="2" value="A  &quot;EnvironmentName&quot;: &quot;&amp;UC4RB_UIP_ENV_NAME#&quot;" xmlName="request_part_0_requestTab_data_6"/>
-<component con="0" enc="0" type="2" value="A  &quot;EnvironmentId&quot;: &amp;UC4RB_UIP_ENV_ID#," xmlName="request_part_0_requestTab_data_5"/>
+<component con="0" enc="0" type="2" value="A  &quot;EnvironmentId&quot;: &amp;UC4RB_UIP_ENV_ID#," xmlName="request_part_0_requestTab_data_6"/>
+<component con="0" enc="0" type="2" value="A  &quot;Description&quot;:&quot;&amp;UC4RB_UIP_PROC_DESC#&quot;," xmlName="request_part_0_requestTab_data_5"/>
 <component con="0" enc="0" type="2" value="A  &quot;ProcessKey&quot;: &quot;&amp;UC4RB_UIP_PROC_KEY#&quot;," xmlName="request_part_0_requestTab_data_2"/>
 <component con="0" enc="0" type="2" value="A{" xmlName="request_part_0_requestTab_data_1"/>
 <component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
@@ -162,52 +164,6 @@
 <Mode>0</Mode>
 </VALUE>
 </node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ENDPOINT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ENDPOINT" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ENDPOINT" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ENDPOINT" prptmode="1">
-<CONN_ENDPOINT_URLs.00 altview="0" haslist="0"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY" prptmode="1">
-<CONN_PROXY_TYPEs.00 altview="0" haslist="0">None</CONN_PROXY_TYPEs.00>
-<CONN_PROXY_HOSTs.00 altview="0" haslist="0"/>
-<CONN_PROXY_PORTs.00 altview="0" haslist="0">0</CONN_PROXY_PORTs.00>
-<CONN_PROXY_USERNAMEs.00 altview="0" haslist="0"/>
-<CONN_PROXY_PASSWORDs.00 altview="0" haslist="0">--10FBA41CCE80A626FF9F1A8BC87ECEB23E141388E66BC9D730</CONN_PROXY_PASSWORDs.00>
-<CONN_PROXY_REALMs.00 altview="0" haslist="0"/>
-<CONN_PROXY_AUTH_METHODs.00 altview="0" haslist="0">None</CONN_PROXY_AUTH_METHODs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED" prptmode="1">
-<CONN_CONNECTION_TIMEOUTs.00 altview="0" haslist="0">30</CONN_CONNECTION_TIMEOUTs.00>
-<CONN_READ_TIMEOUTs.00 altview="0" haslist="0">60</CONN_READ_TIMEOUTs.00>
-<CONN_FOLLOW_REDIRECTSs.00 altview="0" haslist="0">NO</CONN_FOLLOW_REDIRECTSs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" prptmode="1">
-<OVERWRITE_RA_AGENT_PROMPTs.00 altview="0" haslist="0"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" prptmode="1">
-<UC4RB_UIP_PROC_KEYs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_PROC_VRSNs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_PROC_NAMEs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_ENV_NAMEs.00 altview="0" haslist="0"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 </dyntree>
 </DYNVALUES>
 <ROLLBACK state="1">
@@ -224,7 +180,11 @@
 :INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.SET_CONNECTION_AUTH_NONE]]></PSCRI>
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
-<MSCRI/>
+<MSCRI><![CDATA[:SET &UC4RB_UIP_ADV_OPT_KEY_VAL#=""
+:IF &UC4RB_UIP_ADV_OPT# <> ""
+:  SET &COMMA#=","
+: SET &UC4RB_UIP_ADV_OPT_KEY_VAL#=STR_CAT(&COMMA#,&UC4RB_UIP_ADV_OPT#)
+:ENDIF]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>

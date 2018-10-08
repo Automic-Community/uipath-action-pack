@@ -22,7 +22,7 @@
 <AutoDeactNo>0</AutoDeactNo>
 <AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
 <AutoDeactErrorFree>1</AutoDeactErrorFree>
-<DeactWhen/>
+<DeactWhen>ANY_OK</DeactWhen>
 <AutoDeactAlways>0</AutoDeactAlways>
 <DeactDelay>0</DeactDelay>
 <ActAtRun>0</ActAtRun>
@@ -58,7 +58,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
+<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -66,7 +66,9 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
+<UC4RB_UIP_ADV_OPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ADV_OPT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_ENV_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
+<UC4RB_UIP_PROC_DESCs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_DESC#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_VRSNs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_VRSN#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
@@ -78,7 +80,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
 <CONN_PROXY_AUTH_METHODs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
 <CONN_PROXY_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</CONN_PROXY_PASSWORDs.00>
+<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10</CONN_PROXY_PASSWORDs.00>
 <CONN_PROXY_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
 <CONN_PROXY_REALMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
 <CONN_PROXY_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
@@ -98,7 +100,7 @@
 <node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT"/>
+<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -130,14 +132,16 @@
 <dyntree>
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
-<Values/>
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIP_AUTH_TOKEN#" Value=""/>
+</Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
@@ -147,7 +151,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
+<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -155,7 +159,9 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
+<UC4RB_UIP_ADV_OPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ADV_OPT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_ENV_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
+<UC4RB_UIP_PROC_DESCs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_DESC#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_VRSNs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_VRSN#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
@@ -167,7 +173,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
 <CONN_PROXY_AUTH_METHODs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
 <CONN_PROXY_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</CONN_PROXY_PASSWORDs.00>
+<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10</CONN_PROXY_PASSWORDs.00>
 <CONN_PROXY_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
 <CONN_PROXY_REALMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
 <CONN_PROXY_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
@@ -187,7 +193,7 @@
 <node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT"/>
+<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -196,6 +202,7 @@
 <CIT src="OCV">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
+<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
 <component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
 <component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
@@ -258,7 +265,6 @@
 <component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
 <component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
 <component con="0" enc="0" type="2" value="$result" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
@@ -296,14 +302,16 @@
 <dyntree>
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
-<Values/>
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIP_ENV_ID#" Value="&quot;&quot;"/>
+</Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
@@ -313,7 +321,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
+<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -321,7 +329,9 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
+<UC4RB_UIP_ADV_OPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ADV_OPT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_ENV_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
+<UC4RB_UIP_PROC_DESCs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_DESC#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_VRSNs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_VRSN#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
@@ -333,7 +343,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
 <CONN_PROXY_AUTH_METHODs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
 <CONN_PROXY_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</CONN_PROXY_PASSWORDs.00>
+<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10</CONN_PROXY_PASSWORDs.00>
 <CONN_PROXY_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
 <CONN_PROXY_REALMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
 <CONN_PROXY_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
@@ -353,7 +363,7 @@
 <node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT"/>
+<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -365,7 +375,7 @@
 <component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
 <component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
 <component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseToJobLog"/>
+<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
 <component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
 <component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
 <component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
@@ -419,7 +429,7 @@
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
 <component con="0" enc="0" type="2" value="$value[0].Id" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_ENV_ID#" xmlName="response_part_0_script_0_resourceName"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIP_ENV_ID#" xmlName="response_part_0_script_0_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
@@ -460,64 +470,17 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ENDPOINT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ENDPOINT" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ENDPOINT">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ENDPOINT">
-<CONN_ENDPOINT_URLs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_ENDPOINT_URL#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ENDPOINT"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
-<CONN_PROXY_AUTH_METHODs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
-<CONN_PROXY_HOSTs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10FBA41CCE80A626FF9F1A8BC87ECEB23E141388E66BC9D730</CONN_PROXY_PASSWORDs.00>
-<CONN_PROXY_PORTs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
-<CONN_PROXY_REALMs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_TYPEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
-<CONN_PROXY_USERNAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_USERNAME#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">
-<CONN_CONNECTION_TIMEOUTs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_CONNECTION_TIMEOUT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">30</CONN_CONNECTION_TIMEOUTs.00>
-<CONN_FOLLOW_REDIRECTSs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_FOLLOW_REDIRECTS#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">NO</CONN_FOLLOW_REDIRECTSs.00>
-<CONN_READ_TIMEOUTs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_READ_TIMEOUT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">60</CONN_READ_TIMEOUTs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
-<ELEMENT ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="ELEMENT" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_ENV_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_PROC_KEYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_PROC_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_PROC_VRSNs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_VRSN#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
+<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -525,7 +488,9 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
+<UC4RB_UIP_ADV_OPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ADV_OPT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_ENV_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
+<UC4RB_UIP_PROC_DESCs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_DESC#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_VRSNs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_VRSN#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
@@ -537,7 +502,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
 <CONN_PROXY_AUTH_METHODs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
 <CONN_PROXY_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</CONN_PROXY_PASSWORDs.00>
+<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10</CONN_PROXY_PASSWORDs.00>
 <CONN_PROXY_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
 <CONN_PROXY_REALMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
 <CONN_PROXY_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
@@ -557,7 +522,7 @@
 <node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT"/>
+<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -618,11 +583,13 @@
 <component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
 <component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
 <component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
-<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_7"/>
+<component con="0" enc="0" type="2" value="A  &amp;UC4RB_UIP_ADV_OPT_KEY_VAL#" xmlName="request_part_0_requestTab_data_8"/>
+<component con="0" enc="0" type="2" value="A  &quot;EnvironmentName&quot;: &quot;&amp;UC4RB_UIP_ENV_NAME#&quot;" xmlName="request_part_0_requestTab_data_7"/>
+<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_9"/>
 <component con="0" enc="0" type="2" value="A  &quot;Name&quot;: &quot;&amp;UC4RB_UIP_PROC_NAME#&quot;," xmlName="request_part_0_requestTab_data_4"/>
 <component con="0" enc="0" type="2" value="A  &quot;ProcessVersion&quot;: &quot;&amp;UC4RB_UIP_PROC_VRSN#&quot;," xmlName="request_part_0_requestTab_data_3"/>
-<component con="0" enc="0" type="2" value="A  &quot;EnvironmentName&quot;: &quot;&amp;UC4RB_UIP_ENV_NAME#&quot;" xmlName="request_part_0_requestTab_data_6"/>
-<component con="0" enc="0" type="2" value="A  &quot;EnvironmentId&quot;: &amp;UC4RB_UIP_ENV_ID#," xmlName="request_part_0_requestTab_data_5"/>
+<component con="0" enc="0" type="2" value="A  &quot;EnvironmentId&quot;: &amp;UC4RB_UIP_ENV_ID#," xmlName="request_part_0_requestTab_data_6"/>
+<component con="0" enc="0" type="2" value="A  &quot;Description&quot;:&quot;&amp;UC4RB_UIP_PROC_DESC#&quot;," xmlName="request_part_0_requestTab_data_5"/>
 <component con="0" enc="0" type="2" value="A  &quot;ProcessKey&quot;: &quot;&amp;UC4RB_UIP_PROC_KEY#&quot;," xmlName="request_part_0_requestTab_data_2"/>
 <component con="0" enc="0" type="2" value="A{" xmlName="request_part_0_requestTab_data_1"/>
 <component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
@@ -666,7 +633,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
+<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -674,7 +641,9 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
+<UC4RB_UIP_ADV_OPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ADV_OPT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_ENV_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
+<UC4RB_UIP_PROC_DESCs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_DESC#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_VRSNs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_VRSN#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
@@ -686,7 +655,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
 <CONN_PROXY_AUTH_METHODs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
 <CONN_PROXY_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</CONN_PROXY_PASSWORDs.00>
+<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10</CONN_PROXY_PASSWORDs.00>
 <CONN_PROXY_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
 <CONN_PROXY_REALMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
 <CONN_PROXY_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
@@ -706,7 +675,7 @@
 <node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT"/>
+<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -762,13 +731,13 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" ontop="1">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" prptmode="1">
-<UC4RB_UIP_URLs.00 altview="0" haslist="0"/>
+<UC4RB_UIP_URLs.00 altview="0" haslist="0">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_USERs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_PASSWDs.00 altview="0" haslist="0">--10</UC4RB_UIP_PASSWDs.00>
@@ -778,10 +747,12 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" ontop="1">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" prptmode="1">
+<UC4RB_UIP_PROC_NAMEs.00 altview="0" haslist="0"/>
+<UC4RB_UIP_PROC_DESCs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_PROC_KEYs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_PROC_VRSNs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_PROC_NAMEs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_ENV_NAMEs.00 altview="0" haslist="0"/>
+<UC4RB_UIP_ADV_OPTs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -792,7 +763,7 @@
 <CONN_PROXY_HOSTs.00 altview="0" haslist="0"/>
 <CONN_PROXY_PORTs.00 altview="0" haslist="0">0</CONN_PROXY_PORTs.00>
 <CONN_PROXY_USERNAMEs.00 altview="0" haslist="0"/>
-<CONN_PROXY_PASSWORDs.00 altview="0" haslist="0">--10308F4A885A3168FDAE5235CB3DA4439AF3C698E5D5F19918BCA41B355E99723C58A04D89934D2CD42E1AC0FB97368E2BA3C0DEC612650F4E4C7FD0F9D0D566B54B0C8B05D79F94714BF3E87781BAECCF63DAABC92DF908932D2E2AE5A82E585B30218B025C0BF5508636E6489EACA17A67D125A3BA370C50</CONN_PROXY_PASSWORDs.00>
+<CONN_PROXY_PASSWORDs.00 altview="0" haslist="0">--10</CONN_PROXY_PASSWORDs.00>
 <CONN_PROXY_REALMs.00 altview="0" haslist="0"/>
 <CONN_PROXY_AUTH_METHODs.00 altview="0" haslist="0">None</CONN_PROXY_AUTH_METHODs.00>
 </PRPTBOX>
@@ -810,7 +781,7 @@
 <node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" ontop="1">
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" prptmode="1">
-<OVERWRITE_RA_AGENT_PROMPTs.00 altview="0" haslist="0"/>
+<OVERWRITE_RA_AGENT_PROMPTs.00 altview="1" haslist="0">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -836,7 +807,42 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[= Action name =
+PCK.AUTOMIC_UIPATH.PUB.ACTION.CREATE_NEW_RELEASE
+
+= General description =
+This action will create a new release on UiPath Orchestrator.
+
+= Failure Conditions =
+none
+
+= Inputs =
+- Name	             : Provide a custom name of the release. 
+                       E.g. ABC.
+- Description        : Provide the description of release.
+- Process Key        : Provide a unique name for your process, must be same as package name. 
+- Process Version    : Provide the version number that can be same as package version.
+                       E.g. 1.0.6849.36336
+- Environment Name   : Provide the name of environment where you want to execute. This environment must exist.
+                       E.g. Test_Env
+- Advanced Options   : Provide other release relate option that you want while creating the new release.
+ E.g. "IsLatestVersion": false
+
+= Behavior =
+* process name must be same as package name.
+* The default name format of release is ProcessName_EnvironmentName.
+
+
+=Return Value=
+(none)
+
+= Outputs =
+* Return code is 0 in case of success.
+* Return code is non-zero in case of failure.
+* Return JSON in response in Job report.
+
+= Rollback =
+(none)]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>
