@@ -1,0 +1,46 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        upload_package
+Test Template     Upload Package Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    File
+Upload Package with valid Path
+                      [Tags]    main_scenarios
+                      OK        ${File_Path}
+
+Upload Package with Invalid or non existing File Path
+                      NOK       Invalid
+
+Upload Package with Empty File field
+                      NOK       ${Empty}
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "Upload Package"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Upload Package Template
+    [Arguments]    ${OK_NOK}    ${File}
+    [Documentation]    This test uploads a package in UiPath.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${File}: This field specifies the name of the package file with full path of the containing directory. File extension should be nupkg.
+    Generate String
+    Init Action    ${_UPLOAD_PACKAGE_ACTION}
+    Connect To UiPath
+    Run Keyword If    '${File}' == 'Invalid'    Action Set    &UC4RB_UIP_FILE#    ${Generated_Name}_${Time}
+    ...    ELSE    Action Set    &UC4RB_UIP_FILE#    ${File}
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success
+    ...    ELSE    Assert Failure
+
+Teardown
+    Log    *******End Test "Upload Package"*******

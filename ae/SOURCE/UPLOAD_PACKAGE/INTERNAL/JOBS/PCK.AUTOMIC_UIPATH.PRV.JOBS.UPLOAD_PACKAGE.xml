@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBS_CIT AttrType="CIT" name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_TOKEN">
+<JOBS_CIT AttrType="CIT" name="PCK.AUTOMIC_UIPATH.PRV.JOBS.UPLOAD_PACKAGE">
 <XHEADER state="1">
-<Title>Get Token</Title>
+<Title>Upload Package</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -89,34 +89,14 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_type"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
-<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
-<component con="0" enc="0" type="2" value="" xmlName="curl"/>
-<component con="0" enc="0" type="2" value="application/json" xmlName="mediaType"/>
-<component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
-<component con="0" enc="0" type="2" value="Part 1" xmlName="partName"/>
-<component con="0" enc="0" type="2" value="/api/account/authenticate" xmlName="resource"/>
-<component con="0" enc="0" type="2" value="POST" xmlName="method"/>
+<component con="0" enc="0" type="2" value="true" xmlName="isCurl"/>
+<component con="0" enc="0" type="2" value="-H &quot;Authorization: Bearer &amp;UC4RB_UIP_AUTH_TOKEN#&quot; -F &quot;&amp;FILE_PATH#&quot; -X POST  &amp;ENDPOINT_URL#" xmlName="curl"/>
+<component con="0" enc="0" type="2" value="" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="GET" xmlName="method"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
-<component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
-<component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
-<component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
-<component con="0" enc="0" type="2" value="A  &quot;password&quot; : &quot;&amp;UC4RB_UIP_PASSWD#&quot;" xmlName="request_part_0_requestTab_data_4"/>
-<component con="0" enc="0" type="2" value="A  &quot;usernameOrEmailAddress&quot; : &quot;&amp;UC4RB_UIP_USER#&quot;," xmlName="request_part_0_requestTab_data_3"/>
-<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_5"/>
-<component con="0" enc="0" type="2" value="A  &quot;tenancyName&quot; : &quot;&amp;UC4RB_UIP_TENANT_NAME#&quot;," xmlName="request_part_0_requestTab_data_2"/>
-<component con="0" enc="0" type="2" value="A{" xmlName="request_part_0_requestTab_data_1"/>
-<component con="0" enc="0" type="2" value="Content-Type" xmlName="header_0_0"/>
-<component con="0" enc="0" type="2" value="application/json; charset=utf-8" xmlName="header_0_1"/>
-<component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
-<component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="$result" xmlName="response_part_0_script_0_code_0"/>
-<component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
-<component con="0" enc="0" type="2" value="UC4RB_UIP_AUTH_TOKEN#" xmlName="response_part_0_script_0_resourceName"/>
-<component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
-<component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
 <component con="0" enc="0" type="2" value="" xmlName="file"/>
 </cit>
@@ -161,9 +141,7 @@
 <dyntree>
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
-<Values>
-<row ERTUsage="0" Name="&amp;UC4RB_UIP_AUTH_TOKEN#" Value=""/>
-</Values>
+<Values/>
 <Mode>0</Mode>
 </VALUE>
 </node>
@@ -178,17 +156,20 @@
 <FInclSubDirs>0</FInclSubDirs>
 </ROLLBACK>
 <PRE_SCRIPT mode="1" replacementmode="1" state="1">
-<PSCRI><![CDATA[
-:INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.PREPARE_RA_JOB
+<PSCRI><![CDATA[:INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.PREPARE_RA_JOB
 :SET &CONN_ENDPOINT_URL# = &UC4RB_UIP_URL#
 :INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.SET_CONNECTION_AUTH_NONE]]></PSCRI>
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
-<MSCRI/>
+<MSCRI><![CDATA[:SET &FILE_PATH# = STR_CAT("file=@",&UC4RB_UIP_FILE#)
+:SET &ENDPOINT_URL# = STR_CAT(&UC4RB_UIP_URL#,"/odata/Processes/UiPath.Server.Configuration.OData.UploadPackage")
+: P 'curl -H "Authorization: Bearer *****" -F "&FILE_PATH#" -X POST  &ENDPOINT_URL#']]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
-<filterobjects/>
+<filterobjects>
+<row Icon="FILTER" condition="true" execute="" filter="PCK.AUTOMIC_UIPATH.PRV.FILTER.RESPONSE_FILTER" lnr="1" return="1" statustext="Unable to upload package. Please provide valid inputs."/>
+</filterobjects>
 <HostFsc/>
 <LoginFsc/>
 </OUTPUTSCAN>
