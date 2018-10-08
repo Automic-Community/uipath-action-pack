@@ -10,37 +10,37 @@ Resource          ../../Resources/keywords.txt
 Resource          ../../Resources/variables.txt
 Resource          ../../Resources/actions.txt
 
-*** Test Cases ***    OK_NOK    Properties        Filter       OrderBy       Top         Skip        Expand
+*** Test Cases ***    OK_NOK    Properties        Filter       OrderBy       Top         Skip        Include_Count    Expand
 Get Robot Logs with all valid data
                       [Tags]    main_scenarios
-                      OK        ${Properties}     ${Filter}    ${OrderBy}    ${Top}      ${Skip}     ${Expand}
+                      OK        ${Properties}     ${Filter}    ${OrderBy}    ${Top}      ${Skip}     YES              ${Expand}
 
 Get Robot Logs with valid Multiple Property Name
-                      OK        ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
+                      OK        ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     NO               ${EMPTY}
 
 Get Robot Logs with Invalid or non existing Property
-                      NOK       Invalid           ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
+                      NOK       Invalid           ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     NO               ${EMPTY}
 
 Get Robot Logs with Invalid or non existing Filter
-                      NOK       ${Properties}     Invalid      ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
+                      NOK       ${Properties}     Invalid      ${OrderBy}    ${Top}      ${Skip}     NO               ${EMPTY}
 
 Get Robot Logs with all fields blank
-                      OK        ${EMPTY}          ${EMPTY}     ${EMPTY}      ${EMPTY}    ${EMPTY}    ${EMPTY}
+                      OK        ${EMPTY}          ${EMPTY}     ${EMPTY}      ${EMPTY}    ${EMPTY}    NO               ${EMPTY}
 
 Get Robot Logs with Invalid OrderBy
-                      NOK       ${Properties}     ${EMPTY}     Invalid       ${Top}      ${Skip}     ${EMPTY}
+                      NOK       ${Properties}     ${EMPTY}     Invalid       ${Top}      ${Skip}     NO               ${EMPTY}
 
 Get Robot Logs with Invalid Top
-                      NOK       ${Properties}     ${EMPTY}     ${OrderBy}    Invalid     ${EMPTY}    ${EMPTY}
+                      NOK       ${Properties}     ${EMPTY}     ${OrderBy}    Invalid     ${EMPTY}    YES              ${EMPTY}
 
 Get Robot Logs with both Skip & Top to verify that input for skip is ignored.
-                      OK        ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     ${EMPTY}
+                      OK        ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     YES              ${EMPTY}
 
 Get Robot Logs with invalid value in skip field
-                      NOK       ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      Invalid     ${EMPTY}
+                      NOK       ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      Invalid     NO               ${EMPTY}
 
 Get Robot Logs with invalid value in expand field
-                      NOK       ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     Invalid
+                      NOK       ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     NO               Invalid
 
 *** Keywords ***
 Startup
@@ -50,13 +50,14 @@ Startup
 
 Get Robot Logs Template
     [Arguments]    ${OK_NOK}    ${Properties}    ${Filter}    ${OrderBy}    ${Top}    ${Skip}
-    ...    ${Expand}
+    ...    ${Include_Count}    ${Expand}
     [Documentation]    This test is to test the feature of Get_Robot_Logs .
     ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
     ...    -${Properties}: This field specifies the list of properties as comma separated to include in the response. E.g. ProcessName,TimeStamp.
     ...    -${Filter}: This field specifies the filters to be applied for the results, based on a Boolean condition. E.g. ProcessName eq 'SalesProcess.
     ...    -${OrderBy}: This field specifies specify the property to be used in ordering. E.g. TimeStamp desc
     ...    -${Top}: This field specifies if the result should include only the first N items.
+    ...    -${Include_Count}: This field specifies the count user wants to includes.
     ...    -${Skip}: This field specifies if the result should skip the first N items.
     ...    -${Expand}: This field specifies related entities to be inlined..
     Generate String
@@ -72,6 +73,7 @@ Get Robot Logs Template
     ...    &UC4RB_UIP_TOP#    ${Top}
     Run Keyword If    '${Skip}' == 'Invalid'    Action Set    &UC4RB_UIP_SKIP#    ${Generated_Name}_${Time}    ELSE    Action Set
     ...    &UC4RB_UIP_SKIP#    ${Skip}
+    Run Keyword If    '${Include_Count}'    Action Set    &UC4RB_UIP_INC_CNT#    ${Include_Count}
     Run Keyword If    '${Expand}' == 'Invalid'    Action Set    &UC4RB_UIP_EXPAND#    ${Generated_Name}_${Time}    ELSE    Action Set
     ...    &UC4RB_UIP_EXPAND#    ${Expand}
     Action Execute
