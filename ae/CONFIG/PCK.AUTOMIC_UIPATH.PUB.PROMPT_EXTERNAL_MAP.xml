@@ -25,9 +25,9 @@
 </ATTR_VARA>
 <VARA state="1">
 <Variables>
-<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_RELEASES" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.START_JOB" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.UPLOAD_PACKAGE" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_RELEASES/AGENT#" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.START_JOB/AGENT#" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.UPLOAD_PACKAGE/AGENT#" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
 </Variables>
 </VARA>
 <DOCU_Docu state="1" type="text">
