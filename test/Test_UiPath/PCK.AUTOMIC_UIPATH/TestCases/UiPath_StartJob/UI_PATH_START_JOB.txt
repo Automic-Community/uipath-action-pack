@@ -72,8 +72,8 @@ Start Job Template
     Generate String
     Init Action    ${_Start_JOB_ACTION}
     Connect To UiPath
-    Run Keyword If    '${ProcessName}' == 'Invalid'    Action Set    &UC4RB_UIP_RELEASE#    ${Generated_Name}_${Time}
-    ...    ELSE    Action Set    &UC4RB_UIP_RELEASE#    ${ProcessName}
+    Run Keyword If    '${ProcessName}' == 'Invalid'    Action Set    &UC4RB_UIP_PROCESS#    ${Generated_Name}_${Time}
+    ...    ELSE    Action Set    &UC4RB_UIP_PROCESS#    ${ProcessName}
     Action Set    &UC4RB_UIP_STRATEGY#    ${Strategy}
     Run Keyword If    '${RobotIds}' == 'Invalid'    Action Set    &UC4RB_UIP_ROBOT#    ${Generated_Name}_${Time}
     ...    ELSE    Action Set    &UC4RB_UIP_ROBOT#    ${RobotIds}
