@@ -26,7 +26,7 @@
 <VARA state="1">
 <Variables>
 <row Name="All" Value="All" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="Robot Count" Value="RobotCount" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="RobotCount" Value="Robot Count" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Specific" Value="Specific" Value1="" Value2="" Value3="" Value4=""/>
 </Variables>
 </VARA>
