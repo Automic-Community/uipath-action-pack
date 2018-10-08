@@ -34,7 +34,10 @@ Following actions are supported.
 * Action Description: This action uploads a new package on UiPath Orchestrator.
 
 * Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.START_JOB
-* Action Description: This action starts a job on UiPath Orchestrator.]]></DOC>
+* Action Description: This action starts a job on UiPath Orchestrator.
+
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.CREATE_NEW_RELEASE
+* Action Description: This action will create a new release on UiPath Orchestrator.]]></DOC>
 </DOCU_Docu>
 </DOCU>
 </uc-export>

@@ -22,7 +22,7 @@
 <AutoDeactNo>0</AutoDeactNo>
 <AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
 <AutoDeactErrorFree>1</AutoDeactErrorFree>
-<DeactWhen/>
+<DeactWhen>ANY_OK</DeactWhen>
 <AutoDeactAlways>0</AutoDeactAlways>
 <DeactDelay>0</DeactDelay>
 <ActAtRun>0</ActAtRun>
@@ -132,7 +132,9 @@
 <dyntree>
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
-<Values/>
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIP_AUTH_TOKEN#" Value=""/>
+</Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
@@ -200,6 +202,7 @@
 <CIT src="OCV">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
+<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
 <component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
 <component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
@@ -262,7 +265,6 @@
 <component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
 <component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
 <component con="0" enc="0" type="2" value="$result" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
@@ -527,41 +529,6 @@
 <CIT src="OCV">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_host"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_password"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_port"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_realm"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_type"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
-<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
-<component con="0" enc="0" type="2" value="" xmlName="curl"/>
-<component con="0" enc="0" type="2" value="application/json" xmlName="mediaType"/>
-<component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
-<component con="0" enc="0" type="2" value="Part 1" xmlName="partName"/>
-<component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
-<component con="0" enc="0" type="2" value="POST" xmlName="method"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
-<component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
-<component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
-<component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
-<component con="0" enc="0" type="2" value="A  &amp;UC4RB_UIP_ADV_OPT_KEY_VAL#" xmlName="request_part_0_requestTab_data_8"/>
-<component con="0" enc="0" type="2" value="A  &quot;EnvironmentName&quot;: &quot;&amp;UC4RB_UIP_ENV_NAME#&quot;" xmlName="request_part_0_requestTab_data_7"/>
-<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_9"/>
-<component con="0" enc="0" type="2" value="A  &quot;Name&quot;: &quot;&amp;UC4RB_UIP_PROC_NAME#&quot;," xmlName="request_part_0_requestTab_data_4"/>
-<component con="0" enc="0" type="2" value="A  &quot;ProcessVersion&quot;: &quot;&amp;UC4RB_UIP_PROC_VRSN#&quot;," xmlName="request_part_0_requestTab_data_3"/>
-<component con="0" enc="0" type="2" value="A  &quot;EnvironmentId&quot;: &amp;UC4RB_UIP_ENV_ID#," xmlName="request_part_0_requestTab_data_6"/>
-<component con="0" enc="0" type="2" value="A  &quot;Description&quot;:&quot;&amp;UC4RB_UIP_PROC_DESC#&quot;," xmlName="request_part_0_requestTab_data_5"/>
-<component con="0" enc="0" type="2" value="A  &quot;ProcessKey&quot;: &quot;&amp;UC4RB_UIP_PROC_KEY#&quot;," xmlName="request_part_0_requestTab_data_2"/>
-<component con="0" enc="0" type="2" value="A{" xmlName="request_part_0_requestTab_data_1"/>
-<component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
-<component con="0" enc="0" type="2" value="Bearer &amp;UC4RB_UIP_AUTH_TOKEN#" xmlName="header_0_1"/>
-<component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
-<component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
-<component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
-<component con="0" enc="0" type="2" value="" xmlName="file"/>
 <component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
 <component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
 <component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
@@ -597,6 +564,41 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_verifier"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_version_method"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_auth_method"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_host"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_password"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_port"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_realm"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_type"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
+<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
+<component con="0" enc="0" type="2" value="" xmlName="curl"/>
+<component con="0" enc="0" type="2" value="application/json" xmlName="mediaType"/>
+<component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
+<component con="0" enc="0" type="2" value="Part 1" xmlName="partName"/>
+<component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="POST" xmlName="method"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
+<component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
+<component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
+<component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
+<component con="0" enc="0" type="2" value="A  &amp;UC4RB_UIP_ADV_OPT_KEY_VAL#" xmlName="request_part_0_requestTab_data_8"/>
+<component con="0" enc="0" type="2" value="A  &quot;EnvironmentName&quot;: &quot;&amp;UC4RB_UIP_ENV_NAME#&quot;" xmlName="request_part_0_requestTab_data_7"/>
+<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_9"/>
+<component con="0" enc="0" type="2" value="A  &quot;Name&quot;: &quot;&amp;UC4RB_UIP_PROC_NAME#&quot;," xmlName="request_part_0_requestTab_data_4"/>
+<component con="0" enc="0" type="2" value="A  &quot;ProcessVersion&quot;: &quot;&amp;UC4RB_UIP_PROC_VRSN#&quot;," xmlName="request_part_0_requestTab_data_3"/>
+<component con="0" enc="0" type="2" value="A  &quot;EnvironmentId&quot;: &amp;UC4RB_UIP_ENV_ID#," xmlName="request_part_0_requestTab_data_6"/>
+<component con="0" enc="0" type="2" value="A  &quot;Description&quot;:&quot;&amp;UC4RB_UIP_PROC_DESC#&quot;," xmlName="request_part_0_requestTab_data_5"/>
+<component con="0" enc="0" type="2" value="A  &quot;ProcessKey&quot;: &quot;&amp;UC4RB_UIP_PROC_KEY#&quot;," xmlName="request_part_0_requestTab_data_2"/>
+<component con="0" enc="0" type="2" value="A{" xmlName="request_part_0_requestTab_data_1"/>
+<component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
+<component con="0" enc="0" type="2" value="Bearer &amp;UC4RB_UIP_AUTH_TOKEN#" xmlName="header_0_1"/>
+<component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
+<component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
+<component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
+<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
+<component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
+<component con="0" enc="0" type="2" value="" xmlName="file"/>
 </cit>
 <cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
 </citcont>
@@ -804,30 +806,30 @@
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[= Action name =
-PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOT_LOGS
+PCK.AUTOMIC_UIPATH.PUB.ACTION.CREATE_NEW_RELEASE
 
 = General description =
-This action will fetch logs for Robot(s) defined in UiPath Orchestrator.
+This action will create a new release on UiPath Orchestrator.
 
 = Failure Conditions =
 none
 
 = Inputs =
-- Properties	     : Provide the properties that you want in your response, if remain empty then it will fetch all the properties related to robot log. 
-                       E.g. RobotName,MachineId.
-- Filter             : Provide the filter that you want to apply on result set in response.
-                       E.g. RobotName eq ABC.
-- OrderBy            : Provide the property and the order in which you want to sort the result set in response. 
-                       E.g. TimeStamp desc.
-- Top	             : Provide the number that much logs you want in result set of response.
-                       E.g. 5
-- Skip               : Provide the number of logs that you do not want in your result set.
-                       E.g. 2
-- Expand	     : Provide related entities to be inlined.       
+- Name	             : Provide a custom name of the release. 
+                       E.g. ABC.
+- Description        : Provide the description of release.
+- Process Key        : Provide a unique name for your process, must be same as package name. 
+- Process Version    : Provide the version number that can be same as package version.
+                       E.g. 1.0.6849.36336
+- Environment Name   : Provide the name of environment where you want to execute. This environment must exist.
+                       E.g. Test_Env
+- Advanced Options   : Provide other release relate option that you want while creating the new release.
+ E.g. "IsLatestVersion": false
 
 = Behavior =
-* If Skip and Top both are provided, the rest api will ignore the input given for skip.
-* Top must be greater than 0, else it would not show any result and action will be failed.
+* process name must be same as package name.
+* The default name format of release is ProcessName_EnvironmentName.
+
 
 =Return Value=
 (none)
