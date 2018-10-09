@@ -24,3 +24,17 @@ ${Skip}           3
 ${Expand}         *
 #-------------------Upload Package-------------------------------------
 ${File_Path}      D:\\ClosedXML.0.87.1.nupkg
+#------------------Get Releases---------------------------------
+${Properties}     ProcessKey,Id,Name
+${Filter}         Id eq 40735
+${OrderBy}        Id desc
+${Top}            5
+${Skip}           0
+${IncludeCount}    YES
+${Expand}         Environment
+${RA_Agent}       WEBSERVICEREST01
+#------------------Create New Release---------------------------------
+${Name}           PackageName
+${ProcessKey}     Swati_006
+${ProcessVersion}    1.2.06
+${Env_Name}       test
