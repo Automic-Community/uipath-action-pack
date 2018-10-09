@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBS_CIT AttrType="CIT" name="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_RELEASES">
+<JOBS_CIT AttrType="CIT" name="PCK.AUTOMIC_UIPATH.PRV.JOBS.START_JOB">
 <XHEADER state="1">
-<Title>Get Releases</Title>
+<Title>Start Job</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -50,16 +50,29 @@
 <CIT state="2">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
+<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
+<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
+<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
+<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
+<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
+<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
+<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
+<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_password"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_port"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_preemptive"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_username"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientkey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientsecret"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_token"/>
@@ -69,10 +82,6 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_token_secret"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_verifier"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_version_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_auth_method"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_password"/>
@@ -80,43 +89,36 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_type"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
-<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
+<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
 <component con="0" enc="0" type="2" value="" xmlName="curl"/>
-<component con="0" enc="0" type="2" value="" xmlName="file"/>
+<component con="0" enc="0" type="2" value="application/json" xmlName="mediaType"/>
+<component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
+<component con="0" enc="0" type="2" value="Part 1" xmlName="partName"/>
+<component con="0" enc="0" type="2" value="odata/Jobs/UiPath.Server.Configuration.OData.StartJobs" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="POST" xmlName="method"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
+<component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
+<component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
+<component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
+<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_10"/>
+<component con="0" enc="0" type="2" value="A    &quot;NoOfRobots&quot;: &amp;UC4RB_UIP_ROBOT_NUM#" xmlName="request_part_0_requestTab_data_8"/>
+<component con="0" enc="0" type="2" value="A    ]," xmlName="request_part_0_requestTab_data_7"/>
+<component con="0" enc="0" type="2" value="A  }" xmlName="request_part_0_requestTab_data_9"/>
+<component con="0" enc="0" type="2" value="A    &quot;Strategy&quot;: &quot;&amp;UC4RB_UIP_STRATEGY#&quot;," xmlName="request_part_0_requestTab_data_4"/>
+<component con="0" enc="0" type="2" value="A    &quot;ReleaseKey&quot;: &quot;&amp;RELEASE_KEY#&quot;," xmlName="request_part_0_requestTab_data_3"/>
+<component con="0" enc="0" type="2" value="A               &amp;UC4RB_UIP_ROBOT#" xmlName="request_part_0_requestTab_data_6"/>
+<component con="0" enc="0" type="2" value="A    &quot;RobotIds&quot;: [" xmlName="request_part_0_requestTab_data_5"/>
+<component con="0" enc="0" type="2" value="A  &quot;startInfo&quot;: {" xmlName="request_part_0_requestTab_data_2"/>
+<component con="0" enc="0" type="2" value="A{" xmlName="request_part_0_requestTab_data_1"/>
 <component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
 <component con="0" enc="0" type="2" value="Bearer &amp;UC4RB_UIP_AUTH_TOKEN#" xmlName="header_0_1"/>
 <component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
 <component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
-<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
-<component con="0" enc="0" type="2" value="GET" xmlName="method"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
-<component con="0" enc="0" type="2" value="&amp;FILTER#" xmlName="query_0_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_FILTER#" xmlName="query_0_1"/>
-<component con="0" enc="0" type="2" value="&amp;ORDER_BY#" xmlName="query_1_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_ORD_BY#" xmlName="query_1_1"/>
-<component con="0" enc="0" type="2" value="&amp;SELECT#" xmlName="query_2_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SELECT#" xmlName="query_2_1"/>
-<component con="0" enc="0" type="2" value="&amp;TOP#" xmlName="query_3_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_TOP#" xmlName="query_3_1"/>
-<component con="0" enc="0" type="2" value="&amp;SKIP#" xmlName="query_4_0"/>
-<component con="0" enc="0" type="2" value="&amp;SKIP_VAL#" xmlName="query_4_1"/>
-<component con="0" enc="0" type="2" value="&amp;EXPAND#" xmlName="query_5_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
-<component con="0" enc="0" type="2" value="&amp;COUNT#" xmlName="query_6_0"/>
-<component con="0" enc="0" type="2" value="&amp;COUNT_VAL#" xmlName="query_6_1"/>
-<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
-<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
-<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
-<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
+<component con="0" enc="0" type="2" value="" xmlName="file"/>
 </cit>
 <cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
 </citcont>
@@ -176,53 +178,18 @@
 <PRE_SCRIPT mode="1" replacementmode="1" state="1">
 <PSCRI><![CDATA[:INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.PREPARE_RA_JOB
 :SET &CONN_ENDPOINT_URL# = &UC4RB_UIP_URL#
-:INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.SET_CONNECTION_AUTH_NONE
-
-! check if filter is given by user
-:IF &UC4RB_UIP_FILTER# <> ""
-:  SET &FILTER#="$filter"
-:ENDIF
-
-! check if property is given by user
-:IF &UC4RB_UIP_PROP# <> ""
-:  SET &SELECT# = "$select"
-:  SET &UC4RB_UIP_SELECT# = STR_CAT("Key,",&UC4RB_UIP_PROP#)
-:ENDIF
-
-! check if orderby given by user
-:IF &UC4RB_UIP_ORD_BY# <> ""
-:  SET &ORDER_BY#= "$orderby"
-:ENDIF
-
-! check if top is given by user
-:IF &UC4RB_UIP_TOP# <> ""
-:  SET &TOP# ="$top"
-:ENDIF
-
-! check if expand given by user
-:IF &UC4RB_UIP_EXPAND# <> ""
-:  SET &EXPAND#="$expand"
-:ENDIF
-
-!check value of Include Count
-:IF &UC4RB_UIP_COUNT# <> ""
-:  SET &COUNT_VAL# = "false"
-:  SET &COUNT# = "$count"
-:  IF &UC4RB_UIP_COUNT# <> "NO"
-:     SET &COUNT_VAL# = "true"
-:  ENDIF
-:ENDIF
-
-! check if expand given by user
-:  SET &SKIP# = ""
-:  SET &SKIP_VAL# = ""
-:IF &UC4RB_UIP_SKIP# <> 0
-:  SET &SKIP# = "$skip"
-:  SET &SKIP_VAL# = &UC4RB_UIP_SKIP#
-:ENDIF]]></PSCRI>
+:INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.SET_CONNECTION_AUTH_NONE]]></PSCRI>
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
-<MSCRI/>
+<MSCRI><![CDATA[:IF &RELEASE_KEY# = "[]"
+:  STOP MSG, 50, "No release details found with specified Release Name."
+:ENDIF
+
+
+:SET &ATTRIBUTE_VARA# = "PCK.AUTOMIC_UIPATH.PRV.VARA.ROBOT_STRATEGY"
+:SET &UC4RB_MAP_BY_ATTRIBUTE# = &UC4RB_UIP_STRATEGY#
+:INC PCK.AUTOMIC_UIPATH.PUB.JOBI.ITERATE_VARA
+:SET &UC4RB_UIP_STRATEGY#  = &ATTRIBUTE#]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
