@@ -826,12 +826,11 @@ none
 - Environment Name   : Provide the name of environment where you want to execute. This environment must exist.
                        E.g. Test_Env
 - Advanced Options   : Provide other release relate option that you want while creating the new release.
- E.g. "IsLatestVersion": false
-
+	                   E.g. "IsLatestVersion": false
+	
 = Behavior =
-* process name must be same as package name.
+* processkey must be same as package name.
 * The default name format of release is ProcessName_EnvironmentName.
-
 
 =Return Value=
 (none)
