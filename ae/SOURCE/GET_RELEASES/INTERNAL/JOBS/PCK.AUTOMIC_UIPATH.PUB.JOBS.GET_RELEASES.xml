@@ -50,55 +50,6 @@
 <CIT state="2">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_password"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_port"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_preemptive"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_realm"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_username"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientkey"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientsecret"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_token"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_uri"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_signature_type"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_token"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_token_secret"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_verifier"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_version_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_auth_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_host"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_password"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_port"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_realm"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_type"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
-<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="curl"/>
-<component con="0" enc="0" type="2" value="" xmlName="file"/>
-<component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
-<component con="0" enc="0" type="2" value="Bearer &amp;UC4RB_UIP_AUTH_TOKEN#" xmlName="header_0_1"/>
-<component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
-<component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
-<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
-<component con="0" enc="0" type="2" value="GET" xmlName="method"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
-<component con="0" enc="0" type="2" value="&amp;FILTER#" xmlName="query_0_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_FILTER#" xmlName="query_0_1"/>
-<component con="0" enc="0" type="2" value="&amp;ORDER_BY#" xmlName="query_1_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_ORD_BY#" xmlName="query_1_1"/>
-<component con="0" enc="0" type="2" value="&amp;SELECT#" xmlName="query_2_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SELECT#" xmlName="query_2_1"/>
 <component con="0" enc="0" type="2" value="&amp;TOP#" xmlName="query_3_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_TOP#" xmlName="query_3_1"/>
@@ -108,15 +59,74 @@
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
 <component con="0" enc="0" type="2" value="&amp;COUNT#" xmlName="query_6_0"/>
 <component con="0" enc="0" type="2" value="&amp;COUNT_VAL#" xmlName="query_6_1"/>
-<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
+<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
+<component con="0" enc="0" type="2" value="$.value[*].Key" xmlName="response_part_0_script_0_code_0"/>
+<component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIP_KEYS#" xmlName="response_part_0_script_0_resourceName"/>
+<component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
+<component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
+<component con="0" enc="0" type="2" value="$.value[*].Id" xmlName="response_part_0_script_1_code_0"/>
+<component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_1_queryType"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIP_IDS#" xmlName="response_part_0_script_1_resourceName"/>
+<component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_1_saveTo"/>
+<component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_1_useArray"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
+<component con="0" enc="0" type="2" value="" xmlName="file"/>
 <component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
-<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
+<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
+<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
+<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
 <component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
+<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
+<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
+<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_password"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_port"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_preemptive"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_realm"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_username"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientkey"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientsecret"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_token"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_uri"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_signature_type"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_token"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_token_secret"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_verifier"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_version_method"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_auth_method"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_host"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_password"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_port"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_realm"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_type"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
+<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
+<component con="0" enc="0" type="2" value="" xmlName="curl"/>
+<component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="GET" xmlName="method"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
+<component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
+<component con="0" enc="0" type="2" value="Bearer &amp;UC4RB_UIP_AUTH_TOKEN#" xmlName="header_0_1"/>
+<component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
+<component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
+<component con="0" enc="0" type="2" value="&amp;FILTER#" xmlName="query_0_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_FILTER#" xmlName="query_0_1"/>
+<component con="0" enc="0" type="2" value="&amp;ORDER_BY#" xmlName="query_1_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_ORD_BY#" xmlName="query_1_1"/>
+<component con="0" enc="0" type="2" value="&amp;SELECT#" xmlName="query_2_0"/>
 </cit>
 <cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
 </citcont>
@@ -231,7 +241,29 @@
 <LoginFsc/>
 </OUTPUTSCAN>
 <POST_SCRIPT mode="1" replacementmode="1" state="1">
-<OSCRI/>
+<OSCRI><![CDATA[:SET &STATUS# = GET_UC_OBJECT_STATUS(,,"RETCODE")
+:SET &RELEASE_KEYS# = ""
+:SET &RELEASE_IDS# = ""
+:SET &RELEASE_COUNT# = 0
+
+:DEFINE &IDS_SPLIT#,string,30
+:IF &STATUS# EQ 0
+
+:  IF &UC4RB_UIP_IDS# <> "[]"
+:    FILL &IDS_SPLIT#[] = STR_SPLIT(&UC4RB_UIP_IDS#,",")
+:    SET &RELEASE_COUNT# = LENGTH(&IDS_SPLIT#[],SIZE)
+:  ELSE
+:    MODIFY_STATE STATUS_TEXT="No Release details found."
+:    MODIFY_STATE RETCODE=50
+:  ENDIF
+:  SET &RELEASE_KEYS# = &UC4RB_UIP_KEYS#
+:  SET &RELEASE_IDS# = &UC4RB_UIP_IDS#
+:ENDIF
+
+
+:PUBLISH &RELEASE_IDS#,,WORKFLOW
+:PUBLISH &RELEASE_KEYS#,,WORKFLOW
+:PUBLISH &RELEASE_COUNT#,,WORKFLOW]]></OSCRI>
 </POST_SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC/>
