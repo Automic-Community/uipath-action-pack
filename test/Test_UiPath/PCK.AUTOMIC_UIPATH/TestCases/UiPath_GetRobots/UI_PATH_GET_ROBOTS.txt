@@ -1,0 +1,85 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        get_robots
+Test Template     Get Robots Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    Properties        Filter       OrderBy       Top         Skip       IncludeCount       Expand
+Get Robots with valid Filter values
+                      [Tags]    main_scenarios
+                      OK        ${Properties}     ${Filter}    ${OrderBy}    ${Top}      ${Skip}    ${IncludeCount}    ${Empty}
+
+Get Robots with Empty Filter values
+                      OK        ${Empty}          ${Empty}     ${Empty}      ${Empty}    ${Skip}    ${IncludeCount}    ${Empty}
+
+Get Robots with non-zero Skip value
+                      NOK       ${Properties}     ${Filter}    ${Empty}      ${Top}      ${Skip}    ${IncludeCount}    ${Empty}
+
+Get Robots with Invalid or non existing Properties values
+                      NOK       Invalid           ${Empty}     ${OrderBy}    ${Top}      ${Skip}    ${IncludeCount}    ${Empty}
+
+Get Robots with Invalid or non existing Filter values
+                      NOK       ${Properties}     Invalid      ${OrderBy}    ${Top}      ${Skip}    ${IncludeCount}    ${Empty}
+
+Get Robots with Invalid or non existing Order By value
+                      NOK       ${Properties}     ${Empty}     Invalid       ${Top}      ${Skip}    ${IncludeCount}    ${Empty}
+
+Get Robots with Invalid or non existing Top value
+                      NOK       ${Properties}     ${Empty}     ${OrderBy}    Invalid     ${Skip}    ${IncludeCount}    ${Empty}
+
+Get Robots with Invalid or non existing Skip value
+                      NOK       ${Properties}     ${Empty}     ${OrderBy}    ${Top}      Invalid    ${IncludeCount}    ${Empty}
+
+Get Robots with Invalid or non existing IncludeCount value
+                      NOK       ${Properties}     ${Empty}     ${OrderBy}    ${Top}      ${Skip}    Invalid            ${Empty}
+
+Get Robots with Invalid or non existing Expand value
+                      NOK       ${Properties}     ${Empty}     ${OrderBy}    ${Top}      ${Skip}    ${IncludeCount}    Invalid
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "Get Robots"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Get Robots Template
+    [Arguments]    ${OK_NOK}    ${Properties}    ${Filter}    ${OrderBy}    ${Top}    ${Skip}
+    ...    ${IncludeCount}    ${Expand}
+    [Documentation]    This test get robots from UiPath.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${Properties}: This value provide list of properties as comma separated to include in the response.
+    ...    -${Filter}: This value provide filters to be applied for the results, based on a Boolean condition.
+    ...    -${OrderBy}: This value specify the property to be used in ordering.
+    ...    -${Top}: This value specify if the result should include only the first N items.
+    ...    -${Skip}: This value specify if the result should skip the first N items.
+    ...    -${IncludeCount}: This value specify whether if count of the matching results should be included in the response.
+    ...    -${Expand}: This value provide related entities to be inlined.
+    Generate String
+    Init Action    ${_GET_ROBOTS_ACTION}
+    Connect To UiPath
+    Run Keyword If    '${Properties}' == 'Invalid'    Action Set    &UC4RB_UIP_PROP#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_PROP#    ${Properties}
+    Run Keyword If    '${Filter}' == 'Invalid'    Action Set    &UC4RB_UIP_FILTER#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_FILTER#    ${Filter}
+    Run Keyword If    '${OrderBy}' == 'Invalid'    Action Set    &UC4RB_UIP_ORD_BY#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_ORD_BY#    ${OrderBy}
+    Run Keyword If    '${Top}' == 'Invalid'    Action Set    &UC4RB_UIP_TOP#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_TOP#    ${Top}
+    Run Keyword If    '${Skip}' == 'Invalid'    Action Set    &UC4RB_UIP_SKIP#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_SKIP#    ${Skip}
+    Run Keyword If    '${IncludeCount}' == 'Invalid'    Action Set    &UC4RB_UIP_INC_CNT#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_INC_CNT#    ${IncludeCount}
+    Run Keyword If    '${Expand}' == 'Invalid'    Action Set    &UC4RB_UIP_EXPAND#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_EXPAND#    ${Expand}
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
+
+Teardown
+    Log    *******End Test "Get Robots"*******
