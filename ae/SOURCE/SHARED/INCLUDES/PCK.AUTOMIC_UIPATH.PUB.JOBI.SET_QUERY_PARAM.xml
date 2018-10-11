@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_UIPATH.PUB.JOBI.SET_QUERY_PARAM">
+<HEADER state="1">
+<Title>Set Query Parameters</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[!setting filter as querry parameter
+:SET &FILTER_QRY_PARA#=""
+:if &UC4RB_UIP_FILTER# <> ""
+:  SET &FILTER_QRY_PARA#="$filter"
+:ENDIF
+
+
+!setting orderby as querry parameter
+:SET &ORDERBY_QRY_PARA#=""
+:if &UC4RB_UIP_ORD_BY# <> ""
+:  SET  &ORDERBY_QRY_PARA#="$orderby"
+:ENDIF
+
+!setting top as querry parameter
+:SET &TOP_QRY_PARA#=""
+:if &UC4RB_UIP_TOP# <> ""
+:  SET &TOP_QRY_PARA#="$top"
+:ENDIF
+
+!setting skip as querry parameter
+:SET &SKIP_QRY_PARA#=""
+:if &UC4RB_UIP_SKIP# <> ""
+:  SET &SKIP_QRY_PARA#="$skip"
+:endif
+
+!setting count as querry parameter
+:SET &COUNT_QRY_PARA#="$count"
+:if &UC4RB_UIP_INC_CNT# = "YES"
+:  SET &UC4RB_UIP_INC_CNT#="true"
+:else
+:  SET &UC4RB_UIP_INC_CNT#="false"
+:endif
+
+!setting expand as querry parameter
+:SET &EXPAND_QRY_PARA#=""
+:if &UC4RB_UIP_EXPAND# <> ""
+:   SET  &EXPAND_QRY_PARA#="$expand"
+:ENDIF
+]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBI>
+</uc-export>
