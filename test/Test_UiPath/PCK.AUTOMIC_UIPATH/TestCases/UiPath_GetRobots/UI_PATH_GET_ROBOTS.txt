@@ -14,31 +14,34 @@ Resource          ../../Resources/actions.txt
 *** Test Cases ***    OK_NOK    Properties        Filter       OrderBy       Top         Skip       IncludeCount       Expand
 Get Robots with valid Filter values
                       [Tags]    main_scenarios
-                      OK        ${Properties}     ${Filter}    ${OrderBy}    ${Top}      ${Skip}    ${IncludeCount}    ${Empty}
+                      OK        ${Properties}     ${Filter}    ${OrderBy}    ${Top}      ${Skip}    ${IncludeCount}    ${Expand}
 
 Get Robots with Empty Filter values
                       OK        ${Empty}          ${Empty}     ${Empty}      ${Empty}    ${Skip}    ${IncludeCount}    ${Empty}
 
-Get Robots with non-zero Skip value
-                      NOK       ${Properties}     ${Filter}    ${Empty}      ${Top}      ${Skip}    ${IncludeCount}    ${Empty}
+Get Robots with non-zero Skip value without Order By
+                      OK        ${Properties}     ${Filter}    ${Empty}      ${Top}      ${Skip}    ${IncludeCount}    ${Expand}
+
+et Robots with non-zero Skip value with Order By
+                      OK        ${Properties}     ${Filter}    ${OrderBy}    ${Top}      ${Skip}    ${IncludeCount}    ${Expand}
 
 Get Robots with Invalid or non existing Properties values
-                      NOK       Invalid           ${Empty}     ${OrderBy}    ${Top}      ${Skip}    ${IncludeCount}    ${Empty}
+                      NOK       Invalid           ${Empty}     ${OrderBy}    ${Top}      ${Skip}    ${IncludeCount}    ${Expand}
 
 Get Robots with Invalid or non existing Filter values
-                      NOK       ${Properties}     Invalid      ${OrderBy}    ${Top}      ${Skip}    ${IncludeCount}    ${Empty}
+                      NOK       ${Properties}     Invalid      ${OrderBy}    ${Top}      ${Skip}    ${IncludeCount}    ${Expand}
 
 Get Robots with Invalid or non existing Order By value
-                      NOK       ${Properties}     ${Empty}     Invalid       ${Top}      ${Skip}    ${IncludeCount}    ${Empty}
+                      NOK       ${Properties}     ${Empty}     Invalid       ${Top}      ${Skip}    ${IncludeCount}    ${Expand}
 
 Get Robots with Invalid or non existing Top value
-                      NOK       ${Properties}     ${Empty}     ${OrderBy}    Invalid     ${Skip}    ${IncludeCount}    ${Empty}
+                      NOK       ${Properties}     ${Empty}     ${OrderBy}    Invalid     ${Skip}    ${IncludeCount}    ${Expand}
 
 Get Robots with Invalid or non existing Skip value
-                      NOK       ${Properties}     ${Empty}     ${OrderBy}    ${Top}      Invalid    ${IncludeCount}    ${Empty}
+                      NOK       ${Properties}     ${Empty}     ${OrderBy}    ${Top}      Invalid    ${IncludeCount}    ${Expand}
 
 Get Robots with Invalid or non existing IncludeCount value
-                      NOK       ${Properties}     ${Empty}     ${OrderBy}    ${Top}      ${Skip}    Invalid            ${Empty}
+                      NOK       ${Properties}     ${Empty}     ${OrderBy}    ${Top}      ${Skip}    Invalid            ${Expand}
 
 Get Robots with Invalid or non existing Expand value
                       NOK       ${Properties}     ${Empty}     ${OrderBy}    ${Top}      ${Skip}    ${IncludeCount}    Invalid
