@@ -63,16 +63,16 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">
-<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">NO</UC4RB_UIP_INC_CNTs.00>
-<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">0</UC4RB_UIP_SKIPs.00>
-<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
+<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
+<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -157,16 +157,16 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">
-<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">NO</UC4RB_UIP_INC_CNTs.00>
-<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">0</UC4RB_UIP_SKIPs.00>
-<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
+<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
+<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -328,16 +328,16 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">
-<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">NO</UC4RB_UIP_INC_CNTs.00>
-<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">0</UC4RB_UIP_SKIPs.00>
-<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
+<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
+<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -373,7 +373,7 @@
 </dyntree>
 </dynvalues>
 <CIT src="OCV">
-<citcont agentname="WEBSERVICEREST01" jobtype="WEBSERVICEREST" text="Web Service Rest">
+<citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
 <component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
@@ -420,20 +420,20 @@
 <component con="0" enc="0" type="2" value="GET" xmlName="method"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
-<component con="0" enc="0" type="2" value="&amp;FILTER#" xmlName="query_0_0"/>
+<component con="0" enc="0" type="2" value="&amp;FILTER_QRY_PARA#" xmlName="query_0_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_FILTER#" xmlName="query_0_1"/>
-<component con="0" enc="0" type="2" value="&amp;ORDER_BY#" xmlName="query_1_0"/>
+<component con="0" enc="0" type="2" value="&amp;ORDERBY_QRY_PARA#" xmlName="query_1_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_ORD_BY#" xmlName="query_1_1"/>
 <component con="0" enc="0" type="2" value="&amp;SELECT#" xmlName="query_2_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SELECT#" xmlName="query_2_1"/>
-<component con="0" enc="0" type="2" value="&amp;TOP#" xmlName="query_3_0"/>
+<component con="0" enc="0" type="2" value="&amp;TOP_QRY_PARA#" xmlName="query_3_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_TOP#" xmlName="query_3_1"/>
-<component con="0" enc="0" type="2" value="&amp;SKIP#" xmlName="query_4_0"/>
-<component con="0" enc="0" type="2" value="&amp;SKIP_VAL#" xmlName="query_4_1"/>
-<component con="0" enc="0" type="2" value="&amp;EXPAND#" xmlName="query_5_0"/>
+<component con="0" enc="0" type="2" value="&amp;SKIP_QRY_PARA#" xmlName="query_4_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SKIP#" xmlName="query_4_1"/>
+<component con="0" enc="0" type="2" value="&amp;EXPAND_QRY_PARA#" xmlName="query_5_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
-<component con="0" enc="0" type="2" value="&amp;COUNT#" xmlName="query_6_0"/>
-<component con="0" enc="0" type="2" value="&amp;COUNT_VAL#" xmlName="query_6_1"/>
+<component con="0" enc="0" type="2" value="&amp;COUNT_QRY_PARA#" xmlName="query_6_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_INC_CNT#" xmlName="query_6_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
 <component con="0" enc="0" type="2" value="/odata/Robots" xmlName="resource"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
@@ -486,16 +486,16 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">
-<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">NO</UC4RB_UIP_INC_CNTs.00>
-<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS">0</UC4RB_UIP_SKIPs.00>
-<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS"/>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
+<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
+<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -593,9 +593,9 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOTS" prptmode="1">
+<node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" prptmode="1">
 <UC4RB_UIP_PROPs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_FILTERs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_ORD_BYs.00 altview="0" haslist="0"/>
