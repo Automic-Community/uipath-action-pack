@@ -50,6 +50,7 @@
 <CIT state="2">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
+<component con="0" enc="0" type="2" value="&amp;SKIP#" xmlName="query_4_0"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
@@ -102,7 +103,6 @@
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SELECT#" xmlName="query_2_1"/>
 <component con="0" enc="0" type="2" value="&amp;TOP#" xmlName="query_3_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_TOP#" xmlName="query_3_1"/>
-<component con="0" enc="0" type="2" value="&amp;SKIP#" xmlName="query_4_0"/>
 <component con="0" enc="0" type="2" value="&amp;SKIP_VAL#" xmlName="query_4_1"/>
 <component con="0" enc="0" type="2" value="&amp;EXPAND#" xmlName="query_5_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
