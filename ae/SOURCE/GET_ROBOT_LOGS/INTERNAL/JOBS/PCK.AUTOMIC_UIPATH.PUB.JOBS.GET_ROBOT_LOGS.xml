@@ -50,22 +50,6 @@
 <CIT state="2">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
-<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
-<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
-<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
-<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
-<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_password"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_port"/>
@@ -117,6 +101,22 @@
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
 <component con="0" enc="0" type="2" value="" xmlName="file"/>
+<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
+<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
+<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
+<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
+<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
+<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
+<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
+<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
 </cit>
 <cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
 </citcont>
@@ -181,50 +181,14 @@
 ]]></PSCRI>
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[!setting filter as querry parameter
-:SET &FILTER_QRY_PARA#=""
-:if &UC4RB_UIP_FILTER# <> ""
-:  SET &FILTER_QRY_PARA#="$filter"
-:ENDIF
-
+<MSCRI><![CDATA[
 !setting properties as querry parameter
 :SET &PROPERTIES_QRY_PARA#=""
 :if &UC4RB_UIP_PROP# <> ""
 :  SET   &PROPERTIES_QRY_PARA#="$select"
 :ENDIF
 
-!setting orderby as querry parameter
-:SET &ORDERBY_QRY_PARA#=""
-:if &UC4RB_UIP_ORD_BY# <> ""
-:  SET  &ORDERBY_QRY_PARA#="$orderby"
-:ENDIF
-
-!setting top as querry parameter
-:SET &TOP_QRY_PARA#=""
-:if &UC4RB_UIP_TOP# <> ""
-:  SET &TOP_QRY_PARA#="$top"
-:ENDIF
-
-!setting skip as querry parameter
-:SET &SKIP_QRY_PARA#=""
-:if &UC4RB_UIP_SKIP# <> ""
-:  SET &SKIP_QRY_PARA#="$skip"
-:endif
-
-!setting count as querry parameter
-:SET &COUNT_QRY_PARA#="$count"
-:if &UC4RB_UIP_INC_CNT# = "YES"
-:  SET &UC4RB_UIP_INC_CNT#="true"
-:else
-:  SET &UC4RB_UIP_INC_CNT#="false"
-:endif
-
-!setting expand as querry parameter
-:SET &EXPAND_QRY_PARA#=""
-:if &UC4RB_UIP_EXPAND# <> ""
-:   SET  &EXPAND_QRY_PARA#="$expand"
-:ENDIF
-]]></MSCRI>
+:INC PCK.AUTOMIC_UIPATH.PUB.JOBI.SET_QUERY_PARAM]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
