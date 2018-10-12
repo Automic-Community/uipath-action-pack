@@ -7,32 +7,28 @@
 <OH_SubType/>
 </HEADER>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[!setting filter as querry parameter
+<MSCRI><![CDATA[!setting filter as query parameter
 :SET &FILTER_QRY_PARA#=""
 :if &UC4RB_UIP_FILTER# <> ""
 :  SET &FILTER_QRY_PARA#="$filter"
 :ENDIF
 
-
-!setting orderby as querry parameter
+!setting orderby as query parameter
 :SET &ORDERBY_QRY_PARA#=""
 :if &UC4RB_UIP_ORD_BY# <> ""
 :  SET  &ORDERBY_QRY_PARA#="$orderby"
 :ENDIF
 
-!setting top as querry parameter
+!setting top as query parameter
 :SET &TOP_QRY_PARA#=""
 :if &UC4RB_UIP_TOP# <> ""
 :  SET &TOP_QRY_PARA#="$top"
 :ENDIF
 
-!setting skip as querry parameter
-:SET &SKIP_QRY_PARA#=""
-:if &UC4RB_UIP_SKIP# <> ""
-:  SET &SKIP_QRY_PARA#="$skip"
-:endif
+!setting skip as query parameter
+:SET &SKIP_QRY_PARA#="$skip"
 
-!setting count as querry parameter
+!setting count as query parameter
 :SET &COUNT_QRY_PARA#="$count"
 :if &UC4RB_UIP_INC_CNT# = "YES"
 :  SET &UC4RB_UIP_INC_CNT#="true"
@@ -40,10 +36,10 @@
 :  SET &UC4RB_UIP_INC_CNT#="false"
 :endif
 
-!setting expand as querry parameter
+!setting expand as query parameter
 :SET &EXPAND_QRY_PARA#=""
 :if &UC4RB_UIP_EXPAND# <> ""
-:   SET  &EXPAND_QRY_PARA#="$expand"
+:   SET &EXPAND_QRY_PARA#="$expand"
 :ENDIF
 ]]></MSCRI>
 </SCRIPT>
