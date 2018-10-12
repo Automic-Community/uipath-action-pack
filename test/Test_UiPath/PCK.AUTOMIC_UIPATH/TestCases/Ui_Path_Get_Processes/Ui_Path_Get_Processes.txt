@@ -1,7 +1,7 @@
 *** Settings ***
 Suite Setup       Startup
 Suite Teardown    Teardown
-Test Template     Get Robot Logs Template
+Test Template     Get Processes Template
 Library           com.automic.robot.itpa.ItpaLibrary
 Library           String
 Library           DateTime
@@ -11,47 +11,47 @@ Resource          ../../Resources/variables.txt
 Resource          ../../Resources/actions.txt
 
 *** Test Cases ***    OK_NOK    Properties        Filter       OrderBy       Top         Skip        Include_Count    Expand
-Get Robot Logs with all valid data
+Get Processes with all valid data
                       [Tags]    main_scenarios
                       OK        ${Properties}     ${Filter}    ${OrderBy}    ${Top}      ${Skip}     YES              ${Expand}
 
-Get Robot Logs with valid Multiple Property Name
+Get Processes with valid Multiple Property Name
                       OK        ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     NO               ${EMPTY}
 
-Get Robot Logs with Invalid or non existing Property
+Get Processes with Invalid or non existing Property
                       NOK       Invalid           ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     NO               ${EMPTY}
 
-Get Robot Logs with Invalid or non existing Filter
+Get Processes with Invalid or non existing Filter
                       NOK       ${Properties}     Invalid      ${OrderBy}    ${Top}      ${Skip}     NO               ${EMPTY}
 
-Get Robot Logs with all fields blank
+Get Processes with all fields blank
                       OK        ${EMPTY}          ${EMPTY}     ${EMPTY}      ${EMPTY}    ${EMPTY}    NO               ${EMPTY}
 
-Get Robot Logs with Invalid OrderBy
+Get Processes with Invalid OrderBy
                       NOK       ${Properties}     ${EMPTY}     Invalid       ${Top}      ${Skip}     NO               ${EMPTY}
 
-Get Robot Logs with Invalid Top
+Get Processes with Invalid Top
                       NOK       ${Properties}     ${EMPTY}     ${OrderBy}    Invalid     ${EMPTY}    YES              ${EMPTY}
 
-Get Robot Logs with both Skip & Top to verify that input for skip is ignored.
+Get Processes with both Skip & Top
                       OK        ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     YES              ${EMPTY}
 
-Get Robot Logs with invalid value in skip field
+Get Processes with invalid value in skip field
                       NOK       ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      Invalid     NO               ${EMPTY}
 
-Get Robot Logs with invalid value in expand field
+Get Processes with invalid value in expand field
                       NOK       ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     NO               Invalid
 
 *** Keywords ***
 Startup
-    Log    *******Start Test "Get_Robot_Logs "*******
+    Log    *******Start Test "Get_Processes "*******
     Log    *******Connect to AE*******
     Connect AE
 
-Get Robot Logs Template
+Get Processes Template
     [Arguments]    ${OK_NOK}    ${Properties}    ${Filter}    ${OrderBy}    ${Top}    ${Skip}
     ...    ${Include_Count}    ${Expand}
-    [Documentation]    This test is to test the feature of Get_Robot_Logs .
+    [Documentation]    This test is to test the feature of Get Processes .
     ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
     ...    -${Properties}: This field specifies the list of properties as comma separated to include in the response. E.g. ProcessName,TimeStamp.
     ...    -${Filter}: This field specifies the filters to be applied for the results, based on a Boolean condition. E.g. ProcessName eq 'SalesProcess.
@@ -61,7 +61,7 @@ Get Robot Logs Template
     ...    -${Skip}: This field specifies if the result should skip the first N items.
     ...    -${Expand}: This field specifies related entities to be inlined..
     Generate String
-    Init Action    ${_GET_ROBOT_LOGS_ACTION}
+    Init Action    ${_GET_PROCESSES_ACTION}
     Connect To UiPath
     Run Keyword If    '${Properties}' == 'Invalid'    Action Set    &UC4RB_UIP_PROP#    ${Generated_Name}_${Time}    ELSE    Action Set
     ...    &UC4RB_UIP_PROP#    ${Properties}
@@ -80,4 +80,4 @@ Get Robot Logs Template
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
 
 Teardown
-    Log    *******End Test "Get_Robot_Logs "*******
+    Log    *******End Test "Get_Processes"*******
