@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBS_CIT AttrType="CIT" name="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_RELEASES">
+<JOBS_CIT AttrType="CIT" name="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_ENVIRONMENTS">
 <XHEADER state="1">
-<Title>Get Releases</Title>
+<Title>Get Environments</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -91,7 +91,7 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
 <component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
 <component con="0" enc="0" type="2" value="" xmlName="curl"/>
-<component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="/odata/Environments" xmlName="resource"/>
 <component con="0" enc="0" type="2" value="GET" xmlName="method"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
 <component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
@@ -106,25 +106,20 @@
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_PROP#" xmlName="query_2_1"/>
 <component con="0" enc="0" type="2" value="&amp;TOP_QRY_PARA#" xmlName="query_3_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_TOP#" xmlName="query_3_1"/>
-<component con="0" enc="0" type="2" value="&amp;EXPAND_QRY_PARA#" xmlName="query_4_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_4_1"/>
-<component con="0" enc="0" type="2" value="&amp;COUNT_QRY_PARA#" xmlName="query_5_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_INC_CNT#" xmlName="query_5_1"/>
-<component con="0" enc="0" type="2" value="&amp;SKIP_QRY_PARA#" xmlName="query_6_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SKIP#" xmlName="query_6_1"/>
+<component con="0" enc="0" type="2" value="&amp;SKIP_QRY_PARA#" xmlName="query_4_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SKIP#" xmlName="query_4_1"/>
+<component con="0" enc="0" type="2" value="&amp;EXPAND_QRY_PARA#" xmlName="query_5_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
+<component con="0" enc="0" type="2" value="&amp;COUNT_QRY_PARA#" xmlName="query_6_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_INC_CNT#" xmlName="query_6_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="$.value[*].Key" xmlName="response_part_0_script_0_code_0"/>
+<component con="0" enc="0" type="2" value="$.value[*].Id" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
-<component con="0" enc="0" type="2" value="UC4RB_UIP_KEYS#" xmlName="response_part_0_script_0_resourceName"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIP_IDS#" xmlName="response_part_0_script_0_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
-<component con="0" enc="0" type="2" value="$.value[*].Id" xmlName="response_part_0_script_1_code_0"/>
-<component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_1_queryType"/>
-<component con="0" enc="0" type="2" value="UC4RB_UIP_IDS#" xmlName="response_part_0_script_1_resourceName"/>
-<component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_1_saveTo"/>
-<component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_1_useArray"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
 <component con="0" enc="0" type="2" value="" xmlName="file"/>
 </cit>
@@ -171,7 +166,6 @@
 <VALUE state="1">
 <Values>
 <row ERTUsage="0" Name="&amp;UC4RB_UIP_IDS#" Value=""/>
-<row ERTUsage="0" Name="&amp;UC4RB_UIP_KEYS#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -191,57 +185,12 @@
 :SET &CONN_ENDPOINT_URL# = &UC4RB_UIP_URL#
 :INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.SET_CONNECTION_AUTH_NONE
 
-! check if property is given by user
+:INC PCK.AUTOMIC_UIPATH.PUB.JOBI.SET_QUERY_PARAM
+
 :IF &UC4RB_UIP_PROP# <> ""
 :  SET &PROP_QRY_PARA# = "$select"
-:  SET &UC4RB_UIP_PROP# = STR_CAT("Key,Id,",&UC4RB_UIP_PROP#)
+:  SET &UC4RB_UIP_PROP# = STR_CAT("Id,",&UC4RB_UIP_PROP#)
 :ENDIF
-
-!setting filter as querry parameter
-:SET &FILTER_QRY_PARA#=""
-:if &UC4RB_UIP_FILTER# <> ""
-:  SET &FILTER_QRY_PARA#="$filter"
-:ENDIF
-
-
-!setting top as querry parameter
-:SET &TOP_QRY_PARA#=""
-:if &UC4RB_UIP_TOP# <> ""
-:  SET &TOP_QRY_PARA#="$top"
-:ENDIF
-
-!setting skip as querry parameter
-:SET &SKIP_QRY_PARA#=""
-:if &UC4RB_UIP_SKIP# <> 0
-:  if &UC4RB_UIP_ORD_BY# = ""
-:   SET &UC4RB_UIP_ORD_BY#="Id"
-:  endif
-:  SET &SKIP_QRY_PARA#="$skip"
-:ELSE
-:  SET &UC4RB_UIP_SKIP#=""
-:endif
-
-!setting orderby as querry parameter
-:SET &ORDERBY_QRY_PARA#=""
-:if &UC4RB_UIP_ORD_BY# <> ""
-:  SET  &ORDERBY_QRY_PARA#="$orderby"
-:ENDIF
-
-!setting count as querry parameter
-:SET &COUNT_QRY_PARA#="$count"
-:if &UC4RB_UIP_INC_CNT# = "YES"
-:  SET &UC4RB_UIP_INC_CNT#="true"
-:else
-:  SET &UC4RB_UIP_INC_CNT#="false"
-:endif
-
-!setting expand as querry parameter
-:SET &EXPAND_QRY_PARA#=""
-:if &UC4RB_UIP_EXPAND# <> ""
-:   SET  &EXPAND_QRY_PARA#="$expand"
-:ENDIF
-
-
 ]]></PSCRI>
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
@@ -255,28 +204,23 @@
 </OUTPUTSCAN>
 <POST_SCRIPT mode="1" replacementmode="1" state="1">
 <OSCRI><![CDATA[:SET &STATUS# = GET_UC_OBJECT_STATUS(,,"RETCODE")
-:SET &UC4RB_UIPATH_RELEASES_KEYS# = ""
-:SET &UC4RB_UIPATH_RELEASES_IDS# = ""
-:SET &UC4RB_UIPATH_RELEASES_COUNT# = 0
+:SET &UC4RB_UIP_ENV_ID_LIST# = ""
+:SET &UC4RB_UIP_ENV_ID_COUNT# = 0
 
 :DEFINE &IDS_SPLIT#,string,30
 :IF &STATUS# EQ 0
-
 :  IF &UC4RB_UIP_IDS# <> "[]"
 :    FILL &IDS_SPLIT#[] = STR_SPLIT(&UC4RB_UIP_IDS#,",")
-:    SET &UC4RB_UIPATH_RELEASES_COUNT# = LENGTH(&IDS_SPLIT#[],SIZE)
+:    SET &UC4RB_UIP_ENV_ID_COUNT# = LENGTH(&IDS_SPLIT#[],SIZE)
 :  ELSE
-:    MODIFY_STATE STATUS_TEXT="No Release details found."
+:    MODIFY_STATE STATUS_TEXT="No Environments details found."
 :    MODIFY_STATE RETCODE=50
 :  ENDIF
-:  SET &UC4RB_UIPATH_RELEASES_KEYS# = &UC4RB_UIP_KEYS#
-:  SET &UC4RB_UIPATH_RELEASES_IDS# = &UC4RB_UIP_IDS#
+
+:  SET &UC4RB_UIP_ENV_ID_LIST# = &UC4RB_UIP_IDS#
 :ENDIF
-
-
-:PUBLISH &UC4RB_UIPATH_RELEASES_IDS#,,WORKFLOW
-:PUBLISH &UC4RB_UIPATH_RELEASES_KEYS#,,WORKFLOW
-:PUBLISH &UC4RB_UIPATH_RELEASES_COUNT#,,WORKFLOW]]></OSCRI>
+:PUBLISH &UC4RB_UIP_ENV_ID_LIST#,,WORKFLOW
+:PUBLISH &UC4RB_UIP_ENV_ID_COUNT#,,WORKFLOW]]></OSCRI>
 </POST_SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC/>

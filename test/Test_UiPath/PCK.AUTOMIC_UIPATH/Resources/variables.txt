@@ -4,7 +4,7 @@ Resource          ../../../Env/default.txt
 *** Variables ***
 #---- Promptset Fields --------------------------------------------------------------------------------------
 ${UiPath_URL}     https://platform.uipath.com
-${TenantName}     Add Tenant Details
+${TenantName}     Add Details here
 ${Username}       Add Username
 ${Password}       Add Password
 #-------------------Start Job-------------------------------------
@@ -14,27 +14,26 @@ ${Strategy_2}     Specific
 ${Strategy_3}     RobotCount
 ${Robot_Id}       56346
 ${No_of_Robot}    0
-${No_of_Robot1}   1
-#---- Get Robot Logs --------------------------------------------------------------------------------------
-${Properties}     RawMessage
-${Filter}         ProcessName eq RawMessage
-${OrderBy}        TimeStamp desc
+${No_of_Robot1}    1
+#---- Get Robot Logs / Get Environments--------------------------------------------------------------------------------------
+${Properties}     Id
+${Filter}         Id eq 31922
+${OrderBy}        Id desc
 ${Top}            7
-${Skip}           3
+${Skip}           0
 ${Expand}         *
 #-------------------Upload Package-------------------------------------
 ${File_Path}      D:\\ClosedXML.0.87.1.nupkg
-#------------------Get Releases---------------------------------
-${Properties}     ProcessKey,Id,Name
-${Filter}         Id eq 40735
-${OrderBy}        Id desc
-${Top}            5
-${Skip}           0
-${IncludeCount}    YES
-${Expand}         Environment
-${RA_Agent}       WEBSERVICEREST01
 #------------------Create New Release---------------------------------
 ${Name}           PackageName
 ${ProcessKey}     Swati_006
 ${ProcessVersion}    1.2.06
 ${Env_Name}       test
+#------------------Get Robot Logs,Get Releases,Get Robots---------------------------------
+${Properties}     MachineName,MachineId,Username,RobotEnvironments
+${Filter}         MachineId eq 42547
+${OrderBy}        Id desc
+${Top}            5
+${Skip}           0
+${IncludeCount}    YES
+${Expand}         Environments
