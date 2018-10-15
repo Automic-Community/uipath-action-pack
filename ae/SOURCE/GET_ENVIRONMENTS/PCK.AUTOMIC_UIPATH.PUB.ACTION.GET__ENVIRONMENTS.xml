@@ -657,7 +657,51 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[= Action name =
+PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ENVIRONMENTS
+
+= General description =
+This action fetches all the Environments Details defined in UiPath Orchestrator.
+
+= Failure Conditions =
+(none)
+
+= Inputs =
+- Properties: Provide the list of properties as comma separated to include in the response. E.g. Name,Id,Description
+- Filter: Provide filters to be applied for the results, based on a Boolean condition. E.g. Name eq 'SalesProcess'
+- Order By: Specify the property to be used for ordering. E.g. Id desc
+- Top: Specify if the result should include only the first N items. E.g. 5
+- Skip: Specify if the result should skip the first N items. E.g. 2
+- Include Count: Specify whether if the count of the matching results should be included in the response. E.g. No
+- Expand: Provide related entities to be inlined. E.g. Robots
+
+= Behavior =
+* Input for the Top field should be numeric and greater than 0.
+* The action consider the environment count up to 30 only for UC4RB_UIP_ENV_ID_COUNT variable, more than 30 records will be ignored.
+
+= Return Value =
+UC4RB_UIP_ENV_ID_LIST: List of Environments IDs
+UC4RB_UIP_ENV_ID_COUNT: Count of Environments
+
+= Outputs =
+* Return code is 0 in case of success.
+* Return code is non-zero in case of failure.
+
+= Rollback =
+(none)
+
+= Logging =
+AE logs will be displayed in the AE report.
+
+= Example =
+- Properties: Id, Name,Description
+- Filter: Type eq 'Dev'
+- Order By: Name desc
+- Top: 2
+- Skip: 1
+- Include Count: No
+- Expand:Robots
+]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>

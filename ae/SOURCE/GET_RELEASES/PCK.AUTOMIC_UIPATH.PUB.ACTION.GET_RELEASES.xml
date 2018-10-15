@@ -686,9 +686,9 @@ This action fetches all the Releases(Processes) defined in UiPath Orchestrator.
 * The action consider the release count up to 30 only for RELEASE_COUNT variable, more than 30 records will be ignored.
 
 = Return Value =
-RELEASE_KEYS: List of Release Keys
-RELEASE_IDS: List of Release IDs
-RELEASE_COUNT: Count of Releases
+UC4RB_UIPATH_RELEASES_KEYS: List of Release Keys
+UC4RB_UIPATH_RELEASES_IDS: List of Release IDs
+UC4RB_UIPATH_RELEASES_COUNT: Count of Releases
 
 = Outputs =
 * Return code is 0 in case of success.
