@@ -29,3 +29,11 @@ ${Name}           PackageName
 ${ProcessKey}     Swati_006
 ${ProcessVersion}    1.2.06
 ${Env_Name}       test
+#------------------Get Robot Logs,Get Releases,Get Robots---------------------------------
+${Properties}     MachineName,MachineId,Username,RobotEnvironments
+${Filter}         MachineId eq 42547
+${OrderBy}        Id desc
+${Top}            5
+${Skip}           0
+${IncludeCount}    YES
+${Expand}         Environments
