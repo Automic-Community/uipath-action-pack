@@ -1,0 +1,84 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Test Template     Get Environments Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    Properties        Filter       OrderBy       Top         Skip        Include_Count    Expand
+Get Environments with all valid data
+                      [Tags]    main_scenarios
+                      OK        ${Properties}     ${Filter}    ${OrderBy}    ${Top}      ${Skip}     YES              ${Expand}
+
+Get Environments with valid Multiple Property Name
+                      OK        ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     NO               ${EMPTY}
+
+Get Environments with Invalid or non existing Property
+                      NOK       Invalid           ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     NO               ${EMPTY}
+
+Get Environments with Invalid or non existing Filter
+                      NOK       ${Properties}     Invalid      ${OrderBy}    ${Top}      ${Skip}     NO               ${EMPTY}
+
+Get Environments with all fields blank
+                      OK        ${EMPTY}          ${EMPTY}     ${EMPTY}      ${EMPTY}    ${EMPTY}    NO               ${EMPTY}
+
+Get Environments with Invalid OrderBy
+                      NOK       ${Properties}     ${EMPTY}     Invalid       ${Top}      ${Skip}     NO               ${EMPTY}
+
+Get Environments with Invalid Top
+                      NOK       ${Properties}     ${EMPTY}     ${OrderBy}    Invalid     ${EMPTY}    YES              ${EMPTY}
+
+Get Environments with both Skip & Top to verify that input for skip is ignored.
+                      OK        ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     YES              ${EMPTY}
+
+Get Environments with invalid value in skip field
+                      NOK       ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      Invalid     NO               ${EMPTY}
+
+Get Environments with invalid value in expand field
+                      NOK       ${Properties}     ${EMPTY}     ${OrderBy}    ${Top}      ${Skip}     NO               Invalid
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "Get_Environments "*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Get Environments Template
+    [Arguments]    ${OK_NOK}    ${Properties}    ${Filter}    ${OrderBy}    ${Top}    ${Skip}
+    ...    ${Include_Count}    ${Expand}
+    [Documentation]    This test is to test the feature of Get_Environments .
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${Properties}: This field specifies the list of properties as comma separated to include in the response. E.g. ProcessName,TimeStamp.
+    ...    -${Filter}: This field specifies the filters to be applied for the results, based on a Boolean condition. E.g. ProcessName eq 'SalesProcess.
+    ...    -${OrderBy}: This field specifies specify the property to be used in ordering. E.g. Id desc
+    ...    -${Top}: This field specifies if the result should include only the first N items.
+    ...    -${Include_Count}: This field specifies the count user wants to includes.
+    ...    -${Skip}: This field specifies if the result should skip the first N items.
+    ...    -${Expand}: This field specifies related entities to be inlined..
+    Generate String
+    Init Action    ${_GET_ENVIRONMENTS_ACTION}
+    Connect To UiPath
+    Run Keyword If    '${Properties}' == 'Invalid'    Action Set    &UC4RB_UIP_PROP#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_PROP#    ${Properties}
+    Run Keyword If    '${Filter}' == 'Invalid'    Action Set    &UC4RB_UIP_FILTER#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_FILTER#    ${Filter}
+    Run Keyword If    '${OrderBy}' == 'Invalid'    Action Set    &UC4RB_UIP_ORD_BY#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_ORD_BY#    ${OrderBy}
+    Run Keyword If    '${Top}' == 'Invalid'    Action Set    &UC4RB_UIP_TOP#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_TOP#    ${Top}
+    Run Keyword If    '${Skip}' == 'Invalid'    Action Set    &UC4RB_UIP_SKIP#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_SKIP#    ${Skip}
+    Run Keyword If    '${Include_Count}'    Action Set    &UC4RB_UIP_INC_CNT#    ${Include_Count}
+    Run Keyword If    '${Expand}' == 'Invalid'    Action Set    &UC4RB_UIP_EXPAND#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_EXPAND#    ${Expand}
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
+    Run Keyword If    '${OK_NOK}' == 'OK'    Action Object Variable Should Be Found    &UC4RB_UIP_ENV_ID_LIST#    ELSE    Action Object Variable Should Not Be Found    &UC4RB_UIP_ENV_ID_LIST#
+
+Teardown
+    Log    *******End Test "Get_Environments "*******

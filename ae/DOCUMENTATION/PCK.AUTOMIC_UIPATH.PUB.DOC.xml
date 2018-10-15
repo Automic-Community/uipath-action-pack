@@ -27,8 +27,8 @@ v2018.2
 =Common Inputs=
 - REST API URL*: Provide the URL of the UiPath REST API. E.g. https://api.asm.ca.com/1.6
 - Tenant Name*: Provide the tenant name for the REST API authentication. E.g. tenant1
-- Username: Provide the username for the REST API authentication. E.g. ca_integrations@abc.com
-- Password: Provide the password for the REST API authentication.
+- Username*: Provide the username for the REST API authentication. E.g. ca_integrations@abc.com
+- Password*: Provide the password for the REST API authentication.
 
 =Actions=
 Following actions are supported
@@ -47,6 +47,9 @@ Following actions are supported
 
 * Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.CREATE_NEW_RELEASE
 * Action Description: This action will create a new release on UiPath Orchestrator.
+
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ENVIRONMENTS
+* Action Description: This action fetches all the Environments defined in UiPath Orchestrator.
 
 * Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOTS
 * Action Description: This action will fetch Robot(s) available on UiPath Orchestrator.]]></DOC>

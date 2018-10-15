@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBP AllowExternal="1" name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_RELEASES">
+<JOBP AllowExternal="1" name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET__ENVIRONMENTS">
 <XHEADER state="1">
-<Title>Get Releases</Title>
+<Title>Get  Environments</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -13,7 +13,7 @@
 </SYNCREF>
 <ATTR_JOBP state="1">
 <Queue>CLIENT_QUEUE</Queue>
-<ChildQueue/>
+<ChildQueue>*OWN</ChildQueue>
 <StartType/>
 <ExtRepDef>1</ExtRepDef>
 <ExtRepAll>0</ExtRepAll>
@@ -286,7 +286,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="GET_RELEASES" BranchType="0" Col="3" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_RELEASES" ParentAlias="" ParentObject="" Row="1" Text2="">
+<task Alias="GET_ENVIRONMENTS" BranchType="0" Col="3" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_ENVIRONMENTS" ParentAlias="" ParentObject="" Row="1" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -305,7 +305,6 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIP_KEYS#" Value=""/>
 <row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIP_IDS#" Value=""/>
 </Values>
 <Mode>0</Mode>
@@ -419,7 +418,7 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
 <component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
 <component con="0" enc="0" type="2" value="" xmlName="curl"/>
-<component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="/odata/Environments" xmlName="resource"/>
 <component con="0" enc="0" type="2" value="GET" xmlName="method"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
 <component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
@@ -434,25 +433,20 @@
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_PROP#" xmlName="query_2_1"/>
 <component con="0" enc="0" type="2" value="&amp;TOP_QRY_PARA#" xmlName="query_3_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_TOP#" xmlName="query_3_1"/>
-<component con="0" enc="0" type="2" value="&amp;EXPAND_QRY_PARA#" xmlName="query_4_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_4_1"/>
-<component con="0" enc="0" type="2" value="&amp;COUNT_QRY_PARA#" xmlName="query_5_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_INC_CNT#" xmlName="query_5_1"/>
-<component con="0" enc="0" type="2" value="&amp;SKIP_QRY_PARA#" xmlName="query_6_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SKIP#" xmlName="query_6_1"/>
+<component con="0" enc="0" type="2" value="&amp;SKIP_QRY_PARA#" xmlName="query_4_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SKIP#" xmlName="query_4_1"/>
+<component con="0" enc="0" type="2" value="&amp;EXPAND_QRY_PARA#" xmlName="query_5_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
+<component con="0" enc="0" type="2" value="&amp;COUNT_QRY_PARA#" xmlName="query_6_0"/>
+<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_INC_CNT#" xmlName="query_6_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="$.value[*].Key" xmlName="response_part_0_script_0_code_0"/>
+<component con="0" enc="0" type="2" value="$.value[*].Id" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
-<component con="0" enc="0" type="2" value="UC4RB_UIP_KEYS#" xmlName="response_part_0_script_0_resourceName"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIP_IDS#" xmlName="response_part_0_script_0_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
-<component con="0" enc="0" type="2" value="$.value[*].Id" xmlName="response_part_0_script_1_code_0"/>
-<component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_1_queryType"/>
-<component con="0" enc="0" type="2" value="UC4RB_UIP_IDS#" xmlName="response_part_0_script_1_resourceName"/>
-<component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_1_saveTo"/>
-<component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_1_useArray"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
 <component con="0" enc="0" type="2" value="" xmlName="file"/>
 </cit>
@@ -664,31 +658,30 @@
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[= Action name =
-PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_RELEASES
+PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ENVIRONMENTS
 
 = General description =
-This action fetches all the Releases(Processes) defined in UiPath Orchestrator.
+This action fetches all the Environments Details defined in UiPath Orchestrator.
 
 = Failure Conditions =
 (none)
 
 = Inputs =
-- Properties: Provide the list of properties as comma separated to include in the response. E.g. ProcessName,TimeStamp
-- Filter: Provide filters to be applied for the results, based on a Boolean condition. E.g. ProcessName eq 'SalesProcess'
-- Order By: Specify the property to be used for ordering. E.g. TimeStamp desc
+- Properties: Provide the list of properties as comma separated to include in the response. E.g. Name,Id,Description
+- Filter: Provide filters to be applied for the results, based on a Boolean condition. E.g. Name eq 'SalesProcess'
+- Order By: Specify the property to be used for ordering. E.g. Id desc
 - Top: Specify if the result should include only the first N items. E.g. 5
 - Skip: Specify if the result should skip the first N items. E.g. 2
 - Include Count: Specify whether if the count of the matching results should be included in the response. E.g. No
-- Expand: Provide related entities to be inlined. E.g. Environment
+- Expand: Provide related entities to be inlined. E.g. Robots
 
 = Behavior =
 * Input for the Top field should be numeric and greater than 0.
-* The action consider the release count up to 30 only for RELEASE_COUNT variable, more than 30 records will be ignored.
+* The action consider the environment count up to 30 only for UC4RB_UIP_ENV_ID_COUNT variable, more than 30 records will be ignored.
 
 = Return Value =
-UC4RB_UIPATH_RELEASES_KEYS: List of Release Keys
-UC4RB_UIPATH_RELEASES_IDS: List of Release IDs
-UC4RB_UIPATH_RELEASES_COUNT: Count of Releases
+UC4RB_UIP_ENV_ID_LIST: List of Environments IDs
+UC4RB_UIP_ENV_ID_COUNT: Count of Environments
 
 = Outputs =
 * Return code is 0 in case of success.
@@ -701,13 +694,13 @@ UC4RB_UIPATH_RELEASES_COUNT: Count of Releases
 AE logs will be displayed in the AE report.
 
 = Example =
-- Properties: EnvironmentId, Key, Name
-- Filter: ProcessKey eq 'AWI'
+- Properties: Id, Name,Description
+- Filter: Type eq 'Dev'
 - Order By: Name desc
 - Top: 2
 - Skip: 1
 - Include Count: No
-- Expand: Environment
+- Expand:Robots
 ]]></DOC>
 </DOCU_Docu>
 </JOBP>
