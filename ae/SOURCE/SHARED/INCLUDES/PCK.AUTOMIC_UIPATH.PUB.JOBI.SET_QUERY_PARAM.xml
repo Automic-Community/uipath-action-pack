@@ -40,6 +40,7 @@
 :SET &EXPAND_QRY_PARA#=""
 :if &UC4RB_UIP_EXPAND# <> ""
 :   SET &EXPAND_QRY_PARA#="$expand"
+:endif
 ]]></MSCRI>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
