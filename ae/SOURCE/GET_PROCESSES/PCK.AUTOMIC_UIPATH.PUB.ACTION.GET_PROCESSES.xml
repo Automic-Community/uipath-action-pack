@@ -286,7 +286,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="" BranchType="0" Col="3" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_PROCESSES" ParentAlias="" ParentObject="" Row="2" Text2="">
+<task Alias="GET_PROCESSES" BranchType="0" Col="3" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_PROCESSES" ParentAlias="" ParentObject="" Row="2" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -389,8 +389,6 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
-<component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
-<component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
@@ -436,6 +434,8 @@
 <component con="0" enc="0" type="2" value="&amp;SKIP_QRY_PARA#" xmlName="query_4_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SKIP#" xmlName="query_4_1"/>
 <component con="0" enc="0" type="2" value="&amp;EXPAND_QRY_PARA#" xmlName="query_5_0"/>
+<component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
+<component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
 <component con="0" enc="0" type="2" value="&amp;COUNT_QRY_PARA#" xmlName="query_6_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_INC_CNT#" xmlName="query_6_1"/>
@@ -667,22 +667,22 @@ This action will fetch the list of all the processes defined in UiPath Orchestra
 (none)
 
 = Inputs =
-- Properties	     : Provide the properties that you want in your response, if remain empty then it will fetch all the properties related to robot log. 
+- Properties	     : Provide list of properties as comma separated to include in the response.
                        E.g. Id,Key.
-- Filter             : Provide the filter that you want to apply on result set in response.
+- Filter             : Provide filters to be applied for the results, based on a Boolean condition.
                        E.g. Id eq "ABC".
-- OrderBy            : Provide the property and the order in which you want to sort the result set in response. 
+- OrderBy            : Specify the property to be used in ordering.
                        E.g. Published desc.
-- Top	             : Provide the number that much logs you want in result set of response start from top.
+- Top	             : Specify if the result should include only the first N items.
                        E.g. 5
-- Skip               : Provide the number of logs that you want to skip in your result set from top.
+- Skip               : Specify if the result should skip the first N items.
                        E.g. 2
 -Include Count       : Specify whether if count of the matching results should be included in the response.
-- Expand	     : Provide related entities to be inlined.       
+- Expand	     : Provide related entities to be inlined.      
 
 = Behavior =
-* If Skip and Top both are provided, the rest api will ignore the input given for skip.
-* Top can be 0, in this case all the logs will get displayed.
+* If Skip and Top both are provided, the skip filter will get applied first after that the top filter will work.  
+
 
 =Return Value=
 UC4RB_UIP_PROCESS_ID_LIST : Comma seperated List Of Process Ids.
