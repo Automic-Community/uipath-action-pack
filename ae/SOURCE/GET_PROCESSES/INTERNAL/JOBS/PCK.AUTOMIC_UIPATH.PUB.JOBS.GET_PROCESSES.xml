@@ -50,12 +50,6 @@
 <CIT state="2">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
-<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
-<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
-<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
 <component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
 <component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
@@ -122,6 +116,12 @@
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
 <component con="0" enc="0" type="2" value="" xmlName="file"/>
+<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
+<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
+<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
+<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
+<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
+<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
 </cit>
 <cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
 </citcont>
@@ -187,8 +187,8 @@
 ]]></PSCRI>
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[!setting properties as querry parameter
-:if &UC4RB_UIP_PROP# <> ""
+<MSCRI><![CDATA[!setting properties as query parameter
+:IF &UC4RB_UIP_PROP# <> ""
 :  SET &PROPERTIES_QRY_PARA#="$select"
 :  SET   &UC4RB_UIP_PROP#=STR_CAT("Id,",&UC4RB_UIP_PROP#)
 :ENDIF
@@ -206,10 +206,10 @@
 <POST_SCRIPT mode="1" replacementmode="1" state="1">
 <OSCRI><![CDATA[!Setting status code for check
 :SET &STATUS# = GET_UC_OBJECT_STATUS(,,"RETCODE")
+:SET &UC4RB_UIP_PROCESS_ID_COUNT#=0
 
 !Processing list and count of processes
 :IF &STATUS# EQ 0
-:  SET &UC4RB_UIP_PROCESS_ID_COUNT#=0
 :  IF &UC4RB_UIP_PROCESS_ID_LIST# <> "[]"
 :    DEFINE &ARR# ,string, 30
 :    FILL &ARR#[] = STR_SPLIT(&UC4RB_UIP_PROCESS_ID_LIST#,",")
