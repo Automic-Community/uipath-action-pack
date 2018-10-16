@@ -48,6 +48,9 @@ Following actions are supported
 * Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.CREATE_NEW_RELEASE
 * Action Description: This action will create a new release on UiPath Orchestrator.
 
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_PROCESSES
+* Action Description: This action will fetch the list of all the processes defined in UiPath Orchestrator.
+
 * Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ENVIRONMENTS
 * Action Description: This action fetches all the Environments defined in UiPath Orchestrator.
 

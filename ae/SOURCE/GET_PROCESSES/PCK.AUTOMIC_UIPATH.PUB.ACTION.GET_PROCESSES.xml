@@ -66,10 +66,9 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
-<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_COUNTs.00>
 <UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 <UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 <UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 <UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">0</UC4RB_UIP_SKIPs.00>
@@ -116,10 +115,10 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_TOKEN" ParentAlias="" ParentObject="" Row="4" Text2="">
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_TOKEN" ParentAlias="" ParentObject="" Row="2" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
 <PreCon>
 <conditions id="CONDITIONS"/>
@@ -143,7 +142,7 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
@@ -161,10 +160,9 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
-<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_COUNTs.00>
 <UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 <UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 <UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 <UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">0</UC4RB_UIP_SKIPs.00>
@@ -288,10 +286,10 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="" BranchType="0" Col="6" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_PROCESSES" ParentAlias="" ParentObject="" Row="3" Text2="">
+<task Alias="GET_PROCESSES" BranchType="0" Col="3" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_PROCESSES" ParentAlias="" ParentObject="" Row="2" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
 <PreCon>
 <conditions id="CONDITIONS"/>
@@ -315,7 +313,7 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
@@ -333,10 +331,9 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
-<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_COUNTs.00>
 <UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 <UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 <UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 <UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">0</UC4RB_UIP_SKIPs.00>
@@ -378,12 +375,6 @@
 <CIT src="OCV">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
-<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
-<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
-<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
 <component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
 <component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
@@ -450,6 +441,12 @@
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
 <component con="0" enc="0" type="2" value="" xmlName="file"/>
+<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
+<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
+<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
+<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
+<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
+<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
 <component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
 <component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
 </cit>
@@ -492,10 +489,9 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
-<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_COUNTs.00>
 <UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 <UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 <UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
 <UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">0</UC4RB_UIP_SKIPs.00>
@@ -584,7 +580,7 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PRPTS" type="PROMPTSET">
@@ -605,6 +601,7 @@
 <UC4RB_UIP_ORD_BYs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_TOPs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_SKIPs.00 altview="0" haslist="0">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_INC_CNTs.00 altview="0" haslist="0">NO</UC4RB_UIP_INC_CNTs.00>
 <UC4RB_UIP_EXPANDs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -660,7 +657,63 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[= Action name =
+PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_PROCESSES
+
+= General description =
+This action will fetch the list of all the processes defined in UiPath Orchestrator.
+
+= Failure Conditions =
+(none)
+
+= Inputs =
+- Properties	     : Provide list of properties as comma separated to include in the response.
+                       E.g. Id,Key.
+- Filter             : Provide filters to be applied for the results, based on a Boolean condition.
+                       E.g. Id eq "ABC".
+- OrderBy            : Specify the property to be used in ordering.
+                       E.g. Published desc.
+- Top	             : Specify if the result should include only the first N items.
+                       E.g. 5
+- Skip               : Specify if the result should skip the first N items.
+                       E.g. 2
+-Include Count       : Specify whether if count of the matching results should be included in the response.
+- Expand	     : Provide related entities to be inlined.      
+
+= Behavior =
+* If Skip and Top both are provided, the skip filter will get applied first after that the top filter will work.  
+
+
+=Return Value=
+UC4RB_UIP_PROCESS_ID_LIST : Comma seperated List Of Process Ids.
+UC4RB_UIP_PROCESS_ID_COUNT: Count of all process Ids.
+
+= Outputs =
+* Return code is 0 in case of success.
+* Return code is non-zero in case of failure.
+* Return JSON in response in Job report.
+
+= Rollback =
+(none)
+
+=Example=
+*For 10 Top processes Info which is OrderBy TimeStamp descending
+-Properties:         
+-Filter             
+-OrderBy            TimeStamp desc
+-Top                10   
+-Skip 
+-Include Count      true
+-Exapnd
+
+=Important Note=
+Due to bug in Ui-Path API, the "Properties" field is not working. As this bug will get resolved by the Ui-Path, this field will work fine.
+
+
+
+
+
+]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>
