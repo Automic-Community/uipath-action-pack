@@ -56,7 +56,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10FBA41CCE80A626FF9F1A8BC87ECEB23E141388E66BC9D730</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 <UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
@@ -66,12 +66,14 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
+<UC4RB_UIP_FAILUREs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FAILURE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Faulted, Canceled</UC4RB_UIP_FAILUREs.00>
 <UC4RB_UIP_PROCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
 <UC4RB_UIP_RETRY_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">10</UC4RB_UIP_RETRY_COUNTs.00>
 <UC4RB_UIP_RETRY_INTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_INT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">120</UC4RB_UIP_RETRY_INTs.00>
 <UC4RB_UIP_ROBOTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
 <UC4RB_UIP_ROBOT_NUMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NUM#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">0</UC4RB_UIP_ROBOT_NUMs.00>
 <UC4RB_UIP_STRATEGYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_STRATEGY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">All</UC4RB_UIP_STRATEGYs.00>
+<UC4RB_UIP_SUCCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SUCCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Successful</UC4RB_UIP_SUCCESSs.00>
 <UC4RB_UIP_WAIT_COMPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_COMP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">YES</UC4RB_UIP_WAIT_COMPs.00>
 <UC4RB_UIP_WAIT_TIMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_TIME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">5</UC4RB_UIP_WAIT_TIMEs.00>
 </PRPTBOX>
@@ -91,7 +93,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
 <CONN_PROXY_AUTH_METHODs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
 <CONN_PROXY_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10</CONN_PROXY_PASSWORDs.00>
+<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10A61C94D6737EB659</CONN_PROXY_PASSWORDs.00>
 <CONN_PROXY_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
 <CONN_PROXY_REALMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
 <CONN_PROXY_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
@@ -151,7 +153,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10FBA41CCE80A626FF9F1A8BC87ECEB23E141388E66BC9D730</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 <UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
@@ -161,12 +163,14 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
+<UC4RB_UIP_FAILUREs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FAILURE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Faulted, Canceled</UC4RB_UIP_FAILUREs.00>
 <UC4RB_UIP_PROCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
 <UC4RB_UIP_RETRY_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">10</UC4RB_UIP_RETRY_COUNTs.00>
 <UC4RB_UIP_RETRY_INTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_INT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">120</UC4RB_UIP_RETRY_INTs.00>
 <UC4RB_UIP_ROBOTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
 <UC4RB_UIP_ROBOT_NUMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NUM#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">0</UC4RB_UIP_ROBOT_NUMs.00>
 <UC4RB_UIP_STRATEGYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_STRATEGY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">All</UC4RB_UIP_STRATEGYs.00>
+<UC4RB_UIP_SUCCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SUCCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Successful</UC4RB_UIP_SUCCESSs.00>
 <UC4RB_UIP_WAIT_COMPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_COMP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">YES</UC4RB_UIP_WAIT_COMPs.00>
 <UC4RB_UIP_WAIT_TIMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_TIME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">5</UC4RB_UIP_WAIT_TIMEs.00>
 </PRPTBOX>
@@ -186,7 +190,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
 <CONN_PROXY_AUTH_METHODs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
 <CONN_PROXY_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10</CONN_PROXY_PASSWORDs.00>
+<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10A61C94D6737EB659</CONN_PROXY_PASSWORDs.00>
 <CONN_PROXY_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
 <CONN_PROXY_REALMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
 <CONN_PROXY_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
@@ -323,7 +327,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10FBA41CCE80A626FF9F1A8BC87ECEB23E141388E66BC9D730</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 <UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
@@ -333,12 +337,14 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
+<UC4RB_UIP_FAILUREs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FAILURE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Faulted, Canceled</UC4RB_UIP_FAILUREs.00>
 <UC4RB_UIP_PROCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
 <UC4RB_UIP_RETRY_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">10</UC4RB_UIP_RETRY_COUNTs.00>
 <UC4RB_UIP_RETRY_INTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_INT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">120</UC4RB_UIP_RETRY_INTs.00>
 <UC4RB_UIP_ROBOTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
 <UC4RB_UIP_ROBOT_NUMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NUM#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">0</UC4RB_UIP_ROBOT_NUMs.00>
 <UC4RB_UIP_STRATEGYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_STRATEGY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">All</UC4RB_UIP_STRATEGYs.00>
+<UC4RB_UIP_SUCCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SUCCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Successful</UC4RB_UIP_SUCCESSs.00>
 <UC4RB_UIP_WAIT_COMPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_COMP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">YES</UC4RB_UIP_WAIT_COMPs.00>
 <UC4RB_UIP_WAIT_TIMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_TIME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">5</UC4RB_UIP_WAIT_TIMEs.00>
 </PRPTBOX>
@@ -358,7 +364,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
 <CONN_PROXY_AUTH_METHODs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
 <CONN_PROXY_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10</CONN_PROXY_PASSWORDs.00>
+<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10A61C94D6737EB659</CONN_PROXY_PASSWORDs.00>
 <CONN_PROXY_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
 <CONN_PROXY_REALMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
 <CONN_PROXY_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
@@ -498,7 +504,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10FBA41CCE80A626FF9F1A8BC87ECEB23E141388E66BC9D730</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 <UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
@@ -508,12 +514,14 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
+<UC4RB_UIP_FAILUREs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FAILURE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Faulted, Canceled</UC4RB_UIP_FAILUREs.00>
 <UC4RB_UIP_PROCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
 <UC4RB_UIP_RETRY_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">10</UC4RB_UIP_RETRY_COUNTs.00>
 <UC4RB_UIP_RETRY_INTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_INT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">120</UC4RB_UIP_RETRY_INTs.00>
 <UC4RB_UIP_ROBOTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
 <UC4RB_UIP_ROBOT_NUMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NUM#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">0</UC4RB_UIP_ROBOT_NUMs.00>
 <UC4RB_UIP_STRATEGYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_STRATEGY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">All</UC4RB_UIP_STRATEGYs.00>
+<UC4RB_UIP_SUCCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SUCCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Successful</UC4RB_UIP_SUCCESSs.00>
 <UC4RB_UIP_WAIT_COMPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_COMP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">YES</UC4RB_UIP_WAIT_COMPs.00>
 <UC4RB_UIP_WAIT_TIMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_TIME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">5</UC4RB_UIP_WAIT_TIMEs.00>
 </PRPTBOX>
@@ -533,7 +541,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
 <CONN_PROXY_AUTH_METHODs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
 <CONN_PROXY_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10</CONN_PROXY_PASSWORDs.00>
+<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10A61C94D6737EB659</CONN_PROXY_PASSWORDs.00>
 <CONN_PROXY_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
 <CONN_PROXY_REALMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
 <CONN_PROXY_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
@@ -693,7 +701,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10FBA41CCE80A626FF9F1A8BC87ECEB23E141388E66BC9D730</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 <UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
@@ -703,12 +711,14 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
+<UC4RB_UIP_FAILUREs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FAILURE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Faulted, Canceled</UC4RB_UIP_FAILUREs.00>
 <UC4RB_UIP_PROCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
 <UC4RB_UIP_RETRY_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">10</UC4RB_UIP_RETRY_COUNTs.00>
 <UC4RB_UIP_RETRY_INTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_INT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">120</UC4RB_UIP_RETRY_INTs.00>
 <UC4RB_UIP_ROBOTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
 <UC4RB_UIP_ROBOT_NUMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NUM#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">0</UC4RB_UIP_ROBOT_NUMs.00>
 <UC4RB_UIP_STRATEGYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_STRATEGY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">All</UC4RB_UIP_STRATEGYs.00>
+<UC4RB_UIP_SUCCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SUCCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Successful</UC4RB_UIP_SUCCESSs.00>
 <UC4RB_UIP_WAIT_COMPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_COMP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">YES</UC4RB_UIP_WAIT_COMPs.00>
 <UC4RB_UIP_WAIT_TIMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_TIME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">5</UC4RB_UIP_WAIT_TIMEs.00>
 </PRPTBOX>
@@ -728,7 +738,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
 <CONN_PROXY_AUTH_METHODs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
 <CONN_PROXY_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10</CONN_PROXY_PASSWORDs.00>
+<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10A61C94D6737EB659</CONN_PROXY_PASSWORDs.00>
 <CONN_PROXY_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
 <CONN_PROXY_REALMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
 <CONN_PROXY_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
@@ -772,7 +782,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10FBA41CCE80A626FF9F1A8BC87ECEB23E141388E66BC9D730</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 <UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
@@ -782,12 +792,14 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
+<UC4RB_UIP_FAILUREs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FAILURE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Faulted, Canceled</UC4RB_UIP_FAILUREs.00>
 <UC4RB_UIP_PROCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
 <UC4RB_UIP_RETRY_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">10</UC4RB_UIP_RETRY_COUNTs.00>
 <UC4RB_UIP_RETRY_INTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_INT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">120</UC4RB_UIP_RETRY_INTs.00>
 <UC4RB_UIP_ROBOTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
 <UC4RB_UIP_ROBOT_NUMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NUM#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">0</UC4RB_UIP_ROBOT_NUMs.00>
 <UC4RB_UIP_STRATEGYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_STRATEGY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">All</UC4RB_UIP_STRATEGYs.00>
+<UC4RB_UIP_SUCCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SUCCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Successful</UC4RB_UIP_SUCCESSs.00>
 <UC4RB_UIP_WAIT_COMPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_COMP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">YES</UC4RB_UIP_WAIT_COMPs.00>
 <UC4RB_UIP_WAIT_TIMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_TIME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">5</UC4RB_UIP_WAIT_TIMEs.00>
 </PRPTBOX>
@@ -807,7 +819,7 @@
 <PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
 <CONN_PROXY_AUTH_METHODs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
 <CONN_PROXY_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10</CONN_PROXY_PASSWORDs.00>
+<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10A61C94D6737EB659</CONN_PROXY_PASSWORDs.00>
 <CONN_PROXY_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
 <CONN_PROXY_REALMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
 <CONN_PROXY_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
@@ -883,7 +895,7 @@
 <UC4RB_UIP_URLs.00 altview="0" haslist="0">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_USERs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_PASSWDs.00 altview="0" haslist="0">--10</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_PASSWDs.00 altview="0" haslist="0">--10FBA41CCE80A626FF9F1A8BC87ECEB23E141388E66BC9D730</UC4RB_UIP_PASSWDs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -898,6 +910,8 @@
 <UC4RB_UIP_WAIT_TIMEs.00 altview="0" haslist="0">5</UC4RB_UIP_WAIT_TIMEs.00>
 <UC4RB_UIP_RETRY_COUNTs.00 altview="0" haslist="0">10</UC4RB_UIP_RETRY_COUNTs.00>
 <UC4RB_UIP_RETRY_INTs.00 altview="0" haslist="0">120</UC4RB_UIP_RETRY_INTs.00>
+<UC4RB_UIP_SUCCESSs.00 altview="0" haslist="0">Successful</UC4RB_UIP_SUCCESSs.00>
+<UC4RB_UIP_FAILUREs.00 altview="0" haslist="0">Faulted, Canceled</UC4RB_UIP_FAILUREs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -917,7 +931,7 @@
 <CONN_PROXY_HOSTs.00 altview="0" haslist="0"/>
 <CONN_PROXY_PORTs.00 altview="0" haslist="0">0</CONN_PROXY_PORTs.00>
 <CONN_PROXY_USERNAMEs.00 altview="0" haslist="0"/>
-<CONN_PROXY_PASSWORDs.00 altview="0" haslist="0">--10</CONN_PROXY_PASSWORDs.00>
+<CONN_PROXY_PASSWORDs.00 altview="0" haslist="0">--10A61C94D6737EB659</CONN_PROXY_PASSWORDs.00>
 <CONN_PROXY_REALMs.00 altview="0" haslist="0"/>
 <CONN_PROXY_AUTH_METHODs.00 altview="0" haslist="0">None</CONN_PROXY_AUTH_METHODs.00>
 </PRPTBOX>
@@ -955,7 +969,15 @@
 : PSET &UC4RB_UIP_TOP# = ""
 : PSET &UC4RB_UIP_EXPAND# =""
 : PSET &UC4RB_UIP_SKIP# = 0
-: PSET &UC4RB_UIP_COUNT# = ""]]></MSCRI>
+: PSET &UC4RB_UIP_COUNT# = ""
+
+: IF &UC4RB_UIP_WAIT_COMP# = "YES"
+:   IF "" = &UC4RB_UIP_SUCCESS#	 OR &UC4RB_UIP_FAILURE#	
+:     STOP MSG, 50, "Both 'Success' and 'Failure' fields are required when 'Wait for Completion' is 'Yes'."
+:   ENDIF
+: ENDIF
+
+]]></MSCRI>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[= Action name =
@@ -964,11 +986,6 @@ PCK.AUTOMIC_UIPATH.PUB.ACTION.START_JOB
 = General description =
 This action starts a job manually on UiPath Orchestrator.
 
-= Failure Conditions =
-* If the strategy is selected as "Specific" without specifying any Robot Id.
-* If Robot Ids are provided and strategy is not "Specific".
-* If the strategy is selected as "Robot Count" and Number of Robots is not greater than 0.
-* If Number of Robots is greater than 0 and strategy is other than Robot Count.
 
 = Inputs =
 - Process Name*: 	 Provide the name of the process to be executed. E.g. AWI
@@ -979,6 +996,12 @@ This action starts a job manually on UiPath Orchestrator.
 - Initial Waiting Time:  Specify initial waiting time in minutes before the first status query.  Default- 5
 - Retry Count:   	 Specify the number of retry attempts to get the status.  Default- 10
 - Retry Interval:        Specify the interval in seconds between retry attempt. Default- 120
+
+= Failure Conditions =
+* If the strategy is selected as "Specific" without specifying any Robot Id.
+* If Robot Ids are provided and strategy is not "Specific".
+* If the strategy is selected as "Robot Count" and Number of Robots is not greater than 0.
+* If Number of Robots is greater than 0 and strategy is other than Robot Count.
 
 = Behavior =
 * Robot Ids must be provided if Strategy is selected as "Specific".
