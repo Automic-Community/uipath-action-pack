@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_UIPATH.PRV.INCLUDE.GET_JOB_STATUS">
+<HEADER state="1">
+<Title>Get Job Status</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[: SET &UIPATH_JOB_STATUS# = ""
+: SET &FLAG# = "FALSE"
+: SET &SUCCESS# = 0
+
+
+: WHILE &FLAG# = "FALSE"
+! Invoke the job for retrieving job Status
+:    SET &ACTOBJ# = ACTIVATE_UC_OBJECT("PCK.AUTOMIC_UIPATH.PRV.JOBS.GET_JOB_STATUS",WAIT,,,,PASS_VALUES)
+
+:    IF &ACTOBJ# = "0"
+:       SET &ERRNR# = SYS_LAST_ERR_NR()
+:       SET &ERRINS#  = SYS_LAST_ERR_INS()
+:       SET &MESSAGE# = GET_MSG_TXT(&ERRNR#,&ERRINS#)
+:       PRINT "ERROR: Invoking GET_JOB_STATUS Job :&MESSAGE#"
+:       SET &SUCCESS# = 1
+:    ELSE
+:       SET &STATUS# = GET_UC_OBJECT_STATUS(,&ACTOBJ#,"RETCODE")
+:       IF &STATUS# = "9"
+:         PRINT "MSG: Token Expired! Regenerating Token."
+:         SET &ACTOBJ2# = ACTIVATE_UC_OBJECT("PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_TOKEN",WAIT,,,,PASS_VALUES)
+:         IF &ACTOBJ2# = "0"
+:            SET &ERRNR# = SYS_LAST_ERR_NR()
+:            SET &ERRINS#  = SYS_LAST_ERR_INS()
+:            SET &MESSAGE# = GET_MSG_TXT(&ERRNR#,&ERRINS#)
+:            PRINT "ERROR: Invoking GET_TOKEN Job :&MESSAGE#"
+:            SET &SUCCESS# = 1
+:          ELSE
+:            SET &STATUS2# = GET_UC_OBJECT_STATUS(,&ACTOBJ2#,"RETCODE")
+:            IF &STATUS2# <> "0"
+:              PRINT "ERROR: GET_TOKEN Job failed. Error Status [&STATUS2#]. Please check the job report for RUNID: [&ACTOBJ2#]."
+:              SET &SUCCESS# = 1
+:            ENDIF
+:         ENDIF
+:       ELSE
+:         IF &STATUS# <> "0"
+:            PRINT "ERROR: GET_JOB_STATUS Job failed. Error Status [&STATUS#]. Please check the job report for RUNID: [&ACTOBJ#]."
+:            SET &SUCCESS# = 1
+:         ELSE
+:            SET &UIPATH_JOB_STATUS# = GET_PUBLISHED_VALUE(&ACTOBJ#, UC4RB_UIP_JOB_STATUS#)
+:            SET &FLAG# = "TRUE"
+:         ENDIF
+:       ENDIF
+:    ENDIF
+:    IF &SUCCESS# <> 0
+:       STOP MSG, 50, "ERROR: Unable to retrieve the job status."
+:    ENDIF
+:  ENDWHILE
+
+]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBI>
+</uc-export>

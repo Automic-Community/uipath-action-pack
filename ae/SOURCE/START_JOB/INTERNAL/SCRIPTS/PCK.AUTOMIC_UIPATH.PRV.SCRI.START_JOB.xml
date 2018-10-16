@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<SCRI name="PCK.AUTOMIC_UIPATH.PRV.SCRI.START_JOB">
+<XHEADER state="1">
+<Title>Start Job</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_SCRI state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<ActAtRun>1</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<MaxParallel2>0</MaxParallel2>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+</ATTR_SCRI>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[: SET &UIPATH_JOB_RUNNING#="TRUE"
+
+! initial wait
+:   IF &UC4RB_UIP_WAIT_TIME# GT 0
+:      SET  &INIT_WAIT_TIME# = MULT(&UC4RB_UIP_WAIT_TIME#, 60)
+:      P "Initially waiting for [&UC4RB_UIP_WAIT_TIME#] minutes."
+:      WAIT &INIT_WAIT_TIME#
+:   ENDIF
+
+
+:   INC PCK.AUTOMIC_UIPATH.PRV.INCLUDE.GET_JOB_STATUS
+:   P "Job Execution Id: &UC4RB_UIP_JOB_ID#, Job Status: '&UIPATH_JOB_STATUS#'"
+:   IF &UIPATH_JOB_STATUS# EQ "Successful" OR "Canceled" OR "Faulted"
+:     IF &UIPATH_JOB_STATUS# EQ "Successful"
+:       SET &UIPATH_JOB_RUNNING# = "FALSE"
+:     ELSE
+:       P "ERROR: Job could not be completed successfully."
+:       STOP MSG, 50, "ERROR: Action failed."
+:     ENDIF
+:   ENDIF
+:   IF &UIPATH_JOB_RUNNING# = "TRUE"
+:     IF &UC4RB_UIP_RETRY_COUNT# GT 0
+:        SET &LOOP_COND# = "TRUE"
+:        SET &LOOP_COUNT# = 0
+:        WHILE &LOOP_COND# = "TRUE"
+:            WAIT &UC4RB_UIP_RETRY_INT#
+:            SET &LOOP_COUNT# = &LOOP_COUNT# + 1
+:            INC PCK.AUTOMIC_UIPATH.PRV.INCLUDE.GET_JOB_STATUS
+:            P "Retry Count [&LOOP_COUNT#], Job Status: '&UIPATH_JOB_STATUS#'"
+:            IF &UIPATH_JOB_STATUS# EQ "Successful" OR "Canceled" OR "Faulted"
+:              IF &UIPATH_JOB_STATUS# EQ "Successful"
+:                P "MSG: Job completed successfully."
+:                SET &UIPATH_JOB_RUNNING# = "FALSE"
+:              ELSE
+:                P "ERROR: Job could not be completed successfully."
+:                STOP MSG, 50, "ERROR: Action failed."
+:              ENDIF
+:            ENDIF
+:            SET &LOOP_COND# = &UIPATH_JOB_RUNNING#
+:            IF &LOOP_COUNT# = &UC4RB_UIP_RETRY_COUNT#
+:               SET &LOOP_COND# = "FALSE"
+:            ENDIF
+:        ENDWHILE
+:     ENDIF
+:   ENDIF
+
+:   IF &UIPATH_JOB_RUNNING# = "TRUE"
+:      P "ERROR: Job could not be completed successfully within specified time limit."
+:      STOP MSG, 50, "ERROR: Timeout Occurred."
+:   ENDIF]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</SCRI>
+</uc-export>
