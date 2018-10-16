@@ -706,7 +706,8 @@ UC4RB_UIP_PROCESS_ID_COUNT: Count of all process Ids.
 -Include Count      true
 -Exapnd
 
-
+=Important Note=
+Due to bug in Ui-Path API, the "Properties" field is not working. As this bug will get resolved by the Ui-Path, this field will work fine.
 
 
 
