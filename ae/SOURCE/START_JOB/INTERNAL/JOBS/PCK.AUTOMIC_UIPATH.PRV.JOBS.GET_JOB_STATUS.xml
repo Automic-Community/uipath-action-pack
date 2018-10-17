@@ -172,8 +172,8 @@
 :INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.SET_CONNECTION_AUTH_NONE]]></PSCRI>
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[:IF &UC4RB_UIP_JOB_ID# = "[]"
-:  STOP MSG, 50, ""
+<MSCRI><![CDATA[:IF &UC4RB_UIP_JOB_IDS# = "[]"
+:  STOP MSG, 50, "Could not fetch job execution id(s) successfully."
 :ENDIF]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">

@@ -488,7 +488,7 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIP_JOB_ID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIP_JOB_IDS#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -625,9 +625,9 @@
 <component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
 <component con="0" enc="0" type="2" value="odata/Jobs/UiPath.Server.Configuration.OData.StartJobs" xmlName="resource"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="$..value[0].Id" xmlName="response_part_0_script_0_code_0"/>
+<component con="0" enc="0" type="2" value="$..value.Id" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
-<component con="0" enc="0" type="2" value="UC4RB_UIP_JOB_ID#" xmlName="response_part_0_script_0_resourceName"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIP_JOB_IDS#" xmlName="response_part_0_script_0_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
 <component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
@@ -992,16 +992,17 @@ This action starts a job manually on UiPath Orchestrator.
 - Strategy: 	 	 Specify which robots from the environment will be run by the process. E.g. Specific
 - Robot IDs: 	 	 Provide the collection of ids of specific robots selected to be run by the current process. Robot ids should be comma separated. E.g. 55577
 - Number of Robots: 	 Provide the number of robots selected to be run by the current process. E.g. 0
-- Wait for Completion:   Specify whether action should wait for the job to be completed successfully. Default- Yes
-- Initial Waiting Time:  Specify initial waiting time in minutes before the first status query.  Default- 5
-- Retry Count:   	 Specify the number of retry attempts to get the status.  Default- 10
-- Retry Interval:        Specify the interval in seconds between retry attempt. Default- 120
+- Wait for Completion: Specify whether action should wait for the job to be completed successfully. Default- Yes
+- Initial Waiting Time: Specify initial waiting time in minutes before the first status query. Default- 5
+- Retry Count: 	 Specify the number of retry attempts to get the status. Default- 10
+- Retry Interval: Specify the interval in seconds between retry attempt. Default- 120
 
 = Failure Conditions =
 * If the strategy is selected as "Specific" without specifying any Robot Id.
 * If Robot Ids are provided and strategy is not "Specific".
 * If the strategy is selected as "Robot Count" and Number of Robots is not greater than 0.
 * If Number of Robots is greater than 0 and strategy is other than Robot Count.
+* If the Job could not be completed on all the robots specified within the specified time limit.
 
 = Behavior =
 * Robot Ids must be provided if Strategy is selected as "Specific".
@@ -1024,35 +1025,35 @@ AE logs will be displayed in the AE report.
 = Example =
 * For 'Specific' Strategy
 - Process Name*: 	 AWI
-- Strategy:  	 	  Specific
-- Robot IDs: 	   	 55577,4236
-- Number of Robots: 	  0
-- Wait for Completion:    Yes
-- Initial Waiting Time:   1
-- Retry Count:   	  5
-- Retry Interval:         50
+- Strategy: 	 	 Specific
+- Robot IDs: 	 	 55577,4236
+- Number of Robots: 	 0
+- Wait for Completion: Yes
+- Initial Waiting Time: 1
+- Retry Count: 	 5
+- Retry Interval: 50
 
 
 * For 'Robot Count' Strategy
 - Process Name*: 	 AWI
-- Strategy:  	  	 Robot Count
+- Strategy: 	 	 Robot Count
 - Robot IDs:
-- Number of Robots:  	 2
-- Wait for Completion:   No
-- Initial Waiting Time:  5
-- Retry Count:   	 10
-- Retry Interval:        120
+- Number of Robots: 	 2
+- Wait for Completion: No
+- Initial Waiting Time: 5
+- Retry Count: 	 10
+- Retry Interval: 120
 
 
 * For 'All' Strategy
 - Process Name*: 	 AWI
-- Strategy:  	  	 All
+- Strategy: 	 	 All
 - Robot IDs:
-- Number of Robots: 	  0
-- Wait for Completion:   Yes
-- Initial Waiting Time:  2
-- Retry Count:   	 15
-- Retry Interval:        100
+- Number of Robots: 	 0
+- Wait for Completion: Yes
+- Initial Waiting Time: 2
+- Retry Count: 	 15
+- Retry Interval: 100
 ]]></DOC>
 </DOCU_Docu>
 </JOBP>

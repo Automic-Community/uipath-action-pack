@@ -91,44 +91,45 @@
 :   P "Initially waiting for [&UC4RB_UIP_WAIT_TIME#] minutes."
 :   WAIT &INIT_WAIT_TIME#
 : ENDIF
-: INC PCK.AUTOMIC_UIPATH.PRV.INCLUDE.GET_JOB_STATUS
-: P "Job Execution Id: &UC4RB_UIP_JOB_ID#, Job Status: '&UIPATH_JOB_STATUS#'"
-: IF "0" NE STR_FIND(&UC4RB_UIP_SUCCESS#,&UIPATH_JOB_STATUS#)
-:   P "MSG: Job completed successfully."
-:   SET &UIPATH_JOB_RUNNING# = "FALSE"
-: ELSE
-:   IF "0" NE STR_FIND(&UC4RB_UIP_FAILURE#,&UIPATH_JOB_STATUS#)
-:     P "ERROR: Job could not be completed successfully."
-:     STOP MSG, 50, "ERROR: Action failed."
-:   ENDIF
-: ENDIF
-: IF &UIPATH_JOB_RUNNING# = "TRUE"
+
+: SET &JOB_IDS_STR# = STR_SUB (&UC4RB_UIP_JOB_IDS#, "[", "")
+: SET &JOB_IDS_STR# = STR_SUB (&JOB_IDS_STR#, "]", "")
+: SET &JOB_IDS_STR# = STR_TRIM(&JOB_IDS_STR#)
+
+: DEFINE &JOB_IDS#, string, 30
+: FILL &JOB_IDS#[] = STR_SPLIT(&JOB_IDS_STR#, ",")
+
+
+: SET &LEN# = LENGTH(&JOB_IDS#[],SIZE)
+: SET &SUCCESS_COUNT# = 0
+: SET &COMPLETE_COUNT# = 0
+
+: INC PCK.AUTOMIC_UIPATH.PRV.INCLUDE.CHECK_JOB_STATUS
+
+: IF &COMPLETE_COUNT# <> &LEN#
+
 :   IF &UC4RB_UIP_RETRY_COUNT# GT 0
 :     SET &LOOP_COND# = "TRUE"
 :     SET &LOOP_COUNT# = 0
 :     WHILE &LOOP_COND# = "TRUE"
 :       WAIT &UC4RB_UIP_RETRY_INT#
 :       SET &LOOP_COUNT# = &LOOP_COUNT# + 1
-:       INC PCK.AUTOMIC_UIPATH.PRV.INCLUDE.GET_JOB_STATUS
-:       P "Retry Count [&LOOP_COUNT#], Job Status: '&UIPATH_JOB_STATUS#'"
-:       IF "0" NE STR_FIND(&UC4RB_UIP_SUCCESS#,&UIPATH_JOB_STATUS#)
-:         P "MSG: Job completed successfully."
-:         SET &UIPATH_JOB_RUNNING# = "FALSE"
-:       ELSE
-:         IF "0" NE STR_FIND(&UC4RB_UIP_FAILURE#,&UIPATH_JOB_STATUS#)
-:           P "ERROR: Job could not be completed successfully."
-:           STOP MSG, 50, "ERROR: Action failed."
-:         ENDIF
-:       ENDIF
-:       SET &LOOP_COND# = &UIPATH_JOB_RUNNING#
+:       P "Loop Count: &LOOP_COUNT#"
+:       INC PCK.AUTOMIC_UIPATH.PRV.INCLUDE.CHECK_JOB_STATUS
 :       IF &LOOP_COUNT# = &UC4RB_UIP_RETRY_COUNT#
+:         SET &LOOP_COND# = "FALSE"
+:       ENDIF
+:       IF &COMPLETE_COUNT# = &LEN#
 :         SET &LOOP_COND# = "FALSE"
 :       ENDIF
 :     ENDWHILE
 :   ENDIF
+
 : ENDIF
-: IF &UIPATH_JOB_RUNNING# = "TRUE"
-:   P "ERROR: Job could not be completed successfully within specified time limit."
+
+
+: IF &SUCCESS_COUNT# <> &LEN#
+:   P "ERROR: Job could not be completed successfully on all the robots specified within specified time limit."
 :   STOP MSG, 50, "ERROR: Timeout Occurred."
 : ENDIF]]></MSCRI>
 </SCRIPT>

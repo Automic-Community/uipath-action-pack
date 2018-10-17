@@ -113,9 +113,9 @@
 <component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
 <component con="0" enc="0" type="2" value="odata/Jobs/UiPath.Server.Configuration.OData.StartJobs" xmlName="resource"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="$..value[0].Id" xmlName="response_part_0_script_0_code_0"/>
+<component con="0" enc="0" type="2" value="$..value.Id" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
-<component con="0" enc="0" type="2" value="UC4RB_UIP_JOB_ID#" xmlName="response_part_0_script_0_resourceName"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIP_JOB_IDS#" xmlName="response_part_0_script_0_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
 <component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
@@ -167,7 +167,7 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
 <Values>
-<row ERTUsage="0" Name="&amp;UC4RB_UIP_JOB_ID#" Value=""/>
+<row ERTUsage="0" Name="&amp;UC4RB_UIP_JOB_IDS#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
