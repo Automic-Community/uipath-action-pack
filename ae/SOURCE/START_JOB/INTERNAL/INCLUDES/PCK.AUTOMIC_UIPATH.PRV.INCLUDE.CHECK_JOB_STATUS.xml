@@ -7,29 +7,19 @@
 <OH_SubType/>
 </HEADER>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[: SET &VAR# = 1
-: WHILE &VAR# LE &LEN#
-:   SET &VAR# = FORMAT(&VAR#,"0")
-:   SET &UC4RB_UIP_JOB_ID# = &JOB_IDS#[&VAR#]
-:   IF &UC4RB_UIP_JOB_ID# <> "-1"
-:     PUBLISH &UC4RB_UIP_JOB_ID#,,"WORKFLOW"
-:     INC PCK.AUTOMIC_UIPATH.PRV.INCLUDE.GET_JOB_STATUS
-:     P "Job Execution Id: &UC4RB_UIP_JOB_ID#, Job Status: '&UIPATH_JOB_STATUS#'"
-:     IF "0" NE STR_FIND(&UC4RB_UIP_SUCCESS#,&UIPATH_JOB_STATUS#)
-:       P "MESSAGE: Job completed successfully."
-:       SET &SUCCESS_COUNT# = &SUCCESS_COUNT# + 1
-:       SET &COMPLETE_COUNT# = &COMPLETE_COUNT# + 1
-:       SET &JOB_IDS#[&VAR#] = "-1"
-:     ELSE
-:       IF "0" NE STR_FIND(&UC4RB_UIP_FAILURE#,&UIPATH_JOB_STATUS#)
-:         P "ERROR: Job could not be completed successfully."
-:         SET &COMPLETE_COUNT# = &COMPLETE_COUNT# + 1
-:         SET &JOB_IDS#[&VAR#] = "-1"
-:       ENDIF
-:     ENDIF
+<MSCRI><![CDATA[: INC PCK.AUTOMIC_UIPATH.PRV.INCLUDE.GET_JOB_STATUS
+: P "Job Execution Id: &UC4RB_UIP_JOB_ID#, Job Status: '&UIPATH_JOB_STATUS#'"
+: IF "0" NE STR_FIND(&SUCCESS_STATUS#,&UIPATH_JOB_STATUS#)
+:   P "MESSAGE: Job completed successfully."
+:   SET &SUCCESS_COUNT# = &SUCCESS_COUNT# + 1
+:   SET &JOB_IDS#[&VAR#] = "-1"
+: ELSE
+:   IF "0" NE STR_FIND(&FAILURE_STATUS#,&UIPATH_JOB_STATUS#)
+:     P "ERROR: Job could not be completed successfully."
+:     SET &JOB_IDS#[&VAR#] = "-1"
 :   ENDIF
-:   SET &VAR# = &VAR#+ 1
-: ENDWHILE]]></MSCRI>
+: ENDIF
+: SET &JOB_STATUS#[&VAR#] = &UIPATH_JOB_STATUS#]]></MSCRI>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC/>
