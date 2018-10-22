@@ -56,7 +56,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10A61C94D6737EB659</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 <UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
@@ -153,7 +153,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10A61C94D6737EB659</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 <UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
@@ -327,7 +327,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10A61C94D6737EB659</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 <UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
@@ -504,7 +504,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10A61C94D6737EB659</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 <UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
@@ -701,7 +701,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10A61C94D6737EB659</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 <UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
@@ -782,7 +782,7 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10A61C94D6737EB659</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
 <UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
@@ -895,7 +895,7 @@
 <UC4RB_UIP_URLs.00 altview="0" haslist="0">https://platform.uipath.com</UC4RB_UIP_URLs.00>
 <UC4RB_UIP_TENANT_NAMEs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_USERs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_PASSWDs.00 altview="0" haslist="0">--10A61C94D6737EB659</UC4RB_UIP_PASSWDs.00>
+<UC4RB_UIP_PASSWDs.00 altview="0" haslist="0">--10</UC4RB_UIP_PASSWDs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -991,13 +991,15 @@ This action starts a job manually on UiPath Orchestrator.
 - Initial Waiting Time:  Specify initial waiting time in minutes before the first status query. Default- 5
 - Retry Count: 	         Specify the number of retry attempts to get the status. Default- 10
 - Retry Interval:        Specify the interval in seconds between retry attempt. Default- 120
+- Success: 	         Specify UiPath states which end action successfully. Multiple states can be given separated by a comma. Default- Successful
+- Failure:               Specify UiPath states will end action unsuccessfully. Multiple states can be given separated by a comma. Default- Faulted, Canceled
 
 = Failure Conditions =
 * If the strategy is selected as "Specific" without specifying any Robot Id.
 * If Robot Ids are provided and strategy is not "Specific".
 * If the strategy is selected as "Robot Count" and Number of Robots is not greater than 0.
 * If Number of Robots is greater than 0 and strategy is other than Robot Count.
-* If the Job could not be completed on all the robots specified within the specified time limit.
+* If the Job could not be completed successfully on all the robots specified within the specified time limit.
 
 = Behavior =
 * Robot Ids must be provided if Strategy is selected as "Specific".
@@ -1005,7 +1007,7 @@ This action starts a job manually on UiPath Orchestrator.
 * If Number of Robots is greater than the number of available robots, the job will be started for all the robots.
 
 = Return Value =
-(none)
+UC4RB_UIP_JOB_IDS# : Comma-separated list of Job execution Ids.
 
 = Outputs =
 * Return code is 0 in case of success.
@@ -1023,33 +1025,36 @@ AE logs will be displayed in the AE report.
 - Strategy: 	 	 Specific
 - Robot IDs: 	 	 55577,4236
 - Number of Robots: 	 0
-- Wait for Completion: Yes
-- Initial Waiting Time: 1
-- Retry Count: 	 5
-- Retry Interval: 50
-
+- Wait for Completion:   Yes
+- Initial Waiting Time:  1
+- Retry Count: 	         5
+- Retry Interval:        50
+- Success: 	         Successful
+- Failure:               Faulted, Canceled
 
 * For 'Robot Count' Strategy
 - Process Name*: 	 AWI
 - Strategy: 	 	 Robot Count
 - Robot IDs:
 - Number of Robots: 	 2
-- Wait for Completion: No
-- Initial Waiting Time: 5
-- Retry Count: 	 10
-- Retry Interval: 120
-
+- Wait for Completion:   No
+- Initial Waiting Time:  5
+- Retry Count: 	         10
+- Retry Interval:        120
+- Success: 	         Successful
+- Failure:               Faulted, Canceled
 
 * For 'All' Strategy
 - Process Name*: 	 AWI
 - Strategy: 	 	 All
 - Robot IDs:
 - Number of Robots: 	 0
-- Wait for Completion: Yes
-- Initial Waiting Time: 2
-- Retry Count: 	 15
-- Retry Interval: 100
-]]></DOC>
+- Wait for Completion:   Yes
+- Initial Waiting Time:  2
+- Retry Count: 	         15
+- Retry Interval:        100
+- Success:               Successful
+- Failure:               Faulted, Canceled]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>

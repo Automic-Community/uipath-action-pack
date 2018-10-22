@@ -11,7 +11,6 @@
 : SET &FLAG# = "FALSE"
 : SET &SUCCESS# = 0
 
-
 : WHILE &FLAG# = "FALSE"
 ! Invoke the job for retrieving job Status
 :    SET &ACTOBJ# = ACTIVATE_UC_OBJECT("PCK.AUTOMIC_UIPATH.PRV.JOBS.GET_JOB_STATUS",WAIT,,,,PASS_VALUES)
@@ -38,6 +37,9 @@
 :            IF &STATUS2# <> "0"
 :              PRINT "ERROR: GET_TOKEN Job failed. Error Status [&STATUS2#]. Please check the job report for RUNID: [&ACTOBJ2#]."
 :              SET &SUCCESS# = 1
+:            ELSE
+:              SET &UC4RB_UIP_AUTH_TOKEN# = GET_PUBLISHED_VALUE(&ACTOBJ2#, UC4RB_UIP_AUTH_TOKEN#)
+:              PUBLISH &UC4RB_UIP_AUTH_TOKEN#,,"WORKFLOW"
 :            ENDIF
 :         ENDIF
 :       ELSE
