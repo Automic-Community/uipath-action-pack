@@ -94,7 +94,7 @@
 <component con="0" enc="0" type="2" value="application/json" xmlName="mediaType"/>
 <component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
 <component con="0" enc="0" type="2" value="Part 1" xmlName="partName"/>
-<component con="0" enc="0" type="2" value="/odata/Releases{&amp;UC4RB_UIP_RELEASE#}/UiPath.Server.Configuration.OData.RollbackToPreviousReleaseVersion" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="/odata/Releases(&amp;UC4RB_UIP_RELEASE#)/UiPath.Server.Configuration.OData.RollbackToPreviousReleaseVersion" xmlName="resource"/>
 <component con="0" enc="0" type="2" value="POST" xmlName="method"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
 <component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
