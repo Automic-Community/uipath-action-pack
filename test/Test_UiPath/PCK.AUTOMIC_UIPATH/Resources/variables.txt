@@ -4,9 +4,9 @@ Resource          ../../../Env/default.txt
 *** Variables ***
 #---- Promptset Fields --------------------------------------------------------------------------------------
 ${UiPath_URL}     https://platform.uipath.com
-${TenantName}     Shwati
-${Username}       admin
-${Password}       Vardaan@143
+${TenantName}     Tenant Name
+${Username}       User Name
+${Password}       Password
 #-------------------Start Job-------------------------------------
 ${Process_Name}    Test1
 ${Strategy_1}     All
