@@ -9,10 +9,8 @@
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[About the Package
 ================================
-Robotic process automation (or RPA) is an emerging form of business process automation technology based on the notion of software robots or artificial intelligence
- (AI) workers.RPA confers benefits like cost reduction, improved efficiency, and greater accuracy, it's an attractive option. A versatile solution, RPA can be used 
- to operate and orchestrate other application software, regardless of industry. UiPath offers user-friendly software for process automation, web scraping, GUI 
- testing, content migration, and much more. 
+Robotic process automation (or RPA) is an emerging form of business process automation technology based on the notion of software robots or artificial intelligence (AI) workers.RPA confers benefits like cost reduction, improved efficiency, and greater accuracy, it's an attractive option. A versatile solution, RPA can be used to operate and orchestrate other application software, regardless of industry. UiPath offers user-friendly software for process automation, web scraping, GUI 
+testing, content migration, and much more.
 
 
 =Supported versions=

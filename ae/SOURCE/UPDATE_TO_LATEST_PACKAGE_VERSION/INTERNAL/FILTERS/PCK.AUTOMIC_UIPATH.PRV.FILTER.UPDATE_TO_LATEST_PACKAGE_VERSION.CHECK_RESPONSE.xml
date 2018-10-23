@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<FILTER_OUTPUT name="PCK.AUTOMIC_UIPATH.PRV.FILTER.UPDATE_TO_LATEST_PACKAGE_VERSION.CHECK_RESPONSE">
+<HEADER state="1">
+<Title>To Check Response</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<FILTER_OUTPUT state="1">
+<Filters>
+<filter Condition="N" FilterText="value" Lnr="1" SrcName="REP" SrcType="R"/>
+</Filters>
+<OperatorAND>1</OperatorAND>
+<OperatorOR>0</OperatorOR>
+</FILTER_OUTPUT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</FILTER_OUTPUT>
+</uc-export>

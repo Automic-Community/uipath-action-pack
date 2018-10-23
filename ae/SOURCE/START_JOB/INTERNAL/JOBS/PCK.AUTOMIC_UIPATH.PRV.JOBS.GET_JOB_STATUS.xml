@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBS_CIT AttrType="CIT" name="PCK.AUTOMIC_UIPATH.PRV.JOBS.GET_PROCESS">
+<JOBS_CIT AttrType="CIT" name="PCK.AUTOMIC_UIPATH.PRV.JOBS.GET_JOB_STATUS">
 <XHEADER state="1">
-<Title>Get Process Id</Title>
+<Title>Get Job Status</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -27,10 +27,10 @@
 <ExtRepNone>0</ExtRepNone>
 <AutoDeactNo>0</AutoDeactNo>
 <AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
-<AutoDeactErrorFree>0</AutoDeactErrorFree>
-<DeactWhen/>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
 <DeactDelay>0</DeactDelay>
-<AutoDeactAlways>1</AutoDeactAlways>
+<AutoDeactAlways>0</AutoDeactAlways>
 <AttDialog>0</AttDialog>
 <ActAtRun>1</ActAtRun>
 <Consumption>0</Consumption>
@@ -94,26 +94,12 @@
 <component con="0" enc="0" type="2" value="GET" xmlName="method"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
-<component con="0" enc="0" type="2" value="&amp;FILTER#" xmlName="query_0_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_FILTER#" xmlName="query_0_1"/>
-<component con="0" enc="0" type="2" value="&amp;ORDER_BY#" xmlName="query_1_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_ORD_BY#" xmlName="query_1_1"/>
-<component con="0" enc="0" type="2" value="&amp;SELECT#" xmlName="query_2_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SELECT#" xmlName="query_2_1"/>
-<component con="0" enc="0" type="2" value="&amp;TOP#" xmlName="query_3_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_TOP#" xmlName="query_3_1"/>
-<component con="0" enc="0" type="2" value="&amp;SKIP#" xmlName="query_4_0"/>
-<component con="0" enc="0" type="2" value="&amp;SKIP_VAL#" xmlName="query_4_1"/>
-<component con="0" enc="0" type="2" value="&amp;EXPAND#" xmlName="query_5_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
-<component con="0" enc="0" type="2" value="&amp;COUNT#" xmlName="query_6_0"/>
-<component con="0" enc="0" type="2" value="&amp;COUNT_VAL#" xmlName="query_6_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="odata/Jobs(&amp;UC4RB_UIP_JOB_ID#)" xmlName="resource"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="$.value[0].Key" xmlName="response_part_0_script_0_code_0"/>
+<component con="0" enc="0" type="2" value="$..State" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
-<component con="0" enc="0" type="2" value="RELEASE_KEY#" xmlName="response_part_0_script_0_resourceName"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIP_JOB_STATUS#" xmlName="response_part_0_script_0_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
 <component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
@@ -165,7 +151,7 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
 <Values>
-<row ERTUsage="0" Name="&amp;RELEASE_KEY#" Value=""/>
+<row ERTUsage="0" Name="&amp;UC4RB_UIP_JOB_STATUS#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -183,62 +169,23 @@
 <PRE_SCRIPT mode="1" replacementmode="1" state="1">
 <PSCRI><![CDATA[:INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.PREPARE_RA_JOB
 :SET &CONN_ENDPOINT_URL# = &UC4RB_UIP_URL#
-:INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.SET_CONNECTION_AUTH_NONE
-
-! check if filter is given by user
-:IF &UC4RB_UIP_FILTER# <> ""
-:  SET &FILTER#="$filter"
-:ENDIF
-
-! check if property is given by user
-:IF &UC4RB_UIP_PROP# <> ""
-:  SET &SELECT# = "$select"
-:  SET &UC4RB_UIP_SELECT# = STR_CAT("Key,",&UC4RB_UIP_PROP#)
-:ENDIF
-
-! check if orderby given by user
-:IF &UC4RB_UIP_ORD_BY# <> ""
-:  SET &ORDER_BY#= "$orderby"
-:ENDIF
-
-! check if top is given by user
-:IF &UC4RB_UIP_TOP# <> ""
-:  SET &TOP# ="$top"
-:ENDIF
-
-! check if expand given by user
-:IF &UC4RB_UIP_EXPAND# <> ""
-:  SET &EXPAND#="$expand"
-:ENDIF
-
-!check value of Include Count
-:IF &UC4RB_UIP_COUNT# <> ""
-:  SET &COUNT_VAL# = "false"
-:  SET &COUNT# = "$count"
-:  IF &UC4RB_UIP_COUNT# <> "NO"
-:     SET &COUNT_VAL# = "true"
-:  ENDIF
-:ENDIF
-
-! check if expand given by user
-:  SET &SKIP# = ""
-:  SET &SKIP_VAL# = ""
-:IF &UC4RB_UIP_SKIP# <> 0
-:  SET &SKIP# = "$skip"
-:  SET &SKIP_VAL# = &UC4RB_UIP_SKIP#
-:ENDIF]]></PSCRI>
+:INC PCK.AUTOMIC_RA_REST.PUB.INCLUDE.SET_CONNECTION_AUTH_NONE]]></PSCRI>
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
-<MSCRI/>
+<MSCRI><![CDATA[:IF &UC4RB_UIP_JOB_IDS# = "[]"
+:  STOP MSG, 50, "Could not fetch job execution id(s) successfully."
+:ENDIF]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
-<filterobjects/>
+<filterobjects>
+<row Icon="FILTER" condition="true" execute="" filter="PCK.AUTOMIC_UIPATH.PUB.FILTER.GET_JOB_STATUS" lnr="1" return="9" statustext="Token Expired"/>
+</filterobjects>
 <HostFsc/>
 <LoginFsc/>
 </OUTPUTSCAN>
 <POST_SCRIPT mode="1" replacementmode="1" state="1">
-<OSCRI><![CDATA[:PUBLISH &RELEASE_KEY#,,WORKFLOW]]></OSCRI>
+<OSCRI/>
 </POST_SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC/>

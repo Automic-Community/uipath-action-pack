@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBP AllowExternal="1" name="PCK.AUTOMIC_UIPATH.PUB.ACTION.START_JOB">
+<JOBP AllowExternal="1" name="PCK.AUTOMIC_UIPATH.PUB.ACTION.UPDATE_TO_LATEST_PACKAGE_VERSION">
 <XHEADER state="1">
-<Title>Start Job</Title>
+<Title>Update to Latest Package Version</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -63,19 +63,10 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
-<UC4RB_UIP_FAILUREs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FAILURE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Faulted, Canceled</UC4RB_UIP_FAILUREs.00>
-<UC4RB_UIP_PROCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
-<UC4RB_UIP_RETRY_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">10</UC4RB_UIP_RETRY_COUNTs.00>
-<UC4RB_UIP_RETRY_INTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_INT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">120</UC4RB_UIP_RETRY_INTs.00>
-<UC4RB_UIP_ROBOTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
-<UC4RB_UIP_ROBOT_NUMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NUM#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">0</UC4RB_UIP_ROBOT_NUMs.00>
-<UC4RB_UIP_STRATEGYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_STRATEGY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">All</UC4RB_UIP_STRATEGYs.00>
-<UC4RB_UIP_SUCCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SUCCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Successful</UC4RB_UIP_SUCCESSs.00>
-<UC4RB_UIP_WAIT_COMPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_COMP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">YES</UC4RB_UIP_WAIT_COMPs.00>
-<UC4RB_UIP_WAIT_TIMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_TIME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">5</UC4RB_UIP_WAIT_TIMEs.00>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION">
+<UC4RB_UIP_RELEASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RELEASE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -145,7 +136,7 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values/>
-<Mode>1</Mode>
+<Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
@@ -160,19 +151,10 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
-<UC4RB_UIP_FAILUREs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FAILURE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Faulted, Canceled</UC4RB_UIP_FAILUREs.00>
-<UC4RB_UIP_PROCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
-<UC4RB_UIP_RETRY_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">10</UC4RB_UIP_RETRY_COUNTs.00>
-<UC4RB_UIP_RETRY_INTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_INT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">120</UC4RB_UIP_RETRY_INTs.00>
-<UC4RB_UIP_ROBOTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
-<UC4RB_UIP_ROBOT_NUMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NUM#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">0</UC4RB_UIP_ROBOT_NUMs.00>
-<UC4RB_UIP_STRATEGYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_STRATEGY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">All</UC4RB_UIP_STRATEGYs.00>
-<UC4RB_UIP_SUCCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SUCCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Successful</UC4RB_UIP_SUCCESSs.00>
-<UC4RB_UIP_WAIT_COMPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_COMP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">YES</UC4RB_UIP_WAIT_COMPs.00>
-<UC4RB_UIP_WAIT_TIMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_TIME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">5</UC4RB_UIP_WAIT_TIMEs.00>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION">
+<UC4RB_UIP_RELEASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RELEASE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -292,7 +274,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="GET_PROCESS" BranchType="0" Col="3" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_UIPATH.PRV.JOBS.GET_PROCESS" ParentAlias="" ParentObject="" Row="1" Text2="">
+<task Alias="UPDATE_TO_LATEST_PACKAGE_VERSION" BranchType="0" Col="3" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_UIPATH.PRV.JOB.UPDATE_TO_LATEST_PACKAGE_VERSION" ParentAlias="" ParentObject="" Row="1" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -310,16 +292,14 @@
 <dyntree>
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
-<Values>
-<row ERTUsage="0" Mod="0" Name="&amp;RELEASE_KEY#" Value=""/>
-</Values>
+<Values/>
 <Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values/>
-<Mode>1</Mode>
+<Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
@@ -334,196 +314,10 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
-<UC4RB_UIP_FAILUREs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FAILURE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Faulted, Canceled</UC4RB_UIP_FAILUREs.00>
-<UC4RB_UIP_PROCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
-<UC4RB_UIP_RETRY_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">10</UC4RB_UIP_RETRY_COUNTs.00>
-<UC4RB_UIP_RETRY_INTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_INT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">120</UC4RB_UIP_RETRY_INTs.00>
-<UC4RB_UIP_ROBOTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
-<UC4RB_UIP_ROBOT_NUMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NUM#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">0</UC4RB_UIP_ROBOT_NUMs.00>
-<UC4RB_UIP_STRATEGYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_STRATEGY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">All</UC4RB_UIP_STRATEGYs.00>
-<UC4RB_UIP_SUCCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SUCCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Successful</UC4RB_UIP_SUCCESSs.00>
-<UC4RB_UIP_WAIT_COMPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_COMP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">YES</UC4RB_UIP_WAIT_COMPs.00>
-<UC4RB_UIP_WAIT_TIMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_TIME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">5</UC4RB_UIP_WAIT_TIMEs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">
-<CONN_CONNECTION_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_CONNECTION_TIMEOUT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">30</CONN_CONNECTION_TIMEOUTs.00>
-<CONN_FOLLOW_REDIRECTSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_FOLLOW_REDIRECTS#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">NO</CONN_FOLLOW_REDIRECTSs.00>
-<CONN_READ_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_READ_TIMEOUT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">60</CONN_READ_TIMEOUTs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
-<CONN_PROXY_AUTH_METHODs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
-<CONN_PROXY_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10</CONN_PROXY_PASSWORDs.00>
-<CONN_PROXY_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
-<CONN_PROXY_REALMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
-<CONN_PROXY_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_USERNAME#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-</dyntree>
-</dynvalues>
-<CIT src="OCV">
-<citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
-<cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
-<component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_password"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_port"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_preemptive"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_realm"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_username"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientkey"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientsecret"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_token"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_uri"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_signature_type"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_token"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_token_secret"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_verifier"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_version_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_auth_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_host"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_password"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_port"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_realm"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_type"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
-<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="curl"/>
-<component con="0" enc="0" type="2" value="" xmlName="file"/>
-<component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
-<component con="0" enc="0" type="2" value="Bearer &amp;UC4RB_UIP_AUTH_TOKEN#" xmlName="header_0_1"/>
-<component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
-<component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
-<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
-<component con="0" enc="0" type="2" value="GET" xmlName="method"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
-<component con="0" enc="0" type="2" value="&amp;FILTER#" xmlName="query_0_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_FILTER#" xmlName="query_0_1"/>
-<component con="0" enc="0" type="2" value="&amp;ORDER_BY#" xmlName="query_1_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_ORD_BY#" xmlName="query_1_1"/>
-<component con="0" enc="0" type="2" value="&amp;SELECT#" xmlName="query_2_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SELECT#" xmlName="query_2_1"/>
-<component con="0" enc="0" type="2" value="&amp;TOP#" xmlName="query_3_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_TOP#" xmlName="query_3_1"/>
-<component con="0" enc="0" type="2" value="&amp;SKIP#" xmlName="query_4_0"/>
-<component con="0" enc="0" type="2" value="&amp;SKIP_VAL#" xmlName="query_4_1"/>
-<component con="0" enc="0" type="2" value="&amp;EXPAND#" xmlName="query_5_0"/>
-<component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
-<component con="0" enc="0" type="2" value="&amp;COUNT#" xmlName="query_6_0"/>
-<component con="0" enc="0" type="2" value="&amp;COUNT_VAL#" xmlName="query_6_1"/>
-<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
-<component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="$.value[0].Key" xmlName="response_part_0_script_0_code_0"/>
-<component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
-<component con="0" enc="0" type="2" value="RELEASE_KEY#" xmlName="response_part_0_script_0_resourceName"/>
-<component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
-<component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
-<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
-<component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
-<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
-<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
-</cit>
-<cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
-</citcont>
-</CIT>
-<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
-<postconditions>
-<PostCon>
-<conditions id="CONDITIONS"/>
-</PostCon>
-</postconditions>
-</task>
-<task Alias="START_JOB" BranchType="0" Col="3" Lnr="4" OType="JOBS" Object="PCK.AUTOMIC_UIPATH.PRV.JOBS.START_JOB" ParentAlias="" ParentObject="" Row="2" Text2="">
-<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
-<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
-<preconditions>
-<PreCon>
-<conditions id="CONDITIONS"/>
-</PreCon>
-</preconditions>
-<predecessors>
-<pre BranchType="0" Lnr="1" PreLnr="3" When="ANY_OK" type="container"/>
-</predecessors>
-<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
-<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
-<dynvalues>
-<dyntree>
-<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
-<VALUE state="2">
-<Values>
-<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIP_JOB_IDS#" Value=""/>
-</Values>
-<Mode>0</Mode>
-</VALUE>
-</node>
-<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
-<VALUE state="2">
-<Values/>
-<Mode>1</Mode>
-</VALUE>
-</node>
-<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
-<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
-<UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
-<UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
-<UC4RB_UIP_FAILUREs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FAILURE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Faulted, Canceled</UC4RB_UIP_FAILUREs.00>
-<UC4RB_UIP_PROCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
-<UC4RB_UIP_RETRY_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">10</UC4RB_UIP_RETRY_COUNTs.00>
-<UC4RB_UIP_RETRY_INTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_INT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">120</UC4RB_UIP_RETRY_INTs.00>
-<UC4RB_UIP_ROBOTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
-<UC4RB_UIP_ROBOT_NUMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NUM#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">0</UC4RB_UIP_ROBOT_NUMs.00>
-<UC4RB_UIP_STRATEGYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_STRATEGY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">All</UC4RB_UIP_STRATEGYs.00>
-<UC4RB_UIP_SUCCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SUCCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Successful</UC4RB_UIP_SUCCESSs.00>
-<UC4RB_UIP_WAIT_COMPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_COMP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">YES</UC4RB_UIP_WAIT_COMPs.00>
-<UC4RB_UIP_WAIT_TIMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_TIME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">5</UC4RB_UIP_WAIT_TIMEs.00>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION">
+<UC4RB_UIP_RELEASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RELEASE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -611,25 +405,10 @@
 <component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
 <component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
 <component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
-<component con="0" enc="0" type="2" value="A{" xmlName="request_part_0_requestTab_data_1"/>
-<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_10"/>
-<component con="0" enc="0" type="2" value="A  &quot;startInfo&quot;: {" xmlName="request_part_0_requestTab_data_2"/>
-<component con="0" enc="0" type="2" value="A    &quot;ReleaseKey&quot;: &quot;&amp;RELEASE_KEY#&quot;," xmlName="request_part_0_requestTab_data_3"/>
-<component con="0" enc="0" type="2" value="A    &quot;Strategy&quot;: &quot;&amp;UC4RB_UIP_STRATEGY#&quot;," xmlName="request_part_0_requestTab_data_4"/>
-<component con="0" enc="0" type="2" value="A    &quot;RobotIds&quot;: [" xmlName="request_part_0_requestTab_data_5"/>
-<component con="0" enc="0" type="2" value="A               &amp;UC4RB_UIP_ROBOT#" xmlName="request_part_0_requestTab_data_6"/>
-<component con="0" enc="0" type="2" value="A    ]," xmlName="request_part_0_requestTab_data_7"/>
-<component con="0" enc="0" type="2" value="A    &quot;NoOfRobots&quot;: &amp;UC4RB_UIP_ROBOT_NUM#" xmlName="request_part_0_requestTab_data_8"/>
-<component con="0" enc="0" type="2" value="A  }" xmlName="request_part_0_requestTab_data_9"/>
 <component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
 <component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="odata/Jobs/UiPath.Server.Configuration.OData.StartJobs" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="/odata/Releases(&amp;UC4RB_UIP_RELEASE#)/UiPath.Server.Configuration.OData.UpdateToLatestPackageVersion" xmlName="resource"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="$..value.Id" xmlName="response_part_0_script_0_code_0"/>
-<component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
-<component con="0" enc="0" type="2" value="UC4RB_UIP_JOB_IDS#" xmlName="response_part_0_script_0_resourceName"/>
-<component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
-<component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
 <component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
 <component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
 <component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
@@ -648,122 +427,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="CHECK_JOB_STATUS" BranchType="0" Col="4" Lnr="5" OType="SCRI" Object="PCK.AUTOMIC_UIPATH.PRV.SCRI.CHECK_JOB_STATUS" ParentAlias="" ParentObject="" Row="2" Text2="">
-<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
-<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
-<preconditions>
-<PreCon>
-<conditions id="CONDITIONS">
-<condition active="1" id="USER DEFINED" once="0" type="C" uiinfo="">
-<params>
-<param altview="0" name="XC_P01" type="V" value="&amp;UC4RB_UIP_WAIT_COMP#"/>
-<param altview="0" name="XC_P02" type="V" value="="/>
-<param altview="0" name="XC_P03" type="V" value="YES"/>
-</params>
-<when active="1" id="USER DEFINED" once="0" type="W" uiinfo="">
-<action active="1" id="RUN TASK" once="1" type="A" uiinfo="">
-<params/>
-</action>
-</when>
-<else active="1" id="USER DEFINED" once="0" type="E" uiinfo="">
-<action active="1" id="SKIP TASK" once="1" type="A" uiinfo="">
-<params>
-<param altview="0" name="XC_P01" type="V" value="Skipping Get Job  Status"/>
-</params>
-</action>
-</else>
-</condition>
-</conditions>
-</PreCon>
-</preconditions>
-<predecessors>
-<pre BranchType="0" Lnr="1" PreLnr="4" When="ANY_OK" type="container"/>
-</predecessors>
-<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
-<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
-<dynvalues>
-<dyntree>
-<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
-<VALUE state="2">
-<Values/>
-<Mode>0</Mode>
-</VALUE>
-</node>
-<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
-<VALUE state="2">
-<Values/>
-<Mode>1</Mode>
-</VALUE>
-</node>
-<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
-<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
-<UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
-<UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
-<UC4RB_UIP_FAILUREs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FAILURE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Faulted, Canceled</UC4RB_UIP_FAILUREs.00>
-<UC4RB_UIP_PROCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
-<UC4RB_UIP_RETRY_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">10</UC4RB_UIP_RETRY_COUNTs.00>
-<UC4RB_UIP_RETRY_INTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_INT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">120</UC4RB_UIP_RETRY_INTs.00>
-<UC4RB_UIP_ROBOTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
-<UC4RB_UIP_ROBOT_NUMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NUM#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">0</UC4RB_UIP_ROBOT_NUMs.00>
-<UC4RB_UIP_STRATEGYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_STRATEGY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">All</UC4RB_UIP_STRATEGYs.00>
-<UC4RB_UIP_SUCCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SUCCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Successful</UC4RB_UIP_SUCCESSs.00>
-<UC4RB_UIP_WAIT_COMPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_COMP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">YES</UC4RB_UIP_WAIT_COMPs.00>
-<UC4RB_UIP_WAIT_TIMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_TIME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">5</UC4RB_UIP_WAIT_TIMEs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">
-<CONN_CONNECTION_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_CONNECTION_TIMEOUT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">30</CONN_CONNECTION_TIMEOUTs.00>
-<CONN_FOLLOW_REDIRECTSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_FOLLOW_REDIRECTS#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">NO</CONN_FOLLOW_REDIRECTSs.00>
-<CONN_READ_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_READ_TIMEOUT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">60</CONN_READ_TIMEOUTs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
-<CONN_PROXY_AUTH_METHODs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
-<CONN_PROXY_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10</CONN_PROXY_PASSWORDs.00>
-<CONN_PROXY_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
-<CONN_PROXY_REALMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
-<CONN_PROXY_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_USERNAME#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-</dyntree>
-</dynvalues>
-<CIT/>
-<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
-<postconditions>
-<PostCon>
-<conditions id="CONDITIONS"/>
-</PostCon>
-</postconditions>
-</task>
-<task Alias="" BranchType="0" Col="5" Lnr="6" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="2" Text2="">
+<task Alias="" BranchType="0" Col="4" Lnr="4" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
 <checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -773,7 +437,7 @@
 </PreCon>
 </preconditions>
 <predecessors>
-<pre BranchType="0" Lnr="1" PreLnr="5" When="ANY_OK" type="container"/>
+<pre BranchType="0" Lnr="1" PreLnr="3" When="ANY_OK" type="container"/>
 </predecessors>
 <runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
@@ -789,19 +453,10 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">
-<UC4RB_UIP_FAILUREs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FAILURE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Faulted, Canceled</UC4RB_UIP_FAILUREs.00>
-<UC4RB_UIP_PROCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
-<UC4RB_UIP_RETRY_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">10</UC4RB_UIP_RETRY_COUNTs.00>
-<UC4RB_UIP_RETRY_INTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RETRY_INT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">120</UC4RB_UIP_RETRY_INTs.00>
-<UC4RB_UIP_ROBOTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB"/>
-<UC4RB_UIP_ROBOT_NUMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NUM#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">0</UC4RB_UIP_ROBOT_NUMs.00>
-<UC4RB_UIP_STRATEGYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_STRATEGY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">All</UC4RB_UIP_STRATEGYs.00>
-<UC4RB_UIP_SUCCESSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SUCCESS#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">Successful</UC4RB_UIP_SUCCESSs.00>
-<UC4RB_UIP_WAIT_COMPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_COMP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">YES</UC4RB_UIP_WAIT_COMPs.00>
-<UC4RB_UIP_WAIT_TIMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_WAIT_TIME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB">5</UC4RB_UIP_WAIT_TIMEs.00>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION">
+<UC4RB_UIP_RELEASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RELEASE#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -886,7 +541,7 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
 <Values/>
-<Mode>1</Mode>
+<Mode>0</Mode>
 </VALUE>
 </node>
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PRPTS" type="PROMPTSET">
@@ -899,19 +554,10 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.START_JOB" prptmode="1">
-<UC4RB_UIP_PROCESSs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_STRATEGYs.00 altview="0" haslist="0">All</UC4RB_UIP_STRATEGYs.00>
-<UC4RB_UIP_ROBOTs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_ROBOT_NUMs.00 altview="0" haslist="0">0</UC4RB_UIP_ROBOT_NUMs.00>
-<UC4RB_UIP_WAIT_COMPs.00 altview="0" haslist="0">YES</UC4RB_UIP_WAIT_COMPs.00>
-<UC4RB_UIP_WAIT_TIMEs.00 altview="0" haslist="0">5</UC4RB_UIP_WAIT_TIMEs.00>
-<UC4RB_UIP_RETRY_COUNTs.00 altview="0" haslist="0">10</UC4RB_UIP_RETRY_COUNTs.00>
-<UC4RB_UIP_RETRY_INTs.00 altview="0" haslist="0">120</UC4RB_UIP_RETRY_INTs.00>
-<UC4RB_UIP_SUCCESSs.00 altview="0" haslist="0">Successful</UC4RB_UIP_SUCCESSs.00>
-<UC4RB_UIP_FAILUREs.00 altview="0" haslist="0">Faulted, Canceled</UC4RB_UIP_FAILUREs.00>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UPDATE_TO_LATEST_PACKAGE_VERSION" prptmode="1">
+<UC4RB_UIP_RELEASEs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -963,51 +609,28 @@
 <FInclSubDirs>0</FInclSubDirs>
 </ROLLBACK>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[: PSET &UC4RB_UIP_FILTER# = "ProcessKey eq '&UC4RB_UIP_PROCESS#'"
-: PSET &UC4RB_UIP_PROP# = ""
-: PSET &UC4RB_UIP_ORD_BY# = ""
-: PSET &UC4RB_UIP_TOP# = ""
-: PSET &UC4RB_UIP_EXPAND# =""
-: PSET &UC4RB_UIP_SKIP# = 0
-: PSET &UC4RB_UIP_COUNT# = ""
-
-
-]]></MSCRI>
+<MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[= Action name =
-PCK.AUTOMIC_UIPATH.PUB.ACTION.START_JOB
+PCK.AUTOMIC_UIPATH.PUB.ACTION.UPDATE_TO_LATEST_PACKAGE_VERSION
 
 = General description =
-This action starts a job manually on UiPath Orchestrator.
-
-
-= Inputs =
-- Process Name*: 	 Provide the name of the process to be executed. E.g. AWI
-- Strategy: 	 	 Specify which robots from the environment will be run by the process. E.g. Specific
-- Robot IDs: 	 	 Provide the collection of ids of specific robots selected to be run by the current process. Robot ids should be comma separated. E.g. 55577
-- Number of Robots: 	 Provide the number of robots selected to be run by the current process. E.g. 0
-- Wait for Completion:   Specify whether action should wait for the job to be completed successfully. Default- Yes
-- Initial Waiting Time:  Specify initial waiting time in minutes before the first status query. Default- 5
-- Retry Count: 	         Specify the number of retry attempts to get the status. Default- 10
-- Retry Interval:        Specify the interval in seconds between retry attempt. Default- 120
-- Success: 	         Specify UiPath states which end action successfully. Multiple states can be given separated by a comma. Default- Successful
-- Failure:               Specify UiPath states will end action unsuccessfully. Multiple states can be given separated by a comma. Default- Faulted, Canceled
+This action will Update a process to the latest version of release on UiPath Orchestrator.
 
 = Failure Conditions =
-* If the strategy is selected as "Specific" without specifying any Robot Id.
-* If Robot Ids are provided and strategy is not "Specific".
-* If the strategy is selected as "Robot Count" and Number of Robots is not greater than 0.
-* If Number of Robots is greater than 0 and strategy is other than Robot Count.
-* If the Job could not be completed successfully on all the robots specified within the specified time limit.
+* Invalid username/password as input will result in failure while Authenticating system.
+* Action will fail if no release exists in the system with given release id.
+
+= Inputs =
+- Release Id*: 	 Provide the name of the release id for the package. E.g. 44345
+
 
 = Behavior =
-* Robot Ids must be provided if Strategy is selected as "Specific".
-* Number of Robots must be greater than 0 if Strategy is selected as "Robot Count".
-* If Number of Robots is greater than the number of available robots, the job will be started for all the robots.
+(none)
 
 = Return Value =
-UC4RB_UIP_JOB_IDS# : Comma-separated list of Job execution Ids.
+(none)
 
 = Outputs =
 * Return code is 0 in case of success.
@@ -1020,41 +643,10 @@ UC4RB_UIP_JOB_IDS# : Comma-separated list of Job execution Ids.
 AE logs will be displayed in the AE report.
 
 = Example =
-* For 'Specific' Strategy
-- Process Name*: 	 AWI
-- Strategy: 	 	 Specific
-- Robot IDs: 	 	 55577,4236
-- Number of Robots: 	 0
-- Wait for Completion:   Yes
-- Initial Waiting Time:  1
-- Retry Count: 	         5
-- Retry Interval:        50
-- Success: 	         Successful
-- Failure:               Faulted, Canceled
 
-* For 'Robot Count' Strategy
-- Process Name*: 	 AWI
-- Strategy: 	 	 Robot Count
-- Robot IDs:
-- Number of Robots: 	 2
-- Wait for Completion:   No
-- Initial Waiting Time:  5
-- Retry Count: 	         10
-- Retry Interval:        120
-- Success: 	         Successful
-- Failure:               Faulted, Canceled
+- Release Id*: 	 44345
 
-* For 'All' Strategy
-- Process Name*: 	 AWI
-- Strategy: 	 	 All
-- Robot IDs:
-- Number of Robots: 	 0
-- Wait for Completion:   Yes
-- Initial Waiting Time:  2
-- Retry Count: 	         15
-- Retry Interval:        100
-- Success:               Successful
-- Failure:               Faulted, Canceled]]></DOC>
+]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>
