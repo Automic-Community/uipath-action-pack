@@ -55,8 +55,8 @@ Following actions are supported
 * Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOTS
 * Action Description: This action will fetch Robot(s) available on UiPath Orchestrator.
 
-* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.UPDATE_TO_LATEST_PACKAGE_VERSION
-* Action Description: This action will Update a process to the latest version of release on UiPath Orchestrator.]]></DOC>
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.ROLLBACK_RELEASE_TO_PREVIOUS_VERSION
+* Action Description: This action will rollback a given release to its previous version .]]></DOC>
 </DOCU_Docu>
 </DOCU>
 </uc-export>

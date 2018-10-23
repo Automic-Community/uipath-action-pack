@@ -1,0 +1,45 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        rollback_to_previous_package_version
+Test Template     Rollback To Previous Package Version Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    Release_ID
+Rollback To Previous Package Version with valid Release ID value
+                      [Tags]    main_scenarios
+                      OK        ${Release_ID}
+
+Rollback To Previous Package Version with non-existing Release ID value
+                      NOK       ${Release_ID}
+
+Rollback To Previous Package Version with invalid Release ID value
+                      NOK       Invalid
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "Rollback To Previous Package Version"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Rollback To Previous Package Version Template
+    [Arguments]    ${OK_NOK}    ${Release_ID}
+    [Documentation]    This test rollbacks package version to previous in UiPath.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${Release_ID}: This value provide Provide the release ID to rollback to previous version
+    Generate String
+    Init Action    ${_ROLLBACK_TO_PREVIOUS_PACKAGE_VERSION_ACTION}
+    Connect To UiPath
+    Run Keyword If    '${Release_ID}' == 'Invalid'    Action Set    &UC4RB_UIP_RELEASE#    ${Generated_Name}_${Time}    ELSE    Action Set
+    ...    &UC4RB_UIP_RELEASE#    ${Release_ID}
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
+
+Teardown
+    Log    *******End Test "Rollback To Previous Package Version"*******
