@@ -616,7 +616,7 @@
 PCK.AUTOMIC_UIPATH.PUB.ACTION.ROLLBACK_RELEASE_TO_PREVIOUS_VERSION
 
 = General description =
-This actionRollbacks a process to the previous version of release on UiPath Orchestrator.
+This action Rollbacks a process to the previous version of release on UiPath Orchestrator.
 
 = Failure Conditions =
 * If previous version for the specified release id, does not exists.

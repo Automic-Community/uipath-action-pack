@@ -623,7 +623,7 @@ This action will Update a process to the latest version of release on UiPath Orc
 * Action will fail if no release exists in the system with given release id.
 
 = Inputs =
-- Release Id*: 	 Provide the name of the release id for the package. E.g. 44345
+- Release Id*: 	 Provide the id of the release for the package. E.g. 44345
 
 
 = Behavior =
