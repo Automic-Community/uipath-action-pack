@@ -25,7 +25,7 @@
 <DeactWhen>ANY_OK</DeactWhen>
 <AutoDeactAlways>0</AutoDeactAlways>
 <DeactDelay>0</DeactDelay>
-<ActAtRun>0</ActAtRun>
+<ActAtRun>1</ActAtRun>
 <UC4Priority>0</UC4Priority>
 <PassPriority>0</PassPriority>
 <MaxParallel2>0</MaxParallel2>
@@ -67,11 +67,11 @@
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
 <UC4RB_UIP_ADV_OPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ADV_OPT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_ENV_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
+<UC4RB_UIP_ENV_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_ID#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_DESCs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_DESC#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_PROC_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_VRSNs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_VRSN#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
+<UC4RB_UIP_RELEASE_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RELEASE_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -160,11 +160,11 @@
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
 <UC4RB_UIP_ADV_OPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ADV_OPT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_ENV_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
+<UC4RB_UIP_ENV_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_ID#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_DESCs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_DESC#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_PROC_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_VRSNs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_VRSN#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
+<UC4RB_UIP_RELEASE_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RELEASE_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -202,32 +202,17 @@
 <CIT src="OCV">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
-<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
-<component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
-<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
-<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
-<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
-<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
-<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_password"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_port"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_preemptive"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_username"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientkey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientsecret"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_token"/>
@@ -237,6 +222,10 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_token_secret"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_verifier"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_version_method"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_auth_method"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_password"/>
@@ -244,35 +233,46 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_type"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
-<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
+<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
 <component con="0" enc="0" type="2" value="" xmlName="curl"/>
-<component con="0" enc="0" type="2" value="application/json" xmlName="mediaType"/>
-<component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
-<component con="0" enc="0" type="2" value="Part 1" xmlName="partName"/>
-<component con="0" enc="0" type="2" value="/api/account/authenticate" xmlName="resource"/>
-<component con="0" enc="0" type="2" value="POST" xmlName="method"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
-<component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
-<component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
-<component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
-<component con="0" enc="0" type="2" value="A  &quot;password&quot; : &quot;&amp;UC4RB_UIP_PASSWD#&quot;" xmlName="request_part_0_requestTab_data_4"/>
-<component con="0" enc="0" type="2" value="A  &quot;usernameOrEmailAddress&quot; : &quot;&amp;UC4RB_UIP_USER#&quot;," xmlName="request_part_0_requestTab_data_3"/>
-<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_5"/>
-<component con="0" enc="0" type="2" value="A  &quot;tenancyName&quot; : &quot;&amp;UC4RB_UIP_TENANT_NAME#&quot;," xmlName="request_part_0_requestTab_data_2"/>
-<component con="0" enc="0" type="2" value="A{" xmlName="request_part_0_requestTab_data_1"/>
+<component con="0" enc="0" type="2" value="" xmlName="file"/>
 <component con="0" enc="0" type="2" value="Content-Type" xmlName="header_0_0"/>
 <component con="0" enc="0" type="2" value="application/json; charset=utf-8" xmlName="header_0_1"/>
 <component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
 <component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
+<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
+<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
+<component con="0" enc="0" type="2" value="application/json" xmlName="mediaType"/>
+<component con="0" enc="0" type="2" value="POST" xmlName="method"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
+<component con="0" enc="0" type="2" value="Part 1" xmlName="partName"/>
+<component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
+<component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
+<component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
+<component con="0" enc="0" type="2" value="A{" xmlName="request_part_0_requestTab_data_1"/>
+<component con="0" enc="0" type="2" value="A  &quot;tenancyName&quot; : &quot;&amp;UC4RB_UIP_TENANT_NAME#&quot;," xmlName="request_part_0_requestTab_data_2"/>
+<component con="0" enc="0" type="2" value="A  &quot;usernameOrEmailAddress&quot; : &quot;&amp;UC4RB_UIP_USER#&quot;," xmlName="request_part_0_requestTab_data_3"/>
+<component con="0" enc="0" type="2" value="A  &quot;password&quot; : &quot;&amp;UC4RB_UIP_PASSWD#&quot;" xmlName="request_part_0_requestTab_data_4"/>
+<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_5"/>
+<component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
+<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
+<component con="0" enc="0" type="2" value="/api/account/authenticate" xmlName="resource"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
 <component con="0" enc="0" type="2" value="$result" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
 <component con="0" enc="0" type="2" value="UC4RB_UIP_AUTH_TOKEN#" xmlName="response_part_0_script_0_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
-<component con="0" enc="0" type="2" value="" xmlName="file"/>
+<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
+<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
+<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
+<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
+<component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
+<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
+<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
 </cit>
 <cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
 </citcont>
@@ -284,7 +284,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="GET_ENV_ID" BranchType="0" Col="3" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ENV_ID" ParentAlias="" ParentObject="" Row="1" Text2="">
+<task Alias="CREATE_NEW_RELEASE" BranchType="0" Col="3" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_UIPATH.PUB.JOBS.CREATE_NEW_RELEASE" ParentAlias="" ParentObject="" Row="1" Text2="">
 <checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -303,7 +303,8 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIP_ENV_ID#" Value="&quot;&quot;"/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIP_RELEASE_ID#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIP_RELEASE_KEY#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -330,11 +331,11 @@
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
 <UC4RB_UIP_ADV_OPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ADV_OPT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_ENV_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
+<UC4RB_UIP_ENV_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_ID#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_DESCs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_DESC#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_PROC_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_VRSNs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_VRSN#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
+<UC4RB_UIP_RELEASE_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RELEASE_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -373,30 +374,16 @@
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
 <component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
-<component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
-<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
-<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
-<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
-<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
-<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_password"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_port"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_preemptive"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_username"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientkey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientsecret"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_token"/>
@@ -406,6 +393,10 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_token_secret"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_verifier"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_version_method"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_auth_method"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_password"/>
@@ -413,27 +404,54 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_type"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
-<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
+<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
 <component con="0" enc="0" type="2" value="" xmlName="curl"/>
-<component con="0" enc="0" type="2" value="/odata/Environments" xmlName="resource"/>
-<component con="0" enc="0" type="2" value="GET" xmlName="method"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
+<component con="0" enc="0" type="2" value="" xmlName="file"/>
 <component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
 <component con="0" enc="0" type="2" value="Bearer &amp;UC4RB_UIP_AUTH_TOKEN#" xmlName="header_0_1"/>
 <component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
 <component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
-<component con="0" enc="0" type="2" value="$filter" xmlName="query_0_0"/>
-<component con="0" enc="0" type="2" value="Name eq '&amp;UC4RB_UIP_ENV_NAME#'" xmlName="query_0_1"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
+<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
+<component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
+<component con="0" enc="0" type="2" value="application/json" xmlName="mediaType"/>
+<component con="0" enc="0" type="2" value="POST" xmlName="method"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
+<component con="0" enc="0" type="2" value="Part 1" xmlName="partName"/>
+<component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
+<component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
+<component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
+<component con="0" enc="0" type="2" value="A{" xmlName="request_part_0_requestTab_data_1"/>
+<component con="0" enc="0" type="2" value="A  &quot;ProcessKey&quot;: &quot;&amp;UC4RB_UIP_PROC_NAME#&quot;," xmlName="request_part_0_requestTab_data_2"/>
+<component con="0" enc="0" type="2" value="A  &quot;ProcessVersion&quot;: &quot;&amp;UC4RB_UIP_PROC_VRSN#&quot;," xmlName="request_part_0_requestTab_data_3"/>
+<component con="0" enc="0" type="2" value="A  &quot;Name&quot;: &quot;&amp;UC4RB_UIP_RELEASE_NAME#&quot;," xmlName="request_part_0_requestTab_data_4"/>
+<component con="0" enc="0" type="2" value="A  &quot;Description&quot;:&quot;&amp;UC4RB_UIP_PROC_DESC#&quot;," xmlName="request_part_0_requestTab_data_5"/>
+<component con="0" enc="0" type="2" value="A  &quot;EnvironmentId&quot;: &amp;UC4RB_UIP_ENV_ID#" xmlName="request_part_0_requestTab_data_6"/>
+<component con="0" enc="0" type="2" value="A  &amp;UC4RB_UIP_ADV_OPT_KEY_VAL#" xmlName="request_part_0_requestTab_data_7"/>
+<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_8"/>
+<component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
+<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
+<component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="$value[0].Id" xmlName="response_part_0_script_0_code_0"/>
+<component con="0" enc="0" type="2" value="$.Key" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
-<component con="0" enc="0" type="2" value="UC4RB_UIP_ENV_ID#" xmlName="response_part_0_script_0_resourceName"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIP_RELEASE_KEY#" xmlName="response_part_0_script_0_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
-<component con="0" enc="0" type="2" value="" xmlName="file"/>
+<component con="0" enc="0" type="2" value="$.Id" xmlName="response_part_0_script_1_code_0"/>
+<component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_1_queryType"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIP_RELEASE_ID#" xmlName="response_part_0_script_1_resourceName"/>
+<component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_1_saveTo"/>
+<component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_1_useArray"/>
+<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
+<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
+<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
+<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
+<component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
+<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
+<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
 </cit>
 <cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
 </citcont>
@@ -445,8 +463,8 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="CREATE_NEW_RELEASE" BranchType="0" Col="4" Lnr="4" OType="JOBS" Object="PCK.AUTOMIC_UIPATH.PUB.JOBS.CREATE_NEW_RELEASE" ParentAlias="" ParentObject="" Row="1" Text2="">
-<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<task Alias="" BranchType="0" Col="4" Lnr="4" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
 <preconditions>
@@ -461,20 +479,6 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
-<VALUE state="2">
-<Values/>
-<Mode>0</Mode>
-</VALUE>
-</node>
-<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
-<VALUE state="2">
-<Values/>
-<Mode>1</Mode>
-</VALUE>
-</node>
-<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
-<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
@@ -489,164 +493,11 @@
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
 <UC4RB_UIP_ADV_OPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ADV_OPT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_ENV_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
+<UC4RB_UIP_ENV_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_ID#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_DESCs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_DESC#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_PROC_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 <UC4RB_UIP_PROC_VRSNs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_VRSN#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">
-<CONN_PROXY_AUTH_METHODs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_AUTH_METHOD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_AUTH_METHODs.00>
-<CONN_PROXY_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_HOST#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PASSWORD#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">--10</CONN_PROXY_PASSWORDs.00>
-<CONN_PROXY_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_PORT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">0</CONN_PROXY_PORTs.00>
-<CONN_PROXY_REALMs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_REALM#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-<CONN_PROXY_TYPEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_TYPE#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY">None</CONN_PROXY_TYPEs.00>
-<CONN_PROXY_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_PROXY_USERNAME#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_PROXY"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">
-<CONN_CONNECTION_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_CONNECTION_TIMEOUT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">30</CONN_CONNECTION_TIMEOUTs.00>
-<CONN_FOLLOW_REDIRECTSs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_FOLLOW_REDIRECTS#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">NO</CONN_FOLLOW_REDIRECTSs.00>
-<CONN_READ_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="CONN_READ_TIMEOUT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.CONNECTION_ADVANCED">60</CONN_READ_TIMEOUTs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<PRPTBOX promptset="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">
-<OVERWRITE_RA_AGENT_PROMPTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="OVERWRITE_RA_AGENT_PROMPT#" promptsetname="PCK.AUTOMIC_RA_REST.PUB.PROMPTSET.OVERWRITE_RA_AGENT">&amp;OVERWRITE_RA_AGENT_PROMPT#</OVERWRITE_RA_AGENT_PROMPTs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-</dyntree>
-</dynvalues>
-<CIT src="OCV">
-<citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
-<cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
-<component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
-<component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
-<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
-<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
-<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
-<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
-<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_password"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_port"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_preemptive"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_realm"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_username"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientkey"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientsecret"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_token"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_uri"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_signature_type"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_token"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_token_secret"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_verifier"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_version_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_auth_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_host"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_password"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_port"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_realm"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_type"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
-<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
-<component con="0" enc="0" type="2" value="" xmlName="curl"/>
-<component con="0" enc="0" type="2" value="application/json" xmlName="mediaType"/>
-<component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
-<component con="0" enc="0" type="2" value="Part 1" xmlName="partName"/>
-<component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
-<component con="0" enc="0" type="2" value="POST" xmlName="method"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
-<component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
-<component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
-<component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
-<component con="0" enc="0" type="2" value="A  &amp;UC4RB_UIP_ADV_OPT_KEY_VAL#" xmlName="request_part_0_requestTab_data_8"/>
-<component con="0" enc="0" type="2" value="A  &quot;EnvironmentName&quot;: &quot;&amp;UC4RB_UIP_ENV_NAME#&quot;" xmlName="request_part_0_requestTab_data_7"/>
-<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_9"/>
-<component con="0" enc="0" type="2" value="A  &quot;Name&quot;: &quot;&amp;UC4RB_UIP_PROC_NAME#&quot;," xmlName="request_part_0_requestTab_data_4"/>
-<component con="0" enc="0" type="2" value="A  &quot;ProcessVersion&quot;: &quot;&amp;UC4RB_UIP_PROC_VRSN#&quot;," xmlName="request_part_0_requestTab_data_3"/>
-<component con="0" enc="0" type="2" value="A  &quot;EnvironmentId&quot;: &amp;UC4RB_UIP_ENV_ID#," xmlName="request_part_0_requestTab_data_6"/>
-<component con="0" enc="0" type="2" value="A  &quot;Description&quot;:&quot;&amp;UC4RB_UIP_PROC_DESC#&quot;," xmlName="request_part_0_requestTab_data_5"/>
-<component con="0" enc="0" type="2" value="A  &quot;ProcessKey&quot;: &quot;&amp;UC4RB_UIP_PROC_KEY#&quot;," xmlName="request_part_0_requestTab_data_2"/>
-<component con="0" enc="0" type="2" value="A{" xmlName="request_part_0_requestTab_data_1"/>
-<component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
-<component con="0" enc="0" type="2" value="Bearer &amp;UC4RB_UIP_AUTH_TOKEN#" xmlName="header_0_1"/>
-<component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
-<component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
-<component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
-<component con="0" enc="0" type="2" value="" xmlName="file"/>
-</cit>
-<cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
-</citcont>
-</CIT>
-<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
-<postconditions>
-<PostCon>
-<conditions id="CONDITIONS"/>
-</PostCon>
-</postconditions>
-</task>
-<task Alias="" BranchType="0" Col="5" Lnr="5" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
-<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
-<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
-<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
-<preconditions>
-<PreCon>
-<conditions id="CONDITIONS"/>
-</PreCon>
-</preconditions>
-<predecessors>
-<pre BranchType="0" Lnr="1" PreLnr="4" When="ANY_OK" type="container"/>
-</predecessors>
-<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
-<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
-<dynvalues>
-<dyntree>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">
-<UC4RB_UIP_PASSWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PASSWD#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">--10</UC4RB_UIP_PASSWDs.00>
-<UC4RB_UIP_TENANT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TENANT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-<UC4RB_UIP_URLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_URL#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS">https://platform.uipath.com</UC4RB_UIP_URLs.00>
-<UC4RB_UIP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_USER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.UIPATH_CONNECTION_DETAILS"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE">
-<UC4RB_UIP_ADV_OPTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ADV_OPT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_ENV_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ENV_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_PROC_DESCs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_DESC#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_PROC_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_PROC_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
-<UC4RB_UIP_PROC_VRSNs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_VRSN#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
+<UC4RB_UIP_RELEASE_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_RELEASE_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -747,11 +598,11 @@
 <node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" ontop="1">
 <PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.CREATE_NEW_RELEASE" prptmode="1">
-<UC4RB_UIP_PROC_NAMEs.00 altview="0" haslist="0"/>
+<UC4RB_UIP_RELEASE_NAMEs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_PROC_DESCs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_PROC_KEYs.00 altview="0" haslist="0"/>
+<UC4RB_UIP_PROC_NAMEs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_PROC_VRSNs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_ENV_NAMEs.00 altview="0" haslist="0"/>
+<UC4RB_UIP_ENV_IDs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_ADV_OPTs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -817,23 +668,24 @@ This action will create a new release on UiPath Orchestrator.
 none
 
 = Inputs =
-- Name	             : Provide a custom name of the release. 
-                       E.g. ABC.
-- Description        : Provide the description of release.
-- Process Key        : Provide a unique name for your process, must be same as package name. 
-- Process Version    : Provide the version number that can be same as package version.
-                       E.g. 1.0.6849.36336
-- Environment Name   : Provide the name of environment where you want to execute. This environment must exist.
-                       E.g. Test_Env
-- Advanced Options   : Provide other release relate option that you want while creating the new release.
-	                   E.g. "IsLatestVersion": false
+- Name	 : Provide a custom name of the release.
+E.g. ABC.
+- Description: Provide the description of release.
+- Process Name: Provide a unique name for your process, must be the same as the package name.
+- Process Version: Provide the version number that can be the same as package version.
+E.g. 1.0.6849.36336
+- Environment Id: Provide the id of the environment where you want to execute. This environment must exist.
+E.g. 43475
+- Advanced Options: Provide other release relate option that you want while creating the new release.
+	 E.g. "IsLatestVersion": false
 	
 = Behavior =
-* processkey must be same as package name.
+* Process Name must be same as the package name.
 * The default name format of release is ProcessName_EnvironmentName.
 
 =Return Value=
-(none)
+UC4RB_UIP_RELEASE_ID#: Id of the newly created release.
+UC4RB_UIP_RELEASE_Key#: Key of the newly created release.
 
 = Outputs =
 * Return code is 0 in case of success.
