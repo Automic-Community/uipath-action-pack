@@ -17,7 +17,7 @@
 <ATTR_JOBS state="1">
 <Queue>CLIENT_QUEUE</Queue>
 <StartType/>
-<HostDst>|&lt;CIT&gt;|HOST</HostDst>
+<HostDst>|WEBSERVICEREST01|HOST</HostDst>
 <HostATTR_Type>CIT</HostATTR_Type>
 <CodeName/>
 <Login/>
@@ -48,7 +48,7 @@
 <RequTaskParams>0</RequTaskParams>
 </ATTR_CIT>
 <CIT state="2">
-<citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
+<citcont agentname="WEBSERVICEREST01" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
@@ -116,6 +116,11 @@
 <component con="0" enc="0" type="2" value="UC4RB_UIP_PROCESS_ID_LIST#" xmlName="response_part_0_script_0_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
+<component con="0" enc="0" type="2" value="$..value[*].Version" xmlName="response_part_0_script_1_code_0"/>
+<component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_1_queryType"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIP_PROCESS_VRSN_LIST#" xmlName="response_part_0_script_1_resourceName"/>
+<component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_1_saveTo"/>
+<component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_1_useArray"/>
 <component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
 <component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
 <component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
@@ -166,6 +171,7 @@
 <VALUE state="1">
 <Values>
 <row ERTUsage="0" Name="&amp;UC4RB_UIP_PROCESS_ID_LIST#" Value=""/>
+<row ERTUsage="0" Name="&amp;UC4RB_UIP_PROCESS_VRSN_LIST#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
