@@ -4,18 +4,19 @@ Resource          ../../../Env/default.txt
 *** Variables ***
 #---- Promptset Fields --------------------------------------------------------------------------------------
 ${UiPath_URL}     https://platform.uipath.com
-${TenantName}     Tenant Name
-${Username}       User Name
-${Password}       Password
+${TenantName}     tanejaankit
+${Username}       ankit.taneja@nagarro.com
+${Password}       Add_Password_Here
 #-------------------Start Job-------------------------------------
-${Process_Name}    Test1
+${Release_Key}    98fa8970-9dce-4f73-ac42-3217f9cbe5fd
 ${Strategy_1}     All
 ${Strategy_2}     Specific
 ${Strategy_3}     RobotCount
-${Robot_Id}       56346
+${Robot_Id}       42264
 ${No_of_Robot}    0
 ${No_of_Robot1}    1
 #---- Get Robot Logs / Get Environments--------------------------------------------------------------------------------------
+${Env_Name}       TestEnv
 ${Properties}     Id
 ${Filter}         Id eq 31922
 ${OrderBy}        Id desc
@@ -23,13 +24,14 @@ ${Top}            7
 ${Skip}           0
 ${Expand}         *
 #-------------------Upload Package-------------------------------------
-${File_Path}      D:\\ClosedXML.0.87.1.nupkg
+${File_Path}      ${EXECDIR}\\AWI.nupkg
 #------------------Create New Release---------------------------------
 ${Name}           PackageName
-${ProcessKey}     Swati_006
-${ProcessVersion}    1.2.06
-${Env_Name}       test
-#------------------Get Robot Logs,Get Releases,Get Robots---------------------------------
+${ProcessKey}     AWI
+${ProcessVersion}    1.0.6835.26501
+${Env_ID}         28296
+#------------------Get Robot Logs,Get Releases,Get Robots, Get Processes---------------------------------
+${Robot_Name}     SuperBot
 ${Properties}     MachineName,MachineId,Username,RobotEnvironments
 ${Filter}         MachineId eq 42547
 ${OrderBy}        Id desc
@@ -37,8 +39,7 @@ ${Top}            5
 ${Skip}           0
 ${IncludeCount}    YES
 ${Expand}         Environments
-
+${Process_Name}    AWI
+${Release_Name}    AWI
 #------------------Update/Rollback To Latest Package Version---------------------------------
 ${Release_ID}     42902
-
-
