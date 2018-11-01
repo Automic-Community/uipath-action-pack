@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBP AllowExternal="1" name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET__ENVIRONMENTS">
+<JOBP AllowExternal="1" name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ENVIRONMENTS">
 <XHEADER state="1">
 <Title>Get  Environments</Title>
 <ArchiveKey1/>
