@@ -25,7 +25,7 @@
 <DeactWhen>ANY_OK</DeactWhen>
 <AutoDeactAlways>0</AutoDeactAlways>
 <DeactDelay>0</DeactDelay>
-<ActAtRun>0</ActAtRun>
+<ActAtRun>1</ActAtRun>
 <UC4Priority>0</UC4Priority>
 <PassPriority>0</PassPriority>
 <MaxParallel2>0</MaxParallel2>
@@ -63,17 +63,17 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
-<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_COUNTs.00>
-<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
-<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">0</UC4RB_UIP_SKIPs.00>
-<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
+<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">NO</UC4RB_UIP_INC_CNTs.00>
+<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_ROBOT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -158,17 +158,17 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
-<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_COUNTs.00>
-<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
-<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">0</UC4RB_UIP_SKIPs.00>
-<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
+<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">NO</UC4RB_UIP_INC_CNTs.00>
+<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_ROBOT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -207,31 +207,16 @@
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
 <component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
-<component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
-<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
-<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
-<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
-<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
-<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_password"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_port"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_preemptive"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_username"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientkey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientsecret"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_token"/>
@@ -241,6 +226,10 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_token_secret"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_verifier"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_version_method"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_auth_method"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_password"/>
@@ -248,35 +237,46 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_type"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
-<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
+<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
 <component con="0" enc="0" type="2" value="" xmlName="curl"/>
-<component con="0" enc="0" type="2" value="application/json" xmlName="mediaType"/>
-<component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
-<component con="0" enc="0" type="2" value="Part 1" xmlName="partName"/>
-<component con="0" enc="0" type="2" value="/api/account/authenticate" xmlName="resource"/>
-<component con="0" enc="0" type="2" value="POST" xmlName="method"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
-<component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
-<component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
-<component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
-<component con="0" enc="0" type="2" value="A  &quot;password&quot; : &quot;&amp;UC4RB_UIP_PASSWD#&quot;" xmlName="request_part_0_requestTab_data_4"/>
-<component con="0" enc="0" type="2" value="A  &quot;usernameOrEmailAddress&quot; : &quot;&amp;UC4RB_UIP_USER#&quot;," xmlName="request_part_0_requestTab_data_3"/>
-<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_5"/>
-<component con="0" enc="0" type="2" value="A  &quot;tenancyName&quot; : &quot;&amp;UC4RB_UIP_TENANT_NAME#&quot;," xmlName="request_part_0_requestTab_data_2"/>
-<component con="0" enc="0" type="2" value="A{" xmlName="request_part_0_requestTab_data_1"/>
+<component con="0" enc="0" type="2" value="" xmlName="file"/>
 <component con="0" enc="0" type="2" value="Content-Type" xmlName="header_0_0"/>
 <component con="0" enc="0" type="2" value="application/json; charset=utf-8" xmlName="header_0_1"/>
 <component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
 <component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
+<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
+<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
+<component con="0" enc="0" type="2" value="application/json" xmlName="mediaType"/>
+<component con="0" enc="0" type="2" value="POST" xmlName="method"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
+<component con="0" enc="0" type="2" value="Part 1" xmlName="partName"/>
+<component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
+<component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
+<component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
+<component con="0" enc="0" type="2" value="A{" xmlName="request_part_0_requestTab_data_1"/>
+<component con="0" enc="0" type="2" value="A  &quot;tenancyName&quot; : &quot;&amp;UC4RB_UIP_TENANT_NAME#&quot;," xmlName="request_part_0_requestTab_data_2"/>
+<component con="0" enc="0" type="2" value="A  &quot;usernameOrEmailAddress&quot; : &quot;&amp;UC4RB_UIP_USER#&quot;," xmlName="request_part_0_requestTab_data_3"/>
+<component con="0" enc="0" type="2" value="A  &quot;password&quot; : &quot;&amp;UC4RB_UIP_PASSWD#&quot;" xmlName="request_part_0_requestTab_data_4"/>
+<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_5"/>
+<component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
+<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
+<component con="0" enc="0" type="2" value="/api/account/authenticate" xmlName="resource"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
 <component con="0" enc="0" type="2" value="$result" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
 <component con="0" enc="0" type="2" value="UC4RB_UIP_AUTH_TOKEN#" xmlName="response_part_0_script_0_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
-<component con="0" enc="0" type="2" value="" xmlName="file"/>
+<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
+<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
+<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
+<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
+<component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
+<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
+<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
 </cit>
 <cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
 </citcont>
@@ -328,17 +328,17 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
-<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_COUNTs.00>
-<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
-<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">0</UC4RB_UIP_SKIPs.00>
-<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
+<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">NO</UC4RB_UIP_INC_CNTs.00>
+<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_ROBOT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -376,13 +376,17 @@
 <CIT src="OCV">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
+<component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_password"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_port"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_preemptive"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_username"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientkey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientsecret"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_token"/>
@@ -392,6 +396,10 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_token_secret"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_verifier"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_version_method"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_auth_method"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_password"/>
@@ -399,15 +407,20 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_type"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
-<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
+<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
 <component con="0" enc="0" type="2" value="" xmlName="curl"/>
-<component con="0" enc="0" type="2" value="/odata/RobotLogs" xmlName="resource"/>
-<component con="0" enc="0" type="2" value="GET" xmlName="method"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
+<component con="0" enc="0" type="2" value="" xmlName="file"/>
 <component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
 <component con="0" enc="0" type="2" value="Bearer &amp;UC4RB_UIP_AUTH_TOKEN#" xmlName="header_0_1"/>
 <component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
 <component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
+<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
+<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
+<component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
+<component con="0" enc="0" type="2" value="GET" xmlName="method"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
 <component con="0" enc="0" type="2" value="&amp;PROPERTIES_QRY_PARA#" xmlName="query_0_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_PROP#" xmlName="query_0_1"/>
 <component con="0" enc="0" type="2" value="&amp;FILTER_QRY_PARA#" xmlName="query_1_0"/>
@@ -422,29 +435,16 @@
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_EXPAND#" xmlName="query_5_1"/>
 <component con="0" enc="0" type="2" value="&amp;COUNT_QRY_PARA#" xmlName="query_6_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_INC_CNT#" xmlName="query_6_1"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
-<component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
-<component con="0" enc="0" type="2" value="" xmlName="file"/>
-<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
 <component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
+<component con="0" enc="0" type="2" value="/odata/RobotLogs" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
 <component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
-<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
 <component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
-<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
-<component con="0" enc="0" type="2" value="WebServiceRest" xmlName="componentName"/>
+<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
+<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
 <component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
+<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
+<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
 </cit>
 <cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
 </citcont>
@@ -482,17 +482,17 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">
-<UC4RB_UIP_COUNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_COUNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_COUNTs.00>
-<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">NO</UC4RB_UIP_INC_CNTs.00>
-<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS">0</UC4RB_UIP_SKIPs.00>
-<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS"/>
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">
+<UC4RB_UIP_EXPANDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_EXPAND#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_FILTERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_FILTER#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_INC_CNTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_INC_CNT#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS">NO</UC4RB_UIP_INC_CNTs.00>
+<UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_ROBOT_NAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ROBOT_NAME#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
+<UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -590,14 +590,16 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.QUERY_PARAMETERS" prptmode="1">
+<node content="1" id="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_UIPATH.PRV.PROMPTSET.GET_ROBOT_LOGS" prptmode="1">
+<UC4RB_UIP_ROBOT_NAMEs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_PROPs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_FILTERs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_ORD_BYs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_TOPs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_SKIPs.00 altview="0" haslist="0">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_SKIPs.00 altview="0" haslist="0"/>
+<UC4RB_UIP_INC_CNTs.00 altview="0" haslist="0">NO</UC4RB_UIP_INC_CNTs.00>
 <UC4RB_UIP_EXPANDs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -663,22 +665,23 @@ This action will fetch logs for Robot(s) defined in UiPath Orchestrator.
 none
 
 = Inputs =
-- Properties	     : Provide the properties that you want in your response, if remain empty then it will fetch all the properties related to robot log. 
-                       E.g. RobotName,MachineId.
-- Filter             : Provide the filter that you want to apply on result set in response.
-                       E.g. RobotName eq ABC.
-- OrderBy            : Provide the property and the order in which you want to sort the result set in response. 
-                       E.g. TimeStamp desc.
-- Top	             : Provide the number that much logs you want in result set of response.
-                       E.g. 5
-- Skip               : Provide the number of logs that you do not want in your result set.
-                       E.g. 2
--Include Count       : Specify whether if count of the matching results should be included in the response.
-- Expand	     : Provide related entities to be inlined.       
+- Robot Name: Provide the name of the robot. E.g. TestRobot
+- Properties: Provide the properties that you want in your response, if remain empty then it will fetch all the properties related to robot log.
+E.g. RobotName,MachineId.
+- Filter: Provide the filter that you want to apply on the result set in the response.
+E.g. RobotName eq ABC.
+- OrderBy: Provide the property and the order in which you want to sort the result set in the response.
+E.g. TimeStamp desc.
+- Top: Provide the number that much logs you want in the result set of response.
+E.g. 5
+- Skip: Provide the number of logs that you do not want in your result set.
+E.g. 2
+-Include Count: Specify whether if the count of the matching results should be included in the response.
+- Expand: Provide related entities to be inlined.
 
 = Behavior =
-* If Skip and Top both are provided, the rest api will ignore the input given for skip.
-* Top can be 0, in this case all the logs will get displayed.
+* If Skip and Top both are provided, the rest API will ignore the input given for skip.
+* Top can be 0, in this case, all the logs will get displayed.
 
 =Return Value=
 (none)
