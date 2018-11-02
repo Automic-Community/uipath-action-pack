@@ -50,16 +50,29 @@
 <CIT state="2">
 <citcont agentname="&lt;CIT&gt;" jobtype="WEBSERVICEREST" text="Web Service Rest">
 <cit cittype="2" icon="" id="" subtype="REST" text="REST Web Service">
+<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
+<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
+<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
+<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
+<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
+<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
+<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
+<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_secret_accesskey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_aws_sign_version"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_password"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_port"/>
+<component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_preemptive"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_basic_username"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_auth_method"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientkey"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_clientsecret"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_refresh_token"/>
@@ -69,10 +82,6 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_token_secret"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_verifier"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_auth_oauth_version_method"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_connection_timeout"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_endpoint_url"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_follow_redirects"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_from_prompts"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_auth_method"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_host"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_password"/>
@@ -80,20 +89,15 @@
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_realm"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_type"/>
 <component con="0" enc="0" type="2" value="" xmlName="conn_proxy_username"/>
-<component con="0" enc="0" type="2" value="" xmlName="conn_read_timeout"/>
-<component con="0" enc="0" type="2" value="30" xmlName="connectTimeout"/>
+<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
 <component con="0" enc="0" type="2" value="" xmlName="curl"/>
-<component con="0" enc="0" type="2" value="" xmlName="file"/>
+<component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="GET" xmlName="method"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
 <component con="0" enc="0" type="2" value="Authorization" xmlName="header_0_0"/>
 <component con="0" enc="0" type="2" value="Bearer &amp;UC4RB_UIP_AUTH_TOKEN#" xmlName="header_0_1"/>
 <component con="0" enc="0" type="2" value="User-Agent" xmlName="header_1_0"/>
 <component con="0" enc="0" type="2" value="*" xmlName="header_1_1"/>
-<component con="0" enc="0" type="2" value="false" xmlName="isCurl"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
-<component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
-<component con="0" enc="0" type="2" value="GET" xmlName="method"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
-<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
 <component con="0" enc="0" type="2" value="&amp;FILTER_QRY_PARA#" xmlName="query_0_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_FILTER#" xmlName="query_0_1"/>
 <component con="0" enc="0" type="2" value="&amp;ORDERBY_QRY_PARA#" xmlName="query_1_0"/>
@@ -108,25 +112,21 @@
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_INC_CNT#" xmlName="query_5_1"/>
 <component con="0" enc="0" type="2" value="&amp;SKIP_QRY_PARA#" xmlName="query_6_0"/>
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SKIP#" xmlName="query_6_1"/>
-<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
-<component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="false" xmlName="jobQuery"/>
+<component con="0" enc="0" type="2" value="false" xmlName="jobHeaders"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
 <component con="0" enc="0" type="2" value="$.value[*].Key" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
-<component con="0" enc="0" type="2" value="UC4RB_UIP_KEYS#" xmlName="response_part_0_script_0_resourceName"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIPATH_RELEASES_KEYS#" xmlName="response_part_0_script_0_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
 <component con="0" enc="0" type="2" value="$.value[*].Id" xmlName="response_part_0_script_1_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_1_queryType"/>
-<component con="0" enc="0" type="2" value="UC4RB_UIP_IDS#" xmlName="response_part_0_script_1_resourceName"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIPATH_RELEASES_IDS#" xmlName="response_part_0_script_1_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_1_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_1_useArray"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
-<component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
-<component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
-<component con="0" enc="0" type="2" value="" xmlName="uriOverride"/>
+<component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
+<component con="0" enc="0" type="2" value="" xmlName="file"/>
 </cit>
 <cit cittype="3" icon="" id="" subtype="GENERALJOBPANELDEF" text="General Job Panel"/>
 </citcont>
@@ -170,8 +170,8 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
 <Values>
-<row ERTUsage="0" Name="&amp;UC4RB_UIP_IDS#" Value=""/>
-<row ERTUsage="0" Name="&amp;UC4RB_UIP_KEYS#" Value=""/>
+<row ERTUsage="0" Name="&amp;UC4RB_UIPATH_RELEASES_IDS#" Value=""/>
+<row ERTUsage="0" Name="&amp;UC4RB_UIPATH_RELEASES_KEYS#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -229,24 +229,17 @@
 </OUTPUTSCAN>
 <POST_SCRIPT mode="1" replacementmode="1" state="1">
 <OSCRI><![CDATA[:SET &STATUS# = GET_UC_OBJECT_STATUS(,,"RETCODE")
-:SET &UC4RB_UIPATH_RELEASES_KEYS# = ""
-:SET &UC4RB_UIPATH_RELEASES_IDS# = ""
 :SET &UC4RB_UIPATH_RELEASES_COUNT# = 0
 
 :DEFINE &IDS_SPLIT#,string,30
 :IF &STATUS# EQ 0
 
-:  IF &UC4RB_UIP_IDS# <> "[]"
-:    FILL &IDS_SPLIT#[] = STR_SPLIT(&UC4RB_UIP_IDS#,",")
+:  IF &UC4RB_UIPATH_RELEASES_IDS# <> "[]"
+:    FILL &IDS_SPLIT#[] = STR_SPLIT(&UC4RB_UIPATH_RELEASES_IDS#,",")
 :    SET &UC4RB_UIPATH_RELEASES_COUNT# = LENGTH(&IDS_SPLIT#[],SIZE)
-:    SET &UC4RB_UIPATH_RELEASES_KEYS# = &UC4RB_UIP_KEYS#
-:    SET &UC4RB_UIPATH_RELEASES_IDS# = &UC4RB_UIP_IDS#
 :  ENDIF
 :ENDIF
 
-
-:PUBLISH &UC4RB_UIPATH_RELEASES_IDS#,,WORKFLOW
-:PUBLISH &UC4RB_UIPATH_RELEASES_KEYS#,,WORKFLOW
 :PUBLISH &UC4RB_UIPATH_RELEASES_COUNT#,,WORKFLOW]]></OSCRI>
 </POST_SCRIPT>
 <DOCU_Docu state="1" type="text">

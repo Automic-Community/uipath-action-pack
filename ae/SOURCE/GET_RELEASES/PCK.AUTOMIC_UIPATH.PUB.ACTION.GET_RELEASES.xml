@@ -73,7 +73,7 @@
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_PROC_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -169,7 +169,7 @@
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_PROC_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -255,6 +255,8 @@
 <component con="0" enc="0" type="2" value="false" xmlName="multiPart"/>
 <component con="0" enc="0" type="2" value="false" xmlName="multiPartResp"/>
 <component con="0" enc="0" type="2" value="Part 1" xmlName="partName"/>
+<component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
+<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
 <component con="0" enc="0" type="2" value="application/json" xmlName="request_part_0_mediaType"/>
 <component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
 <component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
@@ -263,18 +265,16 @@
 <component con="0" enc="0" type="2" value="A  &quot;usernameOrEmailAddress&quot; : &quot;&amp;UC4RB_UIP_USER#&quot;," xmlName="request_part_0_requestTab_data_3"/>
 <component con="0" enc="0" type="2" value="A  &quot;password&quot; : &quot;&amp;UC4RB_UIP_PASSWD#&quot;" xmlName="request_part_0_requestTab_data_4"/>
 <component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_5"/>
-<component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
-<component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
 <component con="0" enc="0" type="2" value="/api/account/authenticate" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
+<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
+<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
 <component con="0" enc="0" type="2" value="$result" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
 <component con="0" enc="0" type="2" value="UC4RB_UIP_AUTH_TOKEN#" xmlName="response_part_0_script_0_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
 <component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
 <component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
 <component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
@@ -309,8 +309,8 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values>
-<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIP_IDS#" Value=""/>
-<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIP_KEYS#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIPATH_RELEASES_IDS#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_UIPATH_RELEASES_KEYS#" Value=""/>
 </Values>
 <Mode>0</Mode>
 </VALUE>
@@ -343,7 +343,7 @@
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_PROC_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -443,20 +443,20 @@
 <component con="0" enc="0" type="2" value="&amp;UC4RB_UIP_SKIP#" xmlName="query_6_1"/>
 <component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
 <component con="0" enc="0" type="2" value="/odata/Releases" xmlName="resource"/>
+<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
+<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
+<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
 <component con="0" enc="0" type="2" value="" xmlName="response_part_0_file"/>
 <component con="0" enc="0" type="2" value="$.value[*].Key" xmlName="response_part_0_script_0_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_0_queryType"/>
-<component con="0" enc="0" type="2" value="UC4RB_UIP_KEYS#" xmlName="response_part_0_script_0_resourceName"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIPATH_RELEASES_KEYS#" xmlName="response_part_0_script_0_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_0_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_0_useArray"/>
 <component con="0" enc="0" type="2" value="$.value[*].Id" xmlName="response_part_0_script_1_code_0"/>
 <component con="0" enc="0" type="2" value="JSONPath" xmlName="response_part_0_script_1_queryType"/>
-<component con="0" enc="0" type="2" value="UC4RB_UIP_IDS#" xmlName="response_part_0_script_1_resourceName"/>
+<component con="0" enc="0" type="2" value="UC4RB_UIPATH_RELEASES_IDS#" xmlName="response_part_0_script_1_resourceName"/>
 <component con="0" enc="0" type="2" value="variable" xmlName="response_part_0_script_1_saveTo"/>
 <component con="0" enc="0" type="2" value="false" xmlName="response_part_0_script_1_useArray"/>
-<component con="0" enc="0" type="2" value="false" xmlName="responseReport"/>
-<component con="0" enc="0" type="2" value="60" xmlName="responseTimeout"/>
-<component con="0" enc="0" type="2" value="true" xmlName="responseToJobLog"/>
 <component con="1" enc="0" type="2" value="" xmlName="restConnection"/>
 <component con="0" enc="0" type="2" value="REST" xmlName="runType"/>
 <component con="0" enc="0" type="2" value="false" xmlName="tracePerformance"/>
@@ -508,7 +508,7 @@
 <UC4RB_UIP_ORD_BYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_ORD_BY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_PROC_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROC_KEY#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_PROPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_PROP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
-<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_SKIPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_SKIP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 <UC4RB_UIP_TOPs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UIP_TOP#" promptsetname="PCK.AUTOMIC_UIPATH.PUB.PROMPTSET.GET_RELEASES"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -616,7 +616,7 @@
 <UC4RB_UIP_FILTERs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_ORD_BYs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_TOPs.00 altview="0" haslist="0"/>
-<UC4RB_UIP_SKIPs.00 altview="0" haslist="0">0</UC4RB_UIP_SKIPs.00>
+<UC4RB_UIP_SKIPs.00 altview="0" haslist="0"/>
 <UC4RB_UIP_INC_CNTs.00 altview="0" haslist="0">NO</UC4RB_UIP_INC_CNTs.00>
 <UC4RB_UIP_EXPANDs.00 altview="0" haslist="0"/>
 </PRPTBOX>
@@ -695,6 +695,7 @@ This action fetches all the Releases(Processes) defined in UiPath Orchestrator.
 
 = Behavior =
 * Input for the Top field should be numeric and greater than 0.
+* Currently skip parameter works when Order By is also provided. (Limitation from UiPath)
 * The action considers the release count up to 30 only for the UC4RB_UIPATH_RELEASES_COUNT# variable, more than 30 records will be ignored.
 
 = Return Value =

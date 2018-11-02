@@ -26,7 +26,11 @@
 :ENDIF
 
 !setting skip as query parameter
-:SET &SKIP_QRY_PARA#="$skip"
+:IF &UC4RB_UIP_SKIP# <> ""
+:  SET &SKIP_QRY_PARA#="$skip"
+:ELSE
+:  SET &SKIP_QRY_PARA#=""
+:ENDIF
 
 !setting count as query parameter
 :SET &COUNT_QRY_PARA#="$count"

@@ -20,7 +20,7 @@ Get Releases with Empty Filter values
                       OK        ${EMPTY}          NO                 ${Empty}         ${Empty}    ${OrderBy}    ${Empty}    ${Skip}    ${IncludeCount}    ${Empty}
 
 Get Releases with non-zero Skip value without Order By
-                      NOK       ${EMPTY}          YES                ${Properties}    ${Empty}    ${OrderBy}    ${Empty}    ${Skip}    ${IncludeCount}    ${Empty}
+                      NOK       ${EMPTY}          YES                ${Properties}    ${Empty}    ${Empty}    ${Empty}    ${Skip}    ${IncludeCount}    ${Empty}
 
 Get Releases with Invalid or non existing Properties values
                       NOK       ${EMPTY}          YES                Invalid          ${Empty}    ${OrderBy}    ${Top}      ${Skip}    ${IncludeCount}    ${Expand}
