@@ -100,15 +100,16 @@
 <component con="0" enc="0" type="2" value="Part 1" xmlName="request_part_0_partName"/>
 <component con="0" enc="0" type="2" value="text" xmlName="request_part_0_requestDataSource"/>
 <component con="0" enc="0" type="2" value="A{" xmlName="request_part_0_requestTab_data_1"/>
-<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_10"/>
+<component con="0" enc="0" type="2" value="A  }" xmlName="request_part_0_requestTab_data_10"/>
+<component con="0" enc="0" type="2" value="A}" xmlName="request_part_0_requestTab_data_11"/>
 <component con="0" enc="0" type="2" value="A  &quot;startInfo&quot;: {" xmlName="request_part_0_requestTab_data_2"/>
 <component con="0" enc="0" type="2" value="A    &quot;ReleaseKey&quot;: &quot;&amp;UC4RB_UIP_RELEASE_KEY#&quot;," xmlName="request_part_0_requestTab_data_3"/>
 <component con="0" enc="0" type="2" value="A    &quot;Strategy&quot;: &quot;&amp;UC4RB_UIP_STRATEGY#&quot;," xmlName="request_part_0_requestTab_data_4"/>
 <component con="0" enc="0" type="2" value="A    &quot;RobotIds&quot;: [" xmlName="request_part_0_requestTab_data_5"/>
 <component con="0" enc="0" type="2" value="A               &amp;UC4RB_UIP_ROBOT#" xmlName="request_part_0_requestTab_data_6"/>
 <component con="0" enc="0" type="2" value="A    ]," xmlName="request_part_0_requestTab_data_7"/>
-<component con="0" enc="0" type="2" value="A    &quot;NoOfRobots&quot;: &amp;UC4RB_UIP_ROBOT_NUM#" xmlName="request_part_0_requestTab_data_8"/>
-<component con="0" enc="0" type="2" value="A  }" xmlName="request_part_0_requestTab_data_9"/>
+<component con="0" enc="0" type="2" value="A    &quot;NoOfRobots&quot;: &amp;UC4RB_UIP_ROBOT_NUM#," xmlName="request_part_0_requestTab_data_8"/>
+<component con="0" enc="0" type="2" value="A    &quot;InputArguments&quot;: &quot;&amp;REQUEST_ARGUMENTS#&quot;" xmlName="request_part_0_requestTab_data_9"/>
 <component con="0" enc="0" type="2" value="text" xmlName="requestDataSource"/>
 <component con="0" enc="0" type="2" value="false" xmlName="requestReports"/>
 <component con="0" enc="0" type="2" value="odata/Jobs/UiPath.Server.Configuration.OData.StartJobs" xmlName="resource"/>
@@ -192,7 +193,29 @@
 :SET &ATTRIBUTE_VARA# = "PCK.AUTOMIC_UIPATH.PRV.VARA.ROBOT_STRATEGY"
 :SET &UC4RB_MAP_BY_ATTRIBUTE# = &UC4RB_UIP_STRATEGY#
 :INC PCK.AUTOMIC_UIPATH.PUB.JOBI.ITERATE_VARA
-:SET &UC4RB_UIP_STRATEGY#  = &ATTRIBUTE#]]></MSCRI>
+:SET &UC4RB_UIP_STRATEGY#  = &ATTRIBUTE#
+:DEFINE &ARGUMENTS#, STRING, 50
+:FILL &ARGUMENTS#[] = STR_SPLIT(&UC4RB_UIP_ARGS#, ",")
+:SET &INDEX# = 1
+:SET &SIZE# = LENGTH(&ARGUMENTS#[],SIZE)
+:SET &REQUEST_ARGUMENTS# = "{"
+:WHILE &INDEX# LE &SIZE#
+:  SET &INDEX# = FORMAT(&INDEX#, "0")
+:  DEFINE &ARGUMENT#, STRING, 2
+:    FILL &ARGUMENT#[] = STR_SPLIT(&ARGUMENTS#[&INDEX#], "=")
+:    SET  &REQUEST_ARGUMENTS# = STR_CAT(&REQUEST_ARGUMENTS#, '\"')
+:    SET &TEMP# = STR_TRIM(&ARGUMENT#[1])
+:    SET  &REQUEST_ARGUMENTS# = STR_CAT(&REQUEST_ARGUMENTS#, &TEMP#)
+:    SET  &REQUEST_ARGUMENTS# = STR_CAT(&REQUEST_ARGUMENTS#, '\" : \"')
+:    SET &TEMP# = STR_TRIM(&ARGUMENT#[2])
+:    SET  &REQUEST_ARGUMENTS# = STR_CAT(&REQUEST_ARGUMENTS#, &TEMP#)
+:    SET  &REQUEST_ARGUMENTS# = STR_CAT(&REQUEST_ARGUMENTS#, '\"')
+:  IF &INDEX# NE &SIZE#
+:     SET  &REQUEST_ARGUMENTS# = STR_CAT(&REQUEST_ARGUMENTS#, ", ")
+:  ENDIF
+:  SET &INDEX# =&INDEX#+1
+:ENDWHILE
+: SET &REQUEST_ARGUMENTS# = STR_CAT(&REQUEST_ARGUMENTS#, "}")]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>

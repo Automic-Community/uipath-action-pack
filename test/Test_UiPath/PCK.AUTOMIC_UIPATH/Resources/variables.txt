@@ -4,17 +4,19 @@ Resource          ../../../Env/default.txt
 *** Variables ***
 #---- Promptset Fields --------------------------------------------------------------------------------------
 ${UiPath_URL}     https://platform.uipath.com
-${TenantName}     tanejaankit
-${Username}       ankit.taneja@nagarro.com
-${Password}       Add_Password_Here
+${TenantName}     vijendraparmar
+${Username}       admin
+${Password}       Add Password Here
 #-------------------Start Job-------------------------------------
-${Release_Key}    98fa8970-9dce-4f73-ac42-3217f9cbe5fd
+${Release_Key}    8b983d72-a465-4635-9bbb-ba43526db532
 ${Strategy_1}     All
 ${Strategy_2}     Specific
 ${Strategy_3}     RobotCount
 ${Robot_Id}       42264
 ${No_of_Robot}    0
 ${No_of_Robot1}    1
+${Inp_Arg}        Username=srishti
+${Invalid_Inp_Arg}    booli=srish
 #---- Get Robot Logs / Get Environments--------------------------------------------------------------------------------------
 ${Env_Name}       TestEnv
 ${Properties}     Id

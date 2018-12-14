@@ -11,49 +11,55 @@ Resource          ../../Resources/keywords.txt
 Resource          ../../Resources/variables.txt
 Resource          ../../Resources/actions.txt
 
-*** Test Cases ***    OK_NOK    ReleaseKey        Strategy         RobotIds       NumberOfRobots     WaitForCompletion
+*** Test Cases ***    OK_NOK    ReleaseKey        Strategy         RobotIds       NumberOfRobots     WaitForCompletion    InputArg
 Start job with valid Process Name with 'All' as Strategy and Robot Ids is empty and Number of Robots is 0
                       [Tags]    main_scenarios
-                      OK        ${Release_Key}    ${Strategy_1}    ${Empty}       ${No_of_Robot}     NO
+                      OK        ${Release_Key}    ${Strategy_1}    ${Empty}       ${No_of_Robot}     NO                   ${Empty}
 
 Start job with valid Process Name with 'All' as Strategy and Robot Ids is empty and Number of Robots is 1
-                      NOK       ${Release_Key}    ${Strategy_1}    ${Empty}       ${No_of_Robot1}    NO
+                      NOK       ${Release_Key}    ${Strategy_1}    ${Empty}       ${No_of_Robot1}    NO                   ${Empty}
 
 Start job with valid Process Name with 'All' as Strategy and valid Robot Ids and Number of Robots is 0
-                      NOK       ${Release_Key}    ${Strategy_1}    ${Robot_Id}    ${No_of_Robot}     NO
+                      NOK       ${Release_Key}    ${Strategy_1}    ${Robot_Id}    ${No_of_Robot}     NO                   ${Empty}
 
 Start job with valid Process Name with 'All' as Strategy and valid Robot Ids and Number of Robots is 1
-                      NOK       ${Release_Key}    ${Strategy_1}    ${Robot_Id}    ${No_of_Robot1}    NO
+                      NOK       ${Release_Key}    ${Strategy_1}    ${Robot_Id}    ${No_of_Robot1}    NO                   ${Empty}
 
 Start job with valid Process Name with 'Specific' as Strategy and valid Robot Ids and Number of Robots is 0
-                      OK        ${Release_Key}    ${Strategy_2}    ${Robot_Id}    ${No_of_Robot}     NO
+                      OK        ${Release_Key}    ${Strategy_2}    ${Robot_Id}    ${No_of_Robot}     NO                   ${Empty}
 
 Start job with valid Process Name with 'Specific' as Strategy and Robot Ids is empty and Number of Robots is 1
-                      NOK       ${Release_Key}    ${Strategy_2}    ${Empty}       ${No_of_Robot1}    NO
+                      NOK       ${Release_Key}    ${Strategy_2}    ${Empty}       ${No_of_Robot1}    NO                   ${Empty}
 
 Start job with valid Process Name with 'Specific' as Strategy and Robot Ids is empty and Number of Robots is 0
-                      NOK       ${Release_Key}    ${Strategy_2}    ${Empty}       ${No_of_Robot}     NO
+                      NOK       ${Release_Key}    ${Strategy_2}    ${Empty}       ${No_of_Robot}     NO                   ${Empty}
 
 Start job with valid Process Name with 'Specific' as Strategy and valid Robot Ids and Number of Robots is 1
-                      NOK       ${Release_Key}    ${Strategy_2}    ${Robot_Id}    ${No_of_Robot1}    NO
+                      NOK       ${Release_Key}    ${Strategy_2}    ${Robot_Id}    ${No_of_Robot1}    NO                   ${Empty}
 
 Start job with valid Process Name with 'Robot Count' as Strategy and Robot Ids is empty and Number of Robots is 1
-                      OK        ${Release_Key}    ${Strategy_3}    ${Empty}       ${No_of_Robot1}    NO
+                      OK        ${Release_Key}    ${Strategy_3}    ${Empty}       ${No_of_Robot1}    NO                   ${Empty}
 
 Start job with valid Process Name with 'Robot Count' as Strategy and Robot Ids is empty and Number of Robots is 0
-                      NOK       ${Release_Key}    ${Strategy_3}    ${Empty}       ${No_of_Robot}     NO
+                      NOK       ${Release_Key}    ${Strategy_3}    ${Empty}       ${No_of_Robot}     NO                   ${Empty}
 
 Start job with valid Process Name with 'Robot Count' as Strategy and valid Robot Ids and Number of Robots is 0
-                      NOK       ${Release_Key}    ${Strategy_3}    ${Robot_Id}    ${No_of_Robot}     NO
+                      NOK       ${Release_Key}    ${Strategy_3}    ${Robot_Id}    ${No_of_Robot}     NO                   ${Empty}
 
 Start job with valid Process Name with 'Robot Count' as Strategy and valid Robot Ids and Number of Robots is 1
-                      NOK       ${Release_Key}    ${Strategy_3}    ${Robot_Id}    ${No_of_Robot1}    NO
+                      NOK       ${Release_Key}    ${Strategy_3}    ${Robot_Id}    ${No_of_Robot1}    NO                   ${Empty}
 
 Start job with empty Process Name
-                      NOK       ${Empty}          ${Strategy_1}    ${EMPTY}       ${No_of_Robot}     NO
+                      NOK       ${Empty}          ${Strategy_1}    ${EMPTY}       ${No_of_Robot}     NO                   ${Empty}
 
 Start job with valid Process Name and invalid Robot IDs
-                      NOK       ${Release_Key}    ${Strategy_2}    Invalid        ${No_of_Robot}     NO
+                      NOK       ${Release_Key}    ${Strategy_2}    Invalid        ${No_of_Robot}     NO                   ${Empty}
+
+Start job with valid Process Name and Input Arguements
+                      OK        ${Release_Key}    ${Strategy_1}    ${EMPTY}       ${No_of_Robot}     NO                   ${Inp_Arg}
+
+Start job with valid Process Name and invalid Input Arguement type
+                      NOK       ${Release_Key}    ${Strategy_1}    ${EMPTY}       ${No_of_Robot}     NO                   ${Invalid_Inp_Arg}
 
 *** Keywords ***
 Startup
@@ -63,6 +69,7 @@ Startup
 
 Start Job Template
     [Arguments]    ${OK_NOK}    ${ReleaseKey}    ${Strategy}    ${RobotIds}    ${NumberOfRobots}    ${WaitForCompletion}
+    ...    ${InputArg}
     [Documentation]    This test Starts jobs in UI Path.
     ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
     ...    -${ReleaseKey}: It provide the Release Key to start a job.
@@ -70,19 +77,23 @@ Start Job Template
     ...    -${RobotIds}: It provide the collection of names of specific robots selected to be run by the current process.
     ...    -${NumberOfRobots}: It provide the number of robots selected to be run by the current process.
     ...    -${WaitForCompletion}: Select No for Asynchronous behavior of Job.
+    ...    -${InputArg}: It takes input agruements in key=value pair.
     Generate String
     Init Action    ${_Start_JOB_ACTION}
     Connect To UiPath
-    Run Keyword If    '${ReleaseKey}' == 'Invalid'    Action Set    &UC4RB_UIP_RELEASE_KEY#    ${Generated_Name}_${Time}    ELSE    Action Set
-    ...    &UC4RB_UIP_RELEASE_KEY#    ${ReleaseKey}
+    Run Keyword If    '${ReleaseKey}' == 'Invalid'    Action Set    &UC4RB_UIP_RELEASE_KEY#    ${Generated_Name}_${Time}
+    ...    ELSE    Action Set    &UC4RB_UIP_RELEASE_KEY#    ${ReleaseKey}
     Action Set    &UC4RB_UIP_STRATEGY#    ${Strategy}
-    Run Keyword If    '${RobotIds}' == 'Invalid'    Action Set    &UC4RB_UIP_ROBOT#    ${Generated_Name}_${Time}    ELSE    Action Set
-    ...    &UC4RB_UIP_ROBOT#    ${RobotIds}
+    Run Keyword If    '${RobotIds}' == 'Invalid'    Action Set    &UC4RB_UIP_ROBOT#    ${Generated_Name}_${Time}
+    ...    ELSE    Action Set    &UC4RB_UIP_ROBOT#    ${RobotIds}
     Action Set    &UC4RB_UIP_ROBOT_NUM#    ${NumberOfRobots}
     Action Set    &UC4RB_UIP_WAIT_COMP#    ${WaitForCompletion}
+    Action Set    &UC4RB_UIP_ARGS#    ${InputArg}
     Action Execute
-    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
-    Run Keyword If    '${OK_NOK}' == 'OK'    Action Object Variable Should Be Found    &UC4RB_UIP_JOB_IDS#    ELSE    Action Object Variable Should Not Be Found    &UC4RB_UIP_JOB_IDS#
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success
+    ...    ELSE    Assert Failure
+    Run Keyword If    '${OK_NOK}' == 'OK'    Action Object Variable Should Be Found    &UC4RB_UIP_JOB_IDS#
+    ...    ELSE    Action Object Variable Should Not Be Found    &UC4RB_UIP_JOB_IDS#
 
 Teardown
     Log    *******End Test "Start JOB"*******
