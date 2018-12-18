@@ -2,6 +2,17 @@
 name: PCK.AUTOMIC_UIPATH
 
 source: ae
-
+binaries: 
+- object: RESOURCES/PCK.AUTOMIC_UIPATH.PRV.CUSTOM_TYPES
+  timestamp: disabled
+  resources: 
+  - name: DEPLOYMENTTARGET#UiPath#1
+    type: TEXT
+    path: ara/types/deploymenttarget/UiPath.xml
+    version: 1.0.0
+  - name: COMPONENT#UiPath#2
+    type: TEXT
+    path: ara/types/component/UiPath.xml
+    version: 1.0.0
   
 
