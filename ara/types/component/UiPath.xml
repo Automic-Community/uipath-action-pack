@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Version: 1.0.0 -->
+<ComponentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="component.xsd">
+  <Name>UiPath</Name>
+  <DefaultDeploymentTargetType>UiPath</DefaultDeploymentTargetType>
+   
+	<Properties>
+		<Group name="package_group" displayName="Package">
+			<Property name="file_name" type="SingleLineText" mode="EDITABLE" displayName="File">
+				<Defaultvalue>AWI.nupkg</Defaultvalue>
+				<Description>Provide name of the package file. File extension should be nupkg. E.g. AWI.nupkg</Description>
+			</Property>
+			<Property name="processname" type="SingleLineText" mode="EDITABLE" displayName="Process Name">
+				<Defaultvalue>AWI</Defaultvalue>
+				<Description>Provide the unique identifier of the process to be associated with the environment. E.g. AWI</Description>
+			</Property>			
+			<Property name="processversion" type="SingleLineText" mode="EDITABLE" displayName="Process Version">
+				<Defaultvalue></Defaultvalue>
+				<Description>Provide the version of the process.</Description>
+			</Property>	
+			<Property name="input_arguments" type="SingleLineText" mode="EDITABLE" displayName="Process Version">
+				<Defaultvalue></Defaultvalue>
+				<Description>Provide input arguments in key=value pairs separated by comma. E.g. key1=value1,key2=value2</Description>
+			</Property>				
+			
+		</Group>
+  </Properties>
+
+  <DynamicProperties>
+		
+		<!-- GENERAL -->
+		<Property name="/uipath/restapiurl" highlighted="false">
+			<Value>{@target/custom/restapiurl}</Value>
+			<Description>Provide URL of the UiPath REST API. E.g. https://platform.uipath.com</Description>
+		</Property>
+		<Property name="/uipath/tenantname" highlighted="false">
+			<Value>{@target/custom/tenantname}</Value>
+			<Description>Provide tenant name to generate the token for authentication. E.g. admin.</Description>
+		</Property>
+		<Property name="/uipath/username" highlighted="false">
+			<Value>{@target/custom/username}</Value>
+			<Description>Provide username for the REST API authentication. E.g. automic</Description>
+		</Property>
+		<Property name="/uipath/password" highlighted="false">
+			<Value>{@target/custom/password}</Value>
+			<Description>Provide password for the REST API authentication.</Description>
+		</Property>
+		<Property name="/uipath/robotname" highlighted="false">
+			<Value>{@target/custom/robotname}</Value>
+			<Description>Provide the name of the robot.</Description>
+		</Property>	
+		<Property name="/uipath/file_name" highlighted="false">
+			<Value>{/custom/file_name}</Value>
+			<Description>Provide name of the package file. File extension should be nupkg. E.g. AWI.nupkg</Description>
+		</Property>
+		<Property name="/uipath/processname" highlighted="false">
+			<Value>{/custom/processname}</Value>
+			<Description>Provide the unique identifier of the process to be associated with the environment. </Description>
+		</Property>
+		<Property name="/uipath/release_name" highlighted="false">
+			<Value>{/custom/processname}_{@environment/system/name}</Value>
+			<Description>Provide a name the release.</Description>
+		</Property>		
+		<Property name="/uipath/input_arguments" highlighted="false">
+			<Value>{/custom/input_arguments}</Value>
+			<Description>Provide input arguments in key=value pairs separated by comma. E.g. key1=value1,key2=value2</Description>
+		</Property>		
+		
+		<!-- Deployment -->
+		<Property name="/uipath/environment" highlighted="false">
+			<Value>{@environment/system/name}</Value>
+			<Description>Provide the name of the environment.</Description>
+		</Property>
+		<Property name="/uipath/processversion" highlighted="false">
+			<Value>{/custom/processversion}</Value>
+			<Description>Provide the version of the process.</Description>
+		</Property>
+		
+		<!-- Staging -->
+    <Property name="/source/source_files_dirs" type="SingleLineText" highlighted="false" caption="">
+      <Description>Remote file/directory to be downloaded.</Description>
+      <Value>{@target/custom/source_path}\{@deployment_package/system/name}</Value>
+    </Property>
+    <Property name="/target/target_files_dirs" type="SingleLineText" highlighted="false">
+      <Description>Name of a local file/directory where downloaded file/directory is stored.</Description>
+      <Value>{@target/custom/staging_base_directory}\{@deployment_package/system/name}</Value>
+    </Property>
+	<Property name="/target/filepath" type="SingleLineText" highlighted="false">
+      <Description>Path of file to be uploaded</Description>
+      <Value>{/target/target_files_dirs}\{/uipath/file_name}</Value>
+    </Property>
+    <Property name="/target/overwrite_target" type="SingleChoice" highlighted="false" allowCustomValues="false">
+      <Description>Overwrite local files/directory if exist.</Description>
+      <List>Yes#;#No</List>
+      <Value>Yes</Value>
+    </Property>
+    <Property name="/staging/working_files_dirs" type="SingleLineText" highlighted="false">
+      <Description>Files/Directory on the staging server after downloaded from source.</Description>
+      <Value>{/staging/working_base_dir}/{@deployment_package/system/name}</Value>
+    </Property>
+    <Property name="/staging/agent" type="SingleLineText" highlighted="false">
+      <Description>Agent which will be used for staging</Description>
+      <Value>{@target/custom/staging_remote_agent}</Value>
+    </Property>
+    <Property name="/staging/working_base_dir" type="SingleLineText" highlighted="false">
+      <Description>Base directory on the staging server where package should be downloaded to.</Description>
+      <Value>{@target/custom/staging_remote_directory}</Value>
+    </Property>		
+		
+		
+		</DynamicProperties>
+</ComponentType>

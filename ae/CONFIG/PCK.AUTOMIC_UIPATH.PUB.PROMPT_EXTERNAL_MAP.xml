@@ -25,15 +25,64 @@
 </ATTR_VARA>
 <VARA state="1">
 <Variables>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.CREATE_NEW_RELEASE/UC4RB_UIP_PASSWD#" Value="EXT:/uipath/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.CREATE_NEW_RELEASE/UC4RB_UIP_TENANT_NAME#" Value="EXT:/uipath/tenantname" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.CREATE_NEW_RELEASE/UC4RB_UIP_URL#" Value="EXT:/uipath/restapiurl" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.CREATE_NEW_RELEASE/UC4RB_UIP_USER#" Value="EXT:/uipath/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.CREATE_NEW_RELEASE/UC4RB_UIP_RELEASE_NAME#" Value="EXT:/uipath/release_name" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.CREATE_NEW_RELEASE/UC4RB_UIP_PROC_NAME#" Value="EXT:/uipath/processname" Value1="" Value2="" Value3="" Value4=""/> 
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ENVIRONMENTS/UC4RB_UIP_PASSWD#" Value="EXT:/uipath/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ENVIRONMENTS/UC4RB_UIP_TENANT_NAME#" Value="EXT:/uipath/tenantname" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ENVIRONMENTS/UC4RB_UIP_URL#" Value="EXT:/uipath/restapiurl" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ENVIRONMENTS/UC4RB_UIP_USER#" Value="EXT:/uipath/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_PROCESSES/UC4RB_UIP_PASSWD#" Value="EXT:/uipath/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_PROCESSES/UC4RB_UIP_TENANT_NAME#" Value="EXT:/uipath/tenantname" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_PROCESSES/UC4RB_UIP_URL#" Value="EXT:/uipath/restapiurl" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_PROCESSES/UC4RB_UIP_USER#" Value="EXT:/uipath/username" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_RELEASES/AGENT#" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOT_LOGS/AGENT#" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_RELEASES/UC4RB_UIP_PASSWD#" Value="EXT:/uipath/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_RELEASES/UC4RB_UIP_TENANT_NAME#" Value="EXT:/uipath/tenantname" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_RELEASES/UC4RB_UIP_URL#" Value="EXT:/uipath/restapiurl" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_RELEASES/UC4RB_UIP_USER#" Value="EXT:/uipath/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_RELEASES/UC4RB_UIP_PROC_KEY#" Value="EXT:/uipath/processname" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_RELEASES/UC4RB_UIP_ENV_NAME#" Value="EXT:/uipath/environment" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOTS/AGENT#" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOTS/UC4RB_UIP_PASSWD#" Value="EXT:/uipath/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOTS/UC4RB_UIP_ROBOT_NAME#" Value="EXT:/uipath/robotname" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOTS/UC4RB_UIP_TENANT_NAME#" Value="EXT:/uipath/tenantname" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOTS/UC4RB_UIP_URL#" Value="EXT:/uipath/restapiurl" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOTS/UC4RB_UIP_USER#" Value="EXT:/uipath/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOT_LOGS/AGENT#" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOT_LOGS/UC4RB_UIP_PASSWD#" Value="EXT:/uipath/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOT_LOGS/UC4RB_UIP_TENANT_NAME#" Value="EXT:/uipath/tenantname" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOT_LOGS/UC4RB_UIP_URL#" Value="EXT:/uipath/restapiurl" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOT_LOGS/UC4RB_UIP_USER#" Value="EXT:/uipath/username" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.ROLLBACK_RELEASE_TO_PREVIOUS_VERSION/AGENT#" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.ROLLBACK_RELEASE_TO_PREVIOUS_VERSION/UC4RB_UIP_PASSWD#" Value="EXT:/uipath/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.ROLLBACK_RELEASE_TO_PREVIOUS_VERSION/UC4RB_UIP_TENANT_NAME#" Value="EXT:/uipath/tenantname" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.ROLLBACK_RELEASE_TO_PREVIOUS_VERSION/UC4RB_UIP_URL#" Value="EXT:/uipath/restapiurl" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.ROLLBACK_RELEASE_TO_PREVIOUS_VERSION/UC4RB_UIP_USER#" Value="EXT:/uipath/username" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.START_JOB/AGENT#" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.START_JOB/UC4RB_UIP_PASSWD#" Value="EXT:/uipath/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.START_JOB/UC4RB_UIP_TENANT_NAME#" Value="EXT:/uipath/tenantname" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.START_JOB/UC4RB_UIP_URL#" Value="EXT:/uipath/restapiurl" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.START_JOB/UC4RB_UIP_USER#" Value="EXT:/uipath/username" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.START_JOB/UC4RB_UIP_ARGS#" Value="EXT:/uipath/input_arguments" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.UPDATE_TO_LATEST_PACKAGE_VERSION/AGENT#" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.UPDATE_TO_LATEST_PACKAGE_VERSION/UC4RB_UIP_PASSWD#" Value="EXT:/uipath/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.UPDATE_TO_LATEST_PACKAGE_VERSION/UC4RB_UIP_TENANT_NAME#" Value="EXT:/uipath/tenantname" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.UPDATE_TO_LATEST_PACKAGE_VERSION/UC4RB_UIP_URL#" Value="EXT:/uipath/restapiurl" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.UPDATE_TO_LATEST_PACKAGE_VERSION/UC4RB_UIP_USER#" Value="EXT:/uipath/username" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.UPLOAD_PACKAGE/AGENT#" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.UPLOAD_PACKAGE/UC4RB_UIP_FILE#" Value="EXT:/target/filepath" Value1="" Value2="" Value3="" Value4=""/> 
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.UPLOAD_PACKAGE/UC4RB_UIP_PASSWD#" Value="EXT:/uipath/password" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.UPLOAD_PACKAGE/UC4RB_UIP_TENANT_NAME#" Value="EXT:/uipath/tenantname" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.UPLOAD_PACKAGE/UC4RB_UIP_URL#" Value="EXT:/uipath/restapiurl" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.ACTION.UPLOAD_PACKAGE/UC4RB_UIP_USER#" Value="EXT:/uipath/username" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_UIPATH.PUB.JOBS.CREATE_NEW_RELEASE/AGENT#" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.JOBS.CREATE_NEW_RELEASE/UC4RB_UIP_PROC_VRSN#" Value="EXT:/uipath/processversion" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_ENVIRONMENTS/AGENT#" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_ENVIRONMENTS/UC4RB_UIP_ENV_NAME#" Value="EXT:/uipath/environment" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_UIPATH.PUB.JOBS.GET_PROCESSES/AGENT#" Value="&amp;OVERWRITE_RA_AGENT_PROMPT#" Value1="" Value2="" Value3="" Value4=""/>
 </Variables>
 </VARA>
