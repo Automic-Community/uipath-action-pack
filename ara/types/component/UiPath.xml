@@ -18,9 +18,9 @@
 				<Defaultvalue></Defaultvalue>
 				<Description>Provide the version of the process.</Description>
 			</Property>	
-			<Property name="input_arguments" type="SingleLineText" mode="EDITABLE" displayName="Process Version">
+			<Property name="input_arguments" type="LongText" mode="EDITABLE" displayName="Input Arguments">
 				<Defaultvalue></Defaultvalue>
-				<Description>Provide input arguments in key=value pairs separated by comma. E.g. key1=value1,key2=value2</Description>
+				<Description>Provide input arguments in json format. E.g. {"key1":"value1","key2":"value2"}</Description>
 			</Property>				
 			
 		</Group>
@@ -63,7 +63,7 @@
 		</Property>		
 		<Property name="/uipath/input_arguments" highlighted="false">
 			<Value>{/custom/input_arguments}</Value>
-			<Description>Provide input arguments in key=value pairs separated by comma. E.g. key1=value1,key2=value2</Description>
+			<Description>Provide input arguments in json format. E.g. {"key1":"value1","key2":"value2"}</Description>
 		</Property>		
 		
 		<!-- Deployment -->
