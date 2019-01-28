@@ -808,7 +808,7 @@ This action starts a job on UiPath Orchestrator.
 - Strategy: 	 	 Specify which robots from the environment will be run by the process. E.g. Specific
 - Robot IDs: 	 	 Provide the collection of ids of specific robots selected to be run by the current process. Robot ids should be comma separated. E.g. 55577
 - Number of Robots: 	 Provide the number of robots selected to be run by the current process. E.g. 0
-- Input Arguments:       Provide input arguments in json format. E.g. { "key1":"value1", "key2":"value2" }
+- Input Arguments:       Provide input arguments in json format. E.g. { "host":"localhost", "port":"9080" }
 - Wait for Completion:   Specify whether action should wait for the job to be completed successfully. Default- Yes
 - Initial Waiting Time:  Specify initial waiting time in minutes before the first status query. Default- 5
 - Retry Count: 	 	 Specify the number of retry attempts to get the status. Default- 10
@@ -847,7 +847,7 @@ AE logs will be displayed in the AE report.
 - Strategy: 	 	 Specific
 - Robot IDs: 	 	 55577,4236
 - Number of Robots: 	 0
-- Input Arguments: {"key1":"value1","key2":"value2"}
+- Input Arguments: {"host":"localhost","port":"9080"}
 - Wait for Completion: Yes
 - Initial Waiting Time: 1
 - Retry Count: 	 5
