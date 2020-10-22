@@ -40,9 +40,9 @@ Integration examples:
 
 ###### Prerequisite:
 
-1. ITPA Shared and FileSystem action packs should be installed.
-2. A Windows automation agent (it will be the WinRM client)
-3. RA Rest action pack should be installed.
+1. Automation Engine should be installed.
+2. Automic Package Manager should be installed.
+3. RA REST action pack should be installed.
 
 ###### Steps to install action pack source code:
 
