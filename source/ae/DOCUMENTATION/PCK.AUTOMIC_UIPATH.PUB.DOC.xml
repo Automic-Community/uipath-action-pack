@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<DOCU name="PCK.AUTOMIC_UIPATH.PUB.DOC">
+<HEADER state="1">
+<Title>Package Documentation</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<DOCU_Docu state="1" type="text">
+<DOC><![CDATA[About the Package
+================================
+Robotic process automation (or RPA) is an emerging form of business process automation technology based on the notion of software robots or artificial intelligence (AI) workers.RPA confers benefits like cost reduction, improved efficiency, and greater accuracy, it's an attractive option. A versatile solution, RPA can be used to operate and orchestrate other application software, regardless of industry. UiPath offers user-friendly software for process automation, web scraping, GUI 
+testing, content migration, and much more.
+
+
+=Supported versions=
+v2018.2
+
+=Setup=
+* The Agent should be able to access UiPath rest API endpoint URL in order to make HTTP requests.
+* Internet Connection should be available on Agent OS.
+* Curl should be installed on Agent machine to run the action.
+* Curl should be allowed to execute the command on Rest Webservice Agent.
+
+=Common Inputs=
+- REST API URL*: Provide the URL of the UiPath REST API. E.g. https://platform.uipath.com
+- Tenant Name*: Provide the tenant name for the REST API authentication. E.g. tenant1
+- Username*: Provide the username for the REST API authentication. E.g. ca_integrations@abc.com
+- Password*: Provide the password for the REST API authentication.
+
+=Actions=
+Following actions are supported
+
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOT_LOGS
+* Action Description: This action will fetch logs for Robot(s) defined in UiPath Orchestrator.
+
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.UPLOAD_PACKAGE
+* Action Description: This action uploads a new package on UiPath Orchestrator.
+
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.START_JOB
+* Action Description: This action starts a job on UiPath Orchestrator.
+
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_RELEASES
+* Action Description: This action fetches all the Releases(Processes) defined in UiPath Orchestrator.
+
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.CREATE_NEW_RELEASE
+* Action Description: This action will create a new release on UiPath Orchestrator.
+
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_PROCESSES
+* Action Description: This action will fetch the list of all the processes defined in UiPath Orchestrator.
+
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ENVIRONMENTS
+* Action Description: This action fetches all the Environments defined in UiPath Orchestrator.
+
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.GET_ROBOTS
+* Action Description: This action will fetch Robot(s) available on UiPath Orchestrator.
+
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.ROLLBACK_RELEASE_TO_PREVIOUS_VERSION
+* Action Description: This action will rollback a given release to its previous version .
+
+* Action name: PCK.AUTOMIC_UIPATH.PUB.ACTION.UPDATE_TO_LATEST_PACKAGE_VERSION
+* Action Description: This action will Update a process to the latest version of release on UiPath Orchestrator.]]></DOC>
+</DOCU_Docu>
+</DOCU>
+</uc-export>
