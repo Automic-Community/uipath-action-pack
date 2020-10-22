@@ -13,9 +13,6 @@ Robotic process automation (or RPA) is an emerging form of business process auto
 testing, content migration, and much more.
 
 
-=Supported versions=
-v2018.2
-
 =Setup=
 * The Agent should be able to access UiPath rest API endpoint URL in order to make HTTP requests.
 * Internet Connection should be available on Agent OS.
